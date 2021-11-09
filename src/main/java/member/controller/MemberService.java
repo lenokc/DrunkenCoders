@@ -9,7 +9,7 @@ public interface MemberService {
 
 	public String login(String id, String pwd);
 	
-	// 아이디 유무 검사
+	// 아이디 유무 검사.
 	public boolean isExistId(String id);
 
 	// 회원정보 보기

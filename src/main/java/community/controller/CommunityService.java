@@ -7,10 +7,10 @@ import community.dto.CommunityDTO;
 public interface CommunityService {
 	public int boardWrite(CommunityDTO dto);
 
-	// 5개씩 목록보기
+	// 5개씩 목록보기.
 	public List<CommunityDTO> boardList(int startNum, int endNum);
 
-	// 상세보기
+	// 상세보기.
 	public CommunityDTO boardView(int seq);
 
 	// 조회수 증가하기

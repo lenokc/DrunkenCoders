@@ -1,7 +1,7 @@
 package community.dto;
 
 public class CommunityDTO {
-	private int seq;         	 //--글번호
+	private int seq;         	 //--글번호.
 	private String id;           //--아이디
 	private String name;         //--이름
 	private String subject;      //--제목

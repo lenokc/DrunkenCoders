@@ -34,7 +34,7 @@ select * from community where seq=3;
 select count(*) as cnt from community;
 
 -- 데이터 삭제
-delete community where seq=57;
+delete community where seq=13;
 delete community;
 
 -- 조회수 증가

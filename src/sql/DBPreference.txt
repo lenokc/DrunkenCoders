@@ -10,7 +10,7 @@ create table community (
     primary key(seq)
 );
 -- 테이블 구조 확인
-desc community;
+desc community; 
 -- 테이블 삭제
 drop table community purge;
 -- table 목록
@@ -34,11 +34,11 @@ select * from community where seq=3;
 select count(*) as cnt from community;
 
 -- 데이터 삭제
-delete community where seq=13;
+delete community where seq=3;
 delete community;
 
 -- 조회수 증가
-update community set hit=hit+1 where seq=13;
+update community set hit=hit+1 where seq=3;
 
 -- DB 저장
 commit;

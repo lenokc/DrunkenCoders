@@ -1,13 +1,13 @@
 package community.dto;
 
 public class CommunityDTO {
-	private int seq;         	 //--±Û¹øÈ£.
-	private String id;           //--¾ÆÀÌµğ
-	private String name;         //--ÀÌ¸§
-	private String subject;      //--Á¦¸ñ
-	private String content;      //--³»¿ë
-	private int hit; 			//--Á¶È¸¼ö
-	private String logtime;     //--ÀÛ¼ºÀÏ
+	private int seq;         	 //--ê¸€ë²ˆí˜¸
+	private String id;           //--ì•„ì´ë””
+	private String name;         //--ì´ë¦„
+	private String subject;      //--ì œëª©
+	private String content;      //--ë‚´ìš©
+	private int hit; 			//--ì¡°íšŒìˆ˜
+	private String logtime;     //--ì‘ì„±ì¼
 	
 	public int getSeq() {
 		return seq;
@@ -50,5 +50,6 @@ public class CommunityDTO {
 	}
 	public void setLogtime(String logtime) {
 		this.logtime = logtime;
-	}
+	}    
+    
 }

@@ -5,23 +5,25 @@ import java.util.List;
 import community.dto.CommunityDTO;
 
 public interface CommunityService {
-	public int boardWrite(CommunityDTO dto);
+	
+	// ê¸€ì“°ê¸°
+	public int communityWrite(CommunityDTO dto);
 
-	// 5°³¾¿ ¸ñ·Ïº¸±â.
-	public List<CommunityDTO> boardList(int startNum, int endNum);
+	// 10ê°œì”© ëª©ë¡ë³´ê¸°
+	public List<CommunityDTO> communityList(int startNum, int endNum);
 
-	// »ó¼¼º¸±â.
-	public CommunityDTO boardView(int seq);
+	// ìƒì„¸ë³´ê¸°
+	public CommunityDTO communityView(int seq);
 
-	// Á¶È¸¼ö Áõ°¡ÇÏ±â
+	// ì¡°íšŒìˆ˜ ì¦ê°€í•˜ê¸°
 	public int updateHit(int seq);
 
-	// ÃÑ µ¥ÀÌÅÍ¼ö ±¸ÇÏ±â
+	// ì´ ë°ì´í„°ìˆ˜ êµ¬í•˜ê¸°
 	public int getTotalA();
 
-	// °Ô½Ã±Û »èÁ¦ÇÏ±â
+	// ê²Œì‹œê¸€ ì‚­ì œí•˜ê¸°
 	public int delete(int seq);
 
-	// ±Û¼öÁ¤
-	public int boardModify(CommunityDTO dto);
+	// ê¸€ìˆ˜ì •
+	public int communityModify(CommunityDTO dto);
 }

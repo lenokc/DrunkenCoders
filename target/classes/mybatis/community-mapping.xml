@@ -3,6 +3,41 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mybatis.CommunityMapper">
+
+	<insert id="communityWrite" parameterType="Cdto">
+		insert into community values
+		(seq_community.nextval, #{id}, #{name}, #{subject}, #{content}, 0, sysdate)
+	</insert>
+	
+	<select id="communityList" parameterType="java.util.Map" resultType="Cdto">
+		<![CDATA[
+		select seq, id, name, subject, content, hit,
+		to_char(logtime, 'YYYY.MM.DD') as logtime 
+		from(select rownum rn, tt.* from
+		(select * from community order by seq desc) tt)
+		where rn>=#{startNum} and rn<=#{endNum}
+		]]>
+	</select>
+	
+	<select id="communityView" parameterType="int" resultType="Cdto">
+		select * from community where seq=#{seq}
+	</select>
+	
+	<update id="updateHit" parameterType="int">
+		update community set hit=hit+1 where seq=#{seq}
+	</update>
+	
+	<select id="getTotalA" resultType="int">
+		select count(*) as cnt from community
+	</select>
+	
+	<delete id="delete" parameterType="int">
+		delete community where seq=#{seq}
+	</delete>
+	
+	<update id="communityModify" parameterType="Cdto">
+		update community set subject=#{subject}, content=#{content} where seq=#{seq}
+	</update>
 	
 	
 </mapper>

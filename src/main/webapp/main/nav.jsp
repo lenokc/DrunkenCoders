@@ -174,13 +174,13 @@ nav .bi-bell-fill{
 		</button>
 		
 		<!-- device-width 768px미만시 로고위치 센터-->
-		<a class="navbar-brand d-block d-lg-none mx-auto" href="../main/index.do" id="logo1">
-			<img class="c-h-8" src="../img/01_index/m.svg" alt="">
+		<a class="navbar-brand d-block d-lg-none mx-auto" href="/drunkenCoders/main/index.do" id="logo1">
+			<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="">
 			<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
 		</a>
 		<!-- device-width 768px이상시 로고위치 좌측-->
-		<a class="navbar-brand d-none d-lg-block" href="../main/index.do" id="logo2">	
-			<img class="c-h-8" src="../img/01_index/m.svg" alt="">
+		<a class="navbar-brand d-none d-lg-block" href="/drunkenCoders/main/index.do" id="logo2">	
+			<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="">
 			<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
 		</a>
 
@@ -214,7 +214,7 @@ nav .bi-bell-fill{
 					<a class="nav-link" href=#>Challenges</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="../community/communityList.do">Community</a>
+					<a class="nav-link" href="/drunkenCoders/community/communityList.do">Community</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href=#>FAQ</a>

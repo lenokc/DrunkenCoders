@@ -197,7 +197,7 @@ nav .bi-bell-fill{
 				<a href="#">
 					<div class="card border-0">
 						<div class="card-img-top overflow-hidden rounded-lg">
-							<img src="../img/01_index/thumb_01.jpg" alt="..." class="img-fluid rounded-lg">
+							<img src="/drunkenCoders/img/01_index/thumb_01.jpg" alt="..." class="img-fluid rounded-lg">
 							<span class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
 						</div>
 						<div class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
@@ -211,7 +211,7 @@ nav .bi-bell-fill{
 				<a href="#">
 					<div class="card border-0">
 						<div class="card-img-top overflow-hidden rounded-lg">
-							<img src="../img/01_index/thumb_02.jpg" alt="..." class="img-fluid rounded-lg">
+							<img src="/drunkenCoders/img/01_index/thumb_02.jpg" alt="..." class="img-fluid rounded-lg">
 							<span class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
 						</div>
 						<div class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
@@ -225,7 +225,7 @@ nav .bi-bell-fill{
 				<a href="#">
 					<div class="card border-0">
 						<div class="card-img-top overflow-hidden rounded-lg">
-							<img src="../img/01_index/thumb_03.jpg" alt="..." class="img-fluid rounded-lg">
+							<img src="/drunkenCoders/img/01_index/thumb_03.jpg" alt="..." class="img-fluid rounded-lg">
 							<span class="badge badge-pill badge-danger text-white align-top my-2 mx-2">고급</span>
 						</div>
 						<div class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
@@ -239,7 +239,7 @@ nav .bi-bell-fill{
 				<a href="#">
 					<div class="card border-0">
 						<div class="card-img-top overflow-hidden rounded-lg">
-							<img src="../img/01_index/thumb_04.jpg" alt="..." class="img-fluid rounded-lg">
+							<img src="/drunkenCoders/img/01_index/thumb_04.jpg" alt="..." class="img-fluid rounded-lg">
 							<span class="badge badge-pill badge-success text-white align-top my-2 mx-2">중급</span>
 						</div>
 						<div class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
@@ -253,7 +253,7 @@ nav .bi-bell-fill{
 				<a href="#">
 					<div class="card border-0">
 						<div class="card-img-top overflow-hidden rounded-lg">
-							<img src="../img/01_index/thumb_05.jpeg" alt="..." class="img-fluid rounded-lg">
+							<img src="/drunkenCoders/img/01_index/thumb_05.jpeg" alt="..." class="img-fluid rounded-lg">
 							<span class="badge badge-pill badge-success text-white align-top my-2 mx-2">중급</span>
 						</div>
 						<div class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
@@ -267,7 +267,7 @@ nav .bi-bell-fill{
 				<a href="#">
 					<div class="card border-0">
 						<div class="card-img-top overflow-hidden rounded-lg">
-							<img src="../img/01_index/thumb_06.jpg" alt="..." class="img-fluid rounded-lg">
+							<img src="/drunkenCoders/img/01_index/thumb_06.jpg" alt="..." class="img-fluid rounded-lg">
 							<span class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
 						</div>
 						<div class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
@@ -316,10 +316,10 @@ nav .bi-bell-fill{
 							<p class="card-text">
 								<div class="row mt-5">
 									<div class="col-2 p-0">
-										<img src="../img/01_index/html5_logo.png" alt="" class="img-fluid">
+										<img src="/drunkenCoders/img/01_index/html5_logo.png" alt="" class="img-fluid">
 									</div>
 									<div class="col-2 p-0">
-										<img src="../img/01_index/css3_logo.png" alt="" class="img-fluid">
+										<img src="/drunkenCoders/img/01_index/css3_logo.png" alt="" class="img-fluid">
 									</div>
 								</div>
 							</p>
@@ -342,16 +342,16 @@ nav .bi-bell-fill{
 							<p class="card-text">
 								<div class="row mt-5">
 									<div class="col-2 p-0">
-										<img src="../img/01_index/es6.png" alt="" class="img-fluid">
+										<img src="/drunkenCoders/img/01_index/es6.png" alt="" class="img-fluid">
 									</div>
 									<div class="col-2 p-0">
-										<img src="../img/01_index/JS_Node.png" alt="" class="img-fluid">
+										<img src="/drunkenCoders/img/01_index/JS_Node.png" alt="" class="img-fluid">
 									</div>
 									<div class="col-2 p-0">
-										<img src="../img/01_index/Pug.png" alt="" class="img-fluid">
+										<img src="/drunkenCoders/img/01_index/Pug.png" alt="" class="img-fluid">
 									</div>
 									<div class="col-2 p-0">
-										<img src="../img/01_index/MongoDB.png" alt="" class="img-fluid">
+										<img src="/drunkenCoders/img/01_index/MongoDB.png" alt="" class="img-fluid">
 									</div>
 								</div>
 							</p>
@@ -374,7 +374,7 @@ nav .bi-bell-fill{
 							<p class="card-text">
 								<div class="row mt-5">
 									<div class="col-2 p-0">
-										<img src="../img/01_index/JS.png" alt="" class="img-fluid">
+										<img src="/drunkenCoders/img/01_index/JS.png" alt="" class="img-fluid">
 									</div>
 								</div>
 							</p>

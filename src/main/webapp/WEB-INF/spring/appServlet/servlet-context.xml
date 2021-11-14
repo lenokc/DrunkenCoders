@@ -29,6 +29,7 @@
 	<resources location="/script/" mapping="/script/**"/>
 	
 	<!-- 어노테이션 사용 설정 -->
+	<context:component-scan base-package="courses"/>
 	<context:component-scan base-package="community"/>
 	<context:component-scan base-package="member"/>
 	

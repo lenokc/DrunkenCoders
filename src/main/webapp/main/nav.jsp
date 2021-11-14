@@ -252,7 +252,7 @@ nav .bi-bell-fill{
 			<li class="nav-item active d-none d-lg-block">
 				<a class="nav-link" href="../member/loginForm.do">Login</a>
 			</li>
-			<a type="button" class="btn btn-primary px-4" href="../member/writeForm.do">Join</a>
+			<a type="button" class="btn btn-primary px-4" href="../courses/kokoa.do">Join</a>
 		</ul>
 	</c:if>
 	</div>

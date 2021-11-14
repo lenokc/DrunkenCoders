@@ -289,7 +289,6 @@
 	</head>
 	<body>
 		<!-- nav include -->
-		<jsp:include page="nav.jsp"/>
 		
 		<!-----------------------------------------
 		 	네비 제외한 전체 컨텐츠 container-fluid sj
@@ -1042,7 +1041,6 @@
 		 	</div>
 		 	
 		<!-- footer include -->
-		<jsp:include page="footer.jsp"/> 
 		
 		</div>
 		<!-- container-fluid -->

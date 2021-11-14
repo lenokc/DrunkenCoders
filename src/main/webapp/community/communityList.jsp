@@ -7,123 +7,236 @@
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>드렁큰 코더 Drunken Coders</title>
 
+<!-- favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="img/m.png" />
 <!-- Bootstrap CSS -->
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-	integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-<!-- Optional JavaScript; choose one of the two! -->
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<script
-	src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-	crossorigin="anonymous"></script>
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-	crossorigin="anonymous"></script>
+<!-- font awesome cdn -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+<!-- bs glyphicon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
 <style type="text/css">
-* {
-	margin: 0;
-	padding: 0;
-}
+	body, html{
+		font-family: 'Noto Sans KR', sans-serif;
+	}
+	.bo{
+		border: 1px solid red;
+	}
 
-h1 {
-	text-align: center;
-}
+	/*customize css*/
+	.c-fontSize-small{
+		font-size: 0.9em;
+	}
+	.c-text-lightgray{
+		color: #B8B8B8;
+	}
+	.c-border{
+		border-color: #EBE8E8;
+		border-width: 2px !important;
+	}
 
-#p1 {
-	color: #BDBDBD;
-	text-align: center;
-}
+	/*#sideCategory style*/
+	#sideCategory ul li{
+		line-height: 2rem;
+	}
+	#sideCategory ul li button::before{
+		content: "\f35a";
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		margin-right: 15px;
+	}
+	#sideCategory ul li a{
+		color: gray !important;
+	}
+	#sideCategory li button.active{
+		background-color: #5E9BFD !important;
+		color: white !important;
+	}
 
-.pagination {
-	justify-content: center;
-}
-
-.btn btn-primary {
-	justify-content: center;
-}
+	/*두번째 섹션, 게시판 리스트 #boardList style*/
+	#boardList a.active{
+		color: #45B8FC !important;
+	}
+	#boardList #recommendNum span{
+		position: relative;
+		top: -7px;
+	}
+	
+	/* 하단 pagination style */
+	.pagination {
+		justify-content: center;
+	}
+	.btn btn-primary {
+		justify-content: center;
+	}
 </style>
 </head>
 <body>
-
-	<!-- 첫번째 섹션. 흰 배경 -->
-	<div class="box-padding-big white-bg">
-		<h1>
-			<strong><br>
-			<br>Community</strong>
-		</h1>
-		<p id="p1">
-			개발자 99% 커뮤니티에서 수다 떨어요!<br>
-			<br>
-		</p>
-
-	</div>
-	<!-- ------------------------------하나의 div로 묶어서 3:6:3으로 분할----------------------------------- -->
 	<div class="container">
+		<!-- 첫번째 섹션, 최상단 title -->
+		<div class="row text-center p-5">
+			<div class="col">
+				<div class="display-4 font-weight-bold h1 p-3">
+					Community
+				</div>
+				<p class="h5 text-muted mb-4">
+					개발자 99% 커뮤니티에서 수다 떨어요!
+				</p>
+			</div>
+		</div>
+		<!-- 첫번째.row -->
+	
+		<!-----------------------------------
+		하나의 div로 묶어서 2:8:2으로 분할
+		----------------------------------- -->
 		<div class="row">
 			<!-- 좌측 nav -->
-			<div class="col-md-2" color="blue">
+			<div class="col-md-3 pt-5" id="sideCategory">
 				<p>카테고리</p>
+				<ul class="list-unstyled h5 c-fontSize-small text-muted">
+						<li><button href="#" type="button" class="btn rounded-pill py-1 active">all</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">javascript (280)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">html_css (265)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">to-do-list (13)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">bla-bla (131)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">python (94)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">side_project (6)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">twitter_clone (4)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">announcement (2)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">tips (38)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">react (33)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">portfolio (31)</button></button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">ssul (29)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">mbti (21)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">uber_eats (18)</button></button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">insta_clone (13)</button></button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">interview (10)</button></button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">jobs (9)</button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">weather_app (9)</button></button></li>
+						<li><button href="#" type="button" class="btn rounded-pill py-1">ask (6)</button></li>
+					</ul>
 			</div>
-
+			<!-- .col-md-3#sideCategory -->
+			
 			<!-- 두번째 섹션, 게시판 리스트 -->
-			<div class="col-md-8">
-				<c:forEach var="dto" items="${list}">
-					<div class="list-group">
-						<a href="communityView.do?pg=${pg}&seq=${dto.seq}"
-							class="list-group-item list-group-item-action">${dto.subject}<br>by
-							${dto.id}
-						</a>
+			<div class="col-md-6 px-0 text-muted" id="boardList">
+				<div class="row">
+					<div class="c-fontSize-small font-weight-bold mb-4">Sort by: 
+						<a href="#" class="px-3 c-text-lightgray"><span><i class="fab fa-hotjar"></i>Popular</span></a> 
+						<a href="#" class="c-text-lightgray active"><span><i class="bi bi-lightning-fill"></i>New</span></a>
+						<a href="#" class="c-text-lightgray float-right"><span><i class="fas fa-search"></i>search</span></a>
 					</div>
-				</c:forEach>
-				<p></p>
+				</div>
+				<div class="row d-flex mb-5">
+					<c:forEach var="dto" items="${list}">
+						<a href="communityView.do?pg=${pg}&seq=${dto.seq}"
+						class="card rounded-lg shadow-sm text-decoration-none px-2 my-2 flex-fill">
+							<div class="row">
+								<div class="col-2 d-flex align-items-center pl-4">
+									<div class="rounded-lg align-self-center border c-border p-0 px-3  text-muted" id="recommendNum">
+										<i class="bi bi-caret-up-fill"></i><br><span>12</span>
+									</div>
+								</div>
+	
+								<div class="col-8 card-body text-muted">
+									<h4 class="card-title text-dark">${dto.subject}</h4>in 
+									<span class="bg-secondary text-white px-1 font-weight-bold">
+										#<span>python</span>
+									</span>
+									&nbsp;by&nbsp;<span class="font-weight-bold">${dto.id}</span>
+									&nbsp;•&nbsp;&nbsp;<span>5 days ago</span>&nbsp;&nbsp;•&nbsp;
+									<i class="bi bi-chat-left-dots"></i>&nbsp;&nbsp;<span>5</span>
+								</div>
+								<div class="col-2 d-flex align-items-center px-0">
+									<div class="align-self-center p-0 mr-3">
+										<img src="/drunkenCoders/img/04_community/user_icon.png" class="align-self-center img-fluid" alt="...">
+									</div>
+								</div>
+							</div>
+							<!-- .row -->
+						</a>		
+					</c:forEach>
+				</div>
+				
 				<nav aria-label="Page navigation example">
 					<ul class="pagination">
 						<c:if test="${startPage > 1}">
-							<li class="page-item"><a class="page-link"
-								href="communityList.do?pg=${startPage-1}">Previous</a></li>
+							<li class="page-item">
+								<a class="page-link"
+								href="communityList.do?pg=${startPage-1}">Previous</a>
+							</li>
 						</c:if>
-
+	
 						<c:forEach var="i" begin="${startPage }" end="${endPage }" step="1">
 							<c:if test="${pg==i}">
 								<li class="page-item"><a class="page-link"
-									href="communityList.do?pg=${i }">${i }</a></li>
+									href="communityList.do?pg=${i }">${i }</a>
+								</li>
 							</c:if>
 							<c:if test="${pg!=i}">
 								<li class="page-item"><a class="page-link"
-									href="communityList.do?pg=${i }">${i }</a></li>
+									href="communityList.do?pg=${i }">${i }</a>
+								</li>
 							</c:if>
 						</c:forEach>
-
+	
 						<c:if test="${endPage < totalP }">
 							<li class="page-item"><a class="page-link"
-								href="communityList.do?pg=${endPage+1}">Next</a></li>
+								href="communityList.do?pg=${endPage+1}">Next</a>
+							</li>
 						</c:if>
 					</ul>
 				</nav>
 			</div>
-
-			<!-- 우측 nav -->
-			<div class="col-md-2" color="blue">
-				<a class="btn btn-primary btn-block" href="communityWriteForm.do"
-					role="button">글쓰기</a>
+			<!-- .col-md-6#boardList -->
+	
+			<!-- sidebar right -->
+			<div class="col-md-3 pt-5">
+				<div class="text-center px-4">
+					<div class="btn btn-primary btn-block rounded-lg" href="communityWriteForm.do"
+				role="button">글쓰기</div>
+				</div>
 			</div>
 		</div>
-		<!-- ./row -->
+		<!-- 두번째./row -->
+		
 	</div>
-	<!-- ./container -->
-	<!-- ------------------------------하나의 div로 묶어서 3:6:3으로 분할----------------------------------- -->
+	<!--전체를 감싸는 .container-->
 
-
+	<!-- Optional JavaScript; choose one of the two! -->
+	
+	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	
+	<!-- Option 2: Separate Popper and Bootstrap JS -->
+	   <!--
+	   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+	-->
+	<script>
+		$(function(){
+			var sideBtn = $("#sideCategory li button");
+	
+			sideBtn.click(function(){
+				sideBtn.removeClass('active')
+				$(this).addClass('active');
+			})
+		})
+	</script>
 </body>
 </html>
 

@@ -52,7 +52,7 @@ public class CommunityListController {
 			
 			request.setAttribute("req","/community/communityList.jsp");
 
-			return "../main/index.jsp";
+			return "/main/index.jsp";
 		}
 		return null;
 	}

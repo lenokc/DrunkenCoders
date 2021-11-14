@@ -208,7 +208,7 @@ nav .bi-bell-fill{
 				</a>
 			</div>
 			<div class="col-md-6 col-xl-4 rounded-lg">
-				<a href="#">
+				<a href="../courses/kokoa.do">
 					<div class="card border-0">
 						<div class="card-img-top overflow-hidden rounded-lg">
 							<img src="/drunkenCoders/img/01_index/thumb_02.jpg" alt="..." class="img-fluid rounded-lg">

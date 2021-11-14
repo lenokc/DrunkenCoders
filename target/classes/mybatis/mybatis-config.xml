@@ -7,11 +7,13 @@
 	<typeAliases>
 		<typeAlias type="community.dto.CommunityDTO" alias="Cdto"/>
 		<typeAlias type="member.dto.MemberDTO" alias="Mdto"/>
+		<typeAlias type="courses.dto.CoursesDTO" alias="Sdto"/>
 	</typeAliases>
 	
 	<!-- sql mapper 등록 -->
 	<mappers>
 		<mapper resource="/mybatis/community-mapping.xml" />
 		<mapper resource="/mybatis/member-mapping.xml" />
+		<mapper resource="/mybatis/courses-mapping.xml" />		
 	</mappers>
 </configuration>

@@ -8,17 +8,17 @@ public interface MemberService {
 	public int write(MemberDTO dto);
 
 	public String login(String id, String pwd);
-	
-	// ¾ÆÀÌµğ À¯¹« °Ë»ç.
+
+	// ì•„ì´ë”” ìœ ë¬´ ê²€ì‚¬
 	public boolean isExistId(String id);
 
-	// È¸¿øÁ¤º¸ º¸±â
+	// íšŒì›ì •ë³´ ë³´ê¸°
 	public MemberDTO memberView(String id);
 
-	// È¸¿øÁ¤º¸ ¼öÁ¤
+	// íšŒì›ì •ë³´ ìˆ˜ì •
 	public int modify(MemberDTO dto);
 
-	// ÃÑ È¸¿ø¼ö ±¸ÇÏ±â
+	// ì´ íšŒì›ìˆ˜ êµ¬í•˜ê¸°
 	public int getTotalMember();
 
 	public List<MemberDTO> selectList(int startNum, int endNum);

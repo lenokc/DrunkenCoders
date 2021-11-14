@@ -1,11 +1,11 @@
 package member.dto;
 
 public class MemberDTO {
-    private String id;    		//-- ¾ÆÀÌµğ, unique, not null
-    private String pwd;      	//-- ºñ¹Ğ¹øÈ£.
-    private String email1;      //-- ÀÌ¸ŞÀÏ ¾ÕºÎºĞ
-    private String email2;      //-- ÀÌ¸ŞÀÏ µŞºÎºĞ
-    private String logtime;     //-- °¡ÀÔ ³¯Â¥
+    private String id;    		//-- ì•„ì´ë””, unique, not null
+    private String pwd;      	//-- ë¹„ë°€ë²ˆí˜¸.
+    private String email1;      //-- ì´ë©”ì¼ ì•ë¶€ë¶„
+    private String email2;      //-- ì´ë©”ì¼ ë’·ë¶€ë¶„
+    private String logtime;     //-- ê°€ì… ë‚ ì§œ
     
 	public String getId() {
 		return id;

@@ -7,77 +7,87 @@
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <!-- include summernote css/js -->
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js"></script>
 <script src="https://github.com/summernote/summernote/tree/master/lang/summernote-ko-KR.js"></script>
+  
+<script type="text/javascript" src="../script/communityScript.js"></script><style type="text/css">
 
-<script type="text/javascript" src="../script/communityScript.js"></script>
 
-<style type="text/css">
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-h1 {
-	text-align: center;
-}
-
-#p1 {
-	color:#BDBDBD;
-	text-align: center;
-}
-
-div .container {
-	width = 50%; !important;
-}
-
-.btn btn-primary {
-   justify-content: center;
-}
 </style>
 </head>
 <body>
-
-
-	<!-- 첫번째 섹션. 흰 배경 -->
-	<div class="box-padding-big white-bg">
-		<h1>
-			<strong><br><br>글쓰기</strong>
-		</h1>
-		<p id="p1">자유롭게 의견을 남겨 보세요!<br><br></p>		
-	</div>
-	 
 	<div class="container">
-	   	<form action="communityWrite.do" method="post" name="communityWriteForm">
-	   		<div class="form-group">
-		      <input type="text" name="subject" placeholder="제목을 입력하세요" class="help-block" size="100%"></td>
-		    </div>
-	   		<div class="form-group">
-		    	<textarea class="summernote" name="content"></textarea>
-		    </div>
-			<div>
-               <input type="button" class="btn btn-primary btn-block" value="등록" onclick="checkCommunityWrite()">
-<!--           <input type="reset" class="btn btn-primary btn-block" value="다시 작성"> -->
-	     	</div>
-	  	</form>
+		<!-- 첫번째 섹션, 최상단 title -->
+		<div class="row text-center p-4"></div>
+		
+		<div class="row text-center p-5">
+			<div class="col">
+				<div class="display-4 font-weight-bold h3 p-3">
+					글쓰기
+				</div>
+			</div>
+		</div>
+		<!-- 첫번째 섹션 끝  -->
+			
+		<!-----------------------------------
+		하나의 div로 묶어서 2:8:2로 분할
+		----------------------------------- -->			
+		<div class="row">
+			<!-- 좌측 nav -->
+			<!-- 내용 없음 -->
+			<div class="col-md-2"></div>
+		
+			<!-- 두번째 섹션, 제목, 카테고리 고르기, 글쓰기 -->
+			<div class="col-md-8 px-0 text-muted">
+		   		<form action="communityWrite.do" method="post" name="communityWriteForm">
+					<div class="form-group">
+		      			<input type="text" name="subject" placeholder="제목쓰기" class="help-block"  style="width:100%"></td>
+		    		</div>
+					<div class="form-group">		    		
+						<select class="form-select" aria-label="Default select example" style="width:100%">
+				  			<option selected>카테고리 고르기</option>
+				  			<option value="1">#javascript</option>
+				  			<option value="2">#html_css</option>
+				  			<option value="3">#to-do-list</option>
+				  			<option value="4">#bla-bla</option>
+				  			<option value="5">#python</option> 
+						</select>
+					</div>
+					<p></p>		    
+	   				<div class="form-group">
+		    			<textarea class="summernote" name="content"></textarea>
+		    		</div>
+					<div>
+               			<input type="button" class="btn btn-primary btn-block" value="등록" onclick="checkCommunityWrite()">
+<!--  	           		<input type="reset" class="btn btn-primary btn-block" value="다시 작성"> -->
+	     			</div>
+				</form>
+			</div>
+			
+			<!-- 두번째 섹션 끝 -->
+
+			<!-- sidebar right (내용없음) -->
+			<div class="col-md-2"></div>
+		</div>
+		<!-- 두번째./row -->		
 	</div>
-	
-	<script type="text/javascript">
+	<!--전체를 감싸는 .container-->
+
+<script type="text/javascript">
 	$('.summernote').summernote({
-		  height: 400,
+		  height: 250,
 		  lang: "ko-KR"
 		});
-	</script>
+</script>
 		
 </body>
 </html>

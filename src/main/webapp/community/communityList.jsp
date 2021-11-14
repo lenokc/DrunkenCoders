@@ -46,7 +46,7 @@
 		border-width: 2px !important;
 	}
 
-	/*#sideCategory style*/
+	/*#좌측 sideCategory style*/
 	#sideCategory ul li{
 		line-height: 2rem;
 	}
@@ -63,7 +63,8 @@
 		background-color: #5E9BFD !important;
 		color: white !important;
 	}
-
+	
+	
 	/*두번째 섹션, 게시판 리스트 #boardList style*/
 	#boardList a.active{
 		color: #45B8FC !important;
@@ -131,8 +132,8 @@
 			
 			<!-- 두번째 섹션, 게시판 리스트 -->
 			<div class="col-md-6 px-0 text-muted" id="boardList">
-				<div class="row">
-					<div class="c-fontSize-small font-weight-bold mb-4">Sort by: 
+				<div class="row d-flex">
+					<div class="col-12 c-fontSize-small font-weight-bold mb-4 flex-fill">Sort by: 
 						<a href="#" class="px-3 c-text-lightgray"><span><i class="fab fa-hotjar"></i>Popular</span></a> 
 						<a href="#" class="c-text-lightgray active"><span><i class="bi bi-lightning-fill"></i>New</span></a>
 						<a href="#" class="c-text-lightgray float-right"><span><i class="fas fa-search"></i>search</span></a>

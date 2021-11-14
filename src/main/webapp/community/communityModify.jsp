@@ -13,7 +13,7 @@
       } else {
          alert("글을 수정하지 못하였습니다.")
       }
-      location.href="boardView.do?seq=${seq}&pg=${pg}";
+      location.href="communityView.do?seq=${seq}&pg=${pg}";
    }
 </script>
 </head>

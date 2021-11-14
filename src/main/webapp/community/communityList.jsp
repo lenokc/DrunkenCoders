@@ -205,8 +205,8 @@
 			<!-- sidebar right -->
 			<div class="col-md-3 pt-5">
 				<div class="text-center px-4">
-					<div class="btn btn-primary btn-block rounded-lg" href="communityWriteForm.do"
-				role="button">글쓰기</div>
+					<a class="btn btn-primary btn-block rounded-lg" href="communityWriteForm.do"
+				role="button">글쓰기</a>
 				</div>
 			</div>
 		</div>

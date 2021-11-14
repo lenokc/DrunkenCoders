@@ -12,98 +12,87 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title></title>
  <style type="text/css">
-.tb {
-	padding-top: 10%;
-}
+
  </style>   
 </head>
 <body>
-<!--
-	<b-container fluid>
-	  <b-row>
-	    <b-col sm="2">
-	      <label for="textarea-auto-height">Auto height:</label>
-	    </b-col>
-	    <b-col sm="10">
-	      <b-form-textarea
-	        id="textarea-auto-height"
-	        placeholder="Auto height textarea"
-	        rows="3"
-	        max-rows="8"
-	      ></b-form-textarea>
-	    </b-col>
-	  </b-row>
-	
-	  <b-row class="mt-2">
-	    <b-col sm="2">
-	      <label for="textarea-no-auto-shrink">No auto-shrink:</label>
-	    </b-col>
-	    <b-col sm="10">
-	      <b-form-textarea
-	        id="textarea-no-auto-shrink"
-	        placeholder="Auto height (no-shrink) textarea"
-	        rows="3"
-	        max-rows="8"
-	        no-auto-shrink
-	      ></b-form-textarea>
-	    </b-col>
-	  </b-row>
-	</b-container>
--->
-
-
-
-
-	<div class="tb">
-		<div>
-			<table border="1">
-				<tr>
-					<td colspan="3"><font size="5">${dto.subject}</font></td>
-				</tr>
-				<tr align="center">
-					<td width="130">글번호 : ${dto.seq}</td>
-					<td width="130">작성자 : ${dto.name}</td>
-					<td width="130">조회수 : ${dto.hit}</td>
-				</tr>
-				<tr>
-					<td colspan="3" height="300" valign="top">
-						<pre>${dto.content}</pre>
-					</td>
-				</tr>
-			</table>
-		</div>
+	<div class="container">
+		
+		<!-- 첫번째.row ; 내용없음-->
+		<div class="row p-5"></div><div class="row p-5"></div>	
+		<!-----------------------------------
+		하나의 div로 묶어서 2:8:2으로 분할
+		----------------------------------- -->
+		<div class="row">
+			<!-- 좌측 nav -->
+			<div class="col-md-3 pt-5">
+				<span class="text-blue-500 w-full hover:underline font-medium cursor-pointer">
+				<a href=#>← Go back</a></span>
+			</div>
+			<!-- .col-md-3#sideCategory -->
 			
-		<div>	
-			<input type="button" value="목록"
-				onclick="location.href='communityList.do?pg=${pg}'">
-			<c:if test="${memId == dto.id }">
-			<input type="button" value="글수정"
-				onclick="location.href='communityModifyForm.do?pg=${pg}&seq=${seq}'">
-			<input type="button" value="글삭제"
-				onclick="location.href='communityDelete.do?seq=${seq}&pg=${pg}'">
-			</c:if>
-		</div>
-	</div>	
+			<!-- 두번째 섹션, 게시판 리스트 -->
+			<div class="col-md-6 px-0 text-muted" id="boardView">
+				<div class="row d-flex mb-5">
+					
+					<div class="row">
+						<div class="col-2 d-flex align-items-center pl-4">
+							<div class="rounded-lg align-self-center border c-border p-0 px-3  text-muted" id="recommendNum">
+								<i class="bi bi-caret-up-fill"></i><br><span>12</span>
+							</div>
+						</div>
 
-	<!-- 댓글 -->
-	<div>
+						<div class="col-8 card-body text-muted">
+							<h4 class="card-title text-dark">${dto.subject}</h4>in 
+							<span class="bg-secondary text-white px-1 font-weight-bold">
+								#<span>python</span>
+							</span>
+							&nbsp;by&nbsp;<span class="font-weight-bold">${dto.id}</span>
+							&nbsp;•&nbsp;&nbsp;<span>5 days ago</span>&nbsp;&nbsp;•&nbsp;
+							<i class="bi bi-chat-left-dots"></i>&nbsp;&nbsp;<span>5</span>
+													
+						</div>
+						<div class="col-2 d-flex align-items-center px-0">
+							<div class="align-self-center p-0 mr-3">
+								<img src="/drunkenCoders/img/04_community/user_icon.png" class="align-self-center img-fluid" alt="...">
+							</div>
+						</div>						
+					</div>
+					<!-- .row -->
+					
+					<div class="row">
+						<!-- 본문 박스 안 좌측 공백 ; 내용 없음 -->
+						<div class="col-1"></div>
+						<div class="col-10 text-justify">
+						${dto.content}</div>	
+						<div class="col-1"></div>										
+					</div>
+															
+				</div>
+									
+				<div class="d-flex justify-content-center">	
+					<input type="button" value="목록" class="btn btn-light mr-1"
+						onclick="location.href='communityList.do?pg=${pg}'">
+					<c:if test="${memId eq dto.id }">
+					<input type="button" value="글수정" class="btn btn-light mr-1"
+						onclick="location.href='communityModifyForm.do?pg=${pg}&seq=${dto.seq}'">
+					<input type="button" value="글삭제" class="btn btn-light mr-1"
+						onclick="location.href='communityDelete.do?seq=${dto.seq}&pg=${pg}'">
+					</c:if>
+				</div>					
+					
+			</div>
+			<!-- .col-md-6#boardView -->
 	
-		<form method="post" action="recomWrite.do" name="recomWriteForm">
-		
-			<p>
-				<label>댓글 작성자</label> <input type="text" name="re_writer">
-			</p>
-			<p>
-				<textarea rows="5" cols="50" name="re_content"></textarea>
-			</p>
-			<p>
-				<button type="submit">댓글 작성</button>
-			</p>
-		</form>
-		
+			<!-- sidebar right ; 내용 없음-->
+			<div class="col-md-3 pt-5"></div>
+		</div>
+		<!-- 두번째./row -->
+												
 	</div>
+	<!--전체를 감싸는 .container-->
 	
 </body>
 </html>

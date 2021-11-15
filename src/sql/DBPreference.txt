@@ -1,5 +1,42 @@
-This file is a text file and it's not encoded as UTF-8 or the others neither.
-Write database quotes here by English for preference.
+Write database quotes here for preference.
 ------------------------------------------------------------
 
+--- 1. Create Table
+create table member (
+    name varchar2(30) not null,     -- 이름(닉네임)
+    id varchar2(30) primary key,    -- 아이디
+    pwd varchar2(30) not null,      -- 패스워드
+    pic blob,                       -- 사진
+    logtime date                    -- 접속로그
+);
 
+-- 2. Check Table Description
+desc member;
+-- 3. Delete Table
+drop table member purge;
+-- Table List
+select * from tab;
+-- 1) Data Appending into the Table
+insert into member values('홍길동', 'hong@gmail.com', '1234', EMPTY_BLOB(), sysdate);
+
+-- 2) Data Searching
+select * from member;
+select * from member where id='hong@gmail.com';
+select * from member where id='hong@gmail.com' and pwd='1234';
+SELECT * FROM
+    (SELECT ROWNUM rn, tt.* FROM
+        (SELECT * FROM member ORDER BY name ASC) 
+    tt)
+WHERE rn>=1 and rn<=5;
+
+-- 3) Modify Data
+update member set tel2='5555' where id='hong@gmail.com';
+
+-- 3-1) Modify Data2
+UPDATE member SET pwd='1111' where id='hong@gmail.com';
+
+-- 4) Delete Data
+delete member where id='hong@gmail.com';
+
+-- 5) Commit
+commit;

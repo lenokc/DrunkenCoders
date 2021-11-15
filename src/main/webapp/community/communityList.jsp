@@ -25,9 +25,21 @@
 
 <!-- bs glyphicon -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
-
+<!-- <script type="text/javascript" src="../script/communityScript.js"> </script> -->
+<script type="text/javascript">
+function checkCommunityLogin() {
+	var member_id = "<%=(String)session.getAttribute("memId")%>"
+	
+	if (member_id == "null") {
+		alert("로그인을 먼저 하셔야 합니다.");  
+		window.location="../member/loginForm.do";	
+	} else {	
+	window.location="/drunkenCoders/community/communityWriteForm.do";
+	}
+} 
+</script>
 <style type="text/css">
-	body, html{
+	body, html{ 
 		font-family: 'Noto Sans KR', sans-serif;
 	}
 	.bo{
@@ -205,12 +217,12 @@
 			<!-- sidebar right -->
 			<div class="col-md-3 pt-5">
 				<div class="text-center px-4">
-					<a class="btn btn-primary btn-block rounded-lg" href="communityWriteForm.do"
-				role="button">글쓰기</a>
+					<input type="button" class="btn btn-primary btn-block rounded-lg" onClick="checkCommunityLogin()"
+				value="글쓰기">
 				</div>
 			</div>
 		</div>
-		<!-- 두번째./row -->
+		<!-- 두번째./row  -->
 		
 	</div>
 	<!--전체를 감싸는 .container-->
@@ -240,8 +252,3 @@
 	</script>
 </body>
 </html>
-
-
-
-
-

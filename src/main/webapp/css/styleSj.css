@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+body, html {
+	font-family: 'Noto Sans KR', sans-serif;
+	/*font-family: 'Gothic A1', sans-serif;*/
+	/*font-family: Spoqa Han Sans Neo,sans-serif;*/
+}
+
+/*********************
+	 cusomize css
+**********************/
+.c-h-8 {
+	height: 2rem;
+}
+.c-pt-8{
+	padding-top: 8em;
+}
+.c-bg-sky{
+	background-color: #EEF7FF
+}
+.c-skew-minus-5{
+	transform: skewY(-5deg);
+}
+.c-skew-plus-5{
+	transform: skewY(5deg);
+}
+.c-ht-50{
+	height: 50px;
+}
+.bo{
+	border: 2px solid blue;
+}
+.c-text-lightgray{
+	color: #B8B8B8;
+}
+.c-txt-larger{
+	font-size: 1.5em;
+}
+.c-z-index-top{
+	position: relative;
+	z-index: 99999 !important;
+}
+/*kokoatalk customize css*/
+.c-color-yellow{
+	background-color: #FFEF6D !important;
+}
+.c-skew-translate{
+	transform: skewY(5deg) translateY(50px);
+}
+.c-mt-8{
+	margin-top: 8em;
+}
+.c-rounded-xl{
+	 border-radius: 0.6rem !important;
+}
+.c-mb-8{
+	margin-bottom: 8em;
+}
+.c-pb-8{
+	padding-bottom: 8em;
+}
+.c-text-mint{
+	color: #2BEAE8;
+}
+.c-w-100{
+	width: 100% !important;
+}
+.c-pr-7{
+	padding-right: 7rem !important;
+}
+.c-hr-bold{
+	 border: solid 3px lightgray;
+}
+			
+/************************
+	 index:navbar css
+************************/
+nav a{
+	font-weight: bold;
+}
+nav .bi-person-circle{
+	font-size: 2.2em;
+	color: lightgray;
+}
+.bi-person-circle.active{
+	color: #b8daff !important;
+}
+nav .bi-bell-fill{
+	font-size: 1.2em;
+	color: #969696;
+}
+
+/************************
+  index: card grid style
+*************************/
+#card .card-body{
+	width: 90%;
+	position: relative;
+	top: -3.5rem;
+}
+#card a{
+	text-decoration: none;
+}
+#card .card{
+	top: 0;
+	transition: top 0.2s;
+}	
+#card .card:hover{
+	top: -0.4rem;
+}
+#card .card .badge-pill{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#card .card-img-top .img-fluid{
+	position: relative;
+	transition: transform 0.2s;
+}
+#card .card:hover .card-img-top .img-fluid{
+	transform: scale(1.1);
+}
+
+/*************************
+	 index:footer style
+*************************/
+#footer .small, #footer a {
+	color: #7B7B7B;
+}
+#footer a:hover {
+	color: #B8B8B8;
+}
+.nav-link {
+	padding-left: 0;
+}
+
+/*********************************
+	 index:alarm 버튼 클릭시 modal
+**********************************/
+.modal .modal-dialog{
+	position: fixed;
+	margin-top: 0;
+	right: 0;
+	width: 400px;
+	background-color: white;
+	height: 100% !important;
+	transition: -webkit-transform 0.3s ease-out !important;
+	transition: transform 0.3s ease-out !important;
+	transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out !important;
+	-webkit-transform: translate(400px, 0px);
+	transform: translate(400px, 0px);
+}
+.body.modal-open .modal-dialog{
+	right: 0;
+	-webkit-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+
+/*************************
+	 	kakao page
+*************************/
+/*skills & concept style*/
+#skills .card-body ul{
+	line-height: 2em;
+}
+#skills .card-body ul li::before{
+	content: "\f00c";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #11BF65;
+}
+#skills .card i.bi-circle-fill{
+	font-size: 0.6em;
+}
+
+/*course explain card style*/
+#courseExplain h5{
+	line-height: 1.6 !important;
+}
+
+/*provide card style*/
+#provide i.bi{
+	font-size: 1.3em;
+}
+
+/*#welcome style*/
+#welcome ul{
+	line-height: 3.5em;
+}
+#welcome ul li::before, #after ul li::before{
+	content: "\f058";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #11BF65;
+}
+
+/*#after style*/
+#after ul li::before{
+	color: orange;
+}
+
+/*#summary style*/
+#summary ul{
+	line-height: 2.5em;
+}
+#summary a{
+	text-decoration: underline;
+}
+
+/*#curri style*/
+#curri ul li a{
+	float: right;
+}
+#curri ul li:nth-child(odd){
+	background-color: #F7F4F4
+}
+#curri ul li span.lock{
+	color: lightgray;
+}
+#curri ul li span.lock::after{
+	content: "\f023";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: lightgray;
+	margin-left: 5px;
+}
+
+/*#start style*/			
+#start #lifeCard{
+	position: relative;
+	top: 100px;
+}
+#start .hr-text{
+	border-width: 3px;
+	position: relative;
+	top: -8px;
+}
+#start li{
+	line-height: 2em;
+	font-size: 0.9em;
+}
+#start li::before{
+	content: "\f058";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #16E3E5;
+}
+
+/****************************
+	디바이스가 바뀌면 변하는 스타일
+*****************************/
+@media (max-width: 575.98px) {
+
+}
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

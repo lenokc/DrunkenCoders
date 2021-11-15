@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+</head>
 </head>
 <body>
 <jsp:include page="nav.jsp"/>

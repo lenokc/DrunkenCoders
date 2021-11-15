@@ -12,6 +12,11 @@ $(function(){
 		dropdown.click(function(){
 			userBtn.toggleClass('active');
 		})
+		
+		//nav 햄버거 버튼
+		var burgerBtn = $('#toggler');
+		
+		
 		// 상단 로고 클릭시 스크롤 애니메이션 주면서 상단으로 이동주는 코드는 a태그 링크와 충돌이 나서 일단 주석처리
 		/*
 		navbarBrand.click(function(){
@@ -48,5 +53,18 @@ $(function(){
 		//c_toggle_btn 클릭시 loading시 c_toggle_contents 보이기
 		c_toggle_btn.click(function(){
 			c_toggle_contents.slideToggle();
+		})
+		
+		/***********************************
+				 communityList_js
+		***********************************/
+		
+		$(function(){
+			var sideBtn = $("#sideCategory li button");
+	
+			sideBtn.click(function(){
+				sideBtn.removeClass('active')
+				$(this).addClass('active');
+			})
 		})
 	})

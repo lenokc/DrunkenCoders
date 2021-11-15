@@ -9,8 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>드렁큰 코더 Drunken Coders</title>
 <script type="text/javascript" src="../script/memberScript.js?v=1"></script>
-<!-- favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="img/m.png" />
+
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 

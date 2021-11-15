@@ -9,8 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>드렁큰 코더 Drunken Coders</title>
 <script type="text/javascript" src="../script/memberScript.js?v=1"></script>
-<!-- favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="img/m.png" />
+
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
@@ -104,7 +103,7 @@
  				<a href="#"><i class="bi bi-github"></i></a>
  			</div>
  			<div class="col-md-8 font-weight-bold c-text-lightgray text-center text-md-left" id="copyright">
- 				© 2017-2021 Nomad Coders. All rights reserved.
+ 				© 2017-2021 Drunken Coders. All rights reserved.
  			</div>
  			<div class="col-md-4 text-center text-md-right c-text-lightgray c-txt-larger d-none d-md-block" id="sns">
  				<a href="#"><i class="bi bi-instagram mr-3"></i></a>

@@ -4,7 +4,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-</head>
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="/drunkenCoders/img/m.png" />
 </head>
 <body>
 <jsp:include page="nav.jsp"/>

@@ -32,6 +32,6 @@ public class CommunityViewController {
 		request.setAttribute("req","/community/communityView.jsp");
 		
 		// 3. view 처리 파일 리턴
-		return "../main/index.jsp";
+		return "/main/index.jsp";
 	}
 }

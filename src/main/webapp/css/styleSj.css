@@ -5,7 +5,9 @@ body, html {
 	/*font-family: 'Gothic A1', sans-serif;*/
 	/*font-family: Spoqa Han Sans Neo,sans-serif;*/
 }
-
+/* div{
+	border:1px solid red;
+} */
 /*********************
 	 cusomize css
 **********************/
@@ -71,7 +73,17 @@ body, html {
 .c-hr-bold{
 	 border: solid 3px lightgray;
 }
-			
+.c-fontSize-small{
+	font-size: 0.9em;
+}
+.c-text-lightgray{
+	color: #B8B8B8;
+}
+.c-border{
+	border-color: #EBE8E8;
+	border-width: 2px !important;
+}	
+	
 /************************
 	 index:navbar css
 ************************/
@@ -244,6 +256,46 @@ nav .bi-bell-fill{
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
 	color: #16E3E5;
+}
+
+/*************************
+	 communityList page
+*************************/
+/*#좌측 sideCategory style*/
+#sideCategory ul li{
+	line-height: 2rem;
+	text-align:left !important;
+}
+#sideCategory ul li button::before{
+	content: "\f35a";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	margin-right: 15px;
+}
+#sideCategory ul li a{
+	color: gray !important;
+}
+#sideCategory li button.active{
+	background-color: #5E9BFD !important;
+	color: white !important;
+}
+
+
+/*두번째 섹션, 게시판 리스트 #boardList style*/
+#boardList a.active{
+	color: #45B8FC !important;
+}
+#boardList #recommendNum span{
+	position: relative;
+	top: -7px;
+}
+
+/* 하단 pagination style */
+.pagination {
+	justify-content: center;
+}
+.btn btn-primary {
+	justify-content: center;
 }
 
 /****************************

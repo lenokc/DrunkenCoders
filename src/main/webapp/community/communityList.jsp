@@ -5,95 +5,43 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>드렁큰 코더 Drunken Coders</title>
-
-<!-- favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="img/m.png" />
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
-<!-- google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
-<!-- font awesome cdn -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-<!-- bs glyphicon -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
-<!-- <script type="text/javascript" src="../script/communityScript.js"> </script> -->
-<script type="text/javascript">
-function checkCommunityLogin() {
-	var member_id = "<%=(String)session.getAttribute("memId")%>"
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>드렁큰 코더 Drunken Coders</title>
 	
-	if (member_id == "null") {
-		alert("로그인을 먼저 하셔야 합니다.");  
-		window.location="../member/loginForm.do";	
-	} else {	
-	window.location="/drunkenCoders/community/communityWriteForm.do";
-	}
-} 
-</script>
-<style type="text/css">
-	body, html{ 
-		font-family: 'Noto Sans KR', sans-serif;
-	}
-	.bo{
-		border: 1px solid red;
-	}
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/m.png" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	
+	<!-- font awesome cdn -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	
+	<!-- bs glyphicon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+	
+	<!-- myStyle -->
+	<link rel="stylesheet" href="/drunkenCoders/css/styleSj.css">
 
-	/*customize css*/
-	.c-fontSize-small{
-		font-size: 0.9em;
-	}
-	.c-text-lightgray{
-		color: #B8B8B8;
-	}
-	.c-border{
-		border-color: #EBE8E8;
-		border-width: 2px !important;
-	}
-
-	/*#좌측 sideCategory style*/
-	#sideCategory ul li{
-		line-height: 2rem;
-	}
-	#sideCategory ul li button::before{
-		content: "\f35a";
-		font-family: "Font Awesome 5 Free";
-		font-weight: 900;
-		margin-right: 15px;
-	}
-	#sideCategory ul li a{
-		color: gray !important;
-	}
-	#sideCategory li button.active{
-		background-color: #5E9BFD !important;
-		color: white !important;
-	}
-	
-	
-	/*두번째 섹션, 게시판 리스트 #boardList style*/
-	#boardList a.active{
-		color: #45B8FC !important;
-	}
-	#boardList #recommendNum span{
-		position: relative;
-		top: -7px;
-	}
-	
-	/* 하단 pagination style */
-	.pagination {
-		justify-content: center;
-	}
-	.btn btn-primary {
-		justify-content: center;
-	}
-</style>
+	<!-- <script type="text/javascript" src="../script/communityScript.js"> </script> -->
+	<script type="text/javascript">
+	function checkCommunityLogin() {
+		var member_id = "<%=(String)session.getAttribute("memId")%>"
+		
+		if (member_id == "null") {
+			alert("로그인을 먼저 하셔야 합니다.");  
+			window.location="../member/loginForm.do";	
+		} else {	
+		window.location="/drunkenCoders/community/communityWriteForm.do";
+		}
+	} 
+	</script>
 </head>
 <body>
 	<div class="container">
@@ -117,7 +65,7 @@ function checkCommunityLogin() {
 			<!-- 좌측 nav -->
 			<div class="col-md-3 pt-5" id="sideCategory">
 				<p>카테고리</p>
-				<ul class="list-unstyled h5 c-fontSize-small text-muted">
+				<ul class="list-unstyled h5 c-fontSize-small text-muted text-left">
 						<li><button href="#" type="button" class="btn rounded-pill py-1 active">all</button></li>
 						<li><button href="#" type="button" class="btn rounded-pill py-1">javascript (280)</button></li>
 						<li><button href="#" type="button" class="btn rounded-pill py-1">html_css (265)</button></li>
@@ -240,15 +188,8 @@ function checkCommunityLogin() {
 	   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 	-->
-	<script>
-		$(function(){
-			var sideBtn = $("#sideCategory li button");
 	
-			sideBtn.click(function(){
-				sideBtn.removeClass('active')
-				$(this).addClass('active');
-			})
-		})
-	</script>
+	<!-- frontEdn: my_javascript -->
+	<script src="/drunkenCoders/script/frontEnd.js"></script>
 </body>
 </html>

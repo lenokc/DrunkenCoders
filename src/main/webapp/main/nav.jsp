@@ -9,8 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>드렁큰 코더 Drunken Coders</title>
 <script type="text/javascript" src="../script/memberScript.js?v=1"></script>
-<!-- favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="img/m.png" />
+
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
@@ -27,6 +26,24 @@
 
 <!-- myStyle -->
 <link rel="stylesheet" href="/drunkenCoders/css/styleSj.css">
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+   <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+-->
+
+<!-- frontEdn: my_javascript -->
+<script src="/drunkenCoders/script/frontEnd.js"></script>
+
 </head>
 <body>
 <!-----------------------------------------
@@ -34,7 +51,7 @@
  ------------------------------------------>
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
 	<div class="container">
-		<button class="navbar-toggler float-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler float-left" type="button" data-toggle="collapse" data-target="#toggler" aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		
@@ -51,30 +68,32 @@
 				<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
 			</a>
 		</div>
-		
-		<div class="dropdown">
-			<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-				<!-- bs glyphicon icon -->
-				<i class="bi bi-person-circle mr-3 d-block d-lg-none" id="userBtn"></i>
-			</a>
-
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-				<a class="dropdown-item" href=#>Dashboard</a>
-				<a class="dropdown-item" href=#>Edit Profile</a>
-				<a class="dropdown-item" href=#>Sign out</a>
+		<c:if test="${not empty memId}">
+			<div class="dropdown">
+				<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+					<!-- bs glyphicon icon -->
+					<i class="bi bi-person-circle mr-3 d-block d-lg-none" id="userBtn"></i>
+				</a>
+	
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href=#>Dashboard</a>
+					<a class="dropdown-item" href=#>Edit Profile</a>
+					<a class="dropdown-item" href=#>Sign out</a>
+				</div>
 			</div>
-		</div>
-		
-		<!-- Button trigger modal -->
-		<a class="btn" data-toggle="modal" data-target="#alarmModal">
-			<i class="bi bi-bell-fill mr-3 d-block d-lg-none"></i>
-		</a>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			
+			<!-- Button trigger modal -->
+			<a class="btn" data-toggle="modal" data-target="#alarmModal">
+				<i class="bi bi-bell-fill mr-3 d-block d-lg-none"></i>
+			</a>
+		</c:if>
+		<div class="collapse navbar-collapse" id="toggler">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active d-block d-lg-none">
-					<a class="nav-link" href=#>Login</a>
-				</li>
+				<c:if test="${empty memId}">
+					<li class="nav-item active d-block d-lg-none">
+						<a class="nav-link" href=/drunkenCoders//member/loginForm.do>Login</a>
+					</li>
+				</c:if>	
 				<li class="nav-item active">
 					<a class="nav-link" href=#>Courses</a>
 				</li>
@@ -95,34 +114,34 @@
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form> -->
-		<c:if test="${not empty memId}">		
-			<div class="dropdown">
-				<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-					<!-- bs glyphicon icon -->
-					<i class="bi bi-person-circle mr-3 d-none d-lg-block"></i>
-				</a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					<a class="dropdown-item" href=#>Dashboard</a>
-					<a class="dropdown-item" href=#>Edit Profile</a>
-					<a class="dropdown-item" href="../member/logout.do">Sign out</a>
+			<c:if test="${not empty memId}">		
+				<div class="dropdown">
+					<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+						<!-- bs glyphicon icon -->
+						<i class="bi bi-person-circle mr-3 d-none d-lg-block"></i>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a class="dropdown-item" href=#>Dashboard</a>
+						<a class="dropdown-item" href=#>Edit Profile</a>
+						<a class="dropdown-item" href="../member/logout.do">Sign out</a>
+					</div>
 				</div>
-			</div>
-			
-			<!-- Button trigger modal -->
-			<a class="btn" data-toggle="modal" data-target="#alarmModal">
-				<i class="bi bi-bell-fill mr-3 d-none d-lg-block"></i>
-			</a>
-		</c:if>
+				
+				<!-- Button trigger modal -->
+				<a class="btn" data-toggle="modal" data-target="#alarmModal">
+					<i class="bi bi-bell-fill mr-3 d-none d-lg-block"></i>
+				</a>
+			</c:if>
 			
 		</div>
-	<c:if test="${empty memId}">		
-		<ul class="navbar-nav float-right">
-			<li class="nav-item active d-none d-lg-block">
-				<a class="nav-link" href="../member/loginForm.do">Login</a>
-			</li>
-			<a type="button" class="btn btn-primary px-4" href="../courses/kokoa.do">Join</a>
-		</ul>
-	</c:if>
+		<c:if test="${empty memId}">		
+			<ul class="navbar-nav float-right">
+				<li class="nav-item active d-none d-lg-block">
+					<a class="nav-link" href="/drunkenCoders//member/loginForm.do">Login</a>
+				</li>
+				<a type="button" class="btn btn-primary px-4" href="#">Join</a>
+			</ul>
+		</c:if>
 	</div>
 </nav>
 <!-- navbar end -->
@@ -143,23 +162,6 @@
 		</div>
 	</div>
 </div>
-
-<!-- Optional JavaScript; choose one of the two! -->
-
-<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-   <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
--->
-
-<!-- frontEdn: my_javascript -->
-<script src="/drunkenCoders/script/frontEnd.js"></script>
 
 </body>
 </html>

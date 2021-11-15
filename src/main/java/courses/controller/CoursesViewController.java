@@ -16,7 +16,7 @@ public class CoursesViewController {
 		
 		// 2. 데이터 공유 : 코스명 매개변수 공유
 		
-		request.setAttribute("req","../courseSpecific/kakao.jsp");
+		request.setAttribute("req","/courseSpecific/kakao.jsp");
 		
 		// 3. view 처리 파일 리턴
 		return "/main/index.jsp";

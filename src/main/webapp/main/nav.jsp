@@ -174,16 +174,19 @@ nav .bi-bell-fill{
 		</button>
 		
 		<!-- device-width 768px미만시 로고위치 센터-->
-		<a class="navbar-brand d-block d-lg-none mx-auto" href="/drunkenCoders/main/index.do" id="logo1">
-			<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="">
-			<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
-		</a>
-		<!-- device-width 768px이상시 로고위치 좌측-->
-		<a class="navbar-brand d-none d-lg-block" href="/drunkenCoders/main/index.do" id="logo2">	
-			<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="">
-			<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
-		</a>
+		<div id="logo">
+			<a class="navbar-brand d-block d-lg-none mx-auto" href="/drunkenCoders/main/index.do" id="logo1">
+				<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="">
+				<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
+			</a>
 
+			<!-- device-width 768px이상시 로고위치 좌측-->
+			<a class="navbar-brand d-none d-lg-block" href="/drunkenCoders/main/index.do" id="logo2">	
+				<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="">
+				<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
+			</a>
+		</div>
+		
 		<div class="dropdown">
 			<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
 				<!-- bs glyphicon icon -->
@@ -289,23 +292,9 @@ nav .bi-bell-fill{
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 -->
-<script>
-	$(function(){
-		var dropdown = $('.dropdown a');
-		var userBtn = $('.bi-person-circle');
-		var navbarBrand =$('.navbar-brand');
-		
-		// 상단 userBtn토글시 색 바뀌기
-		dropdown.click(function(){
-			userBtn.toggleClass('active');
-		})
 
-		// 상단 로고 클릭시 스크롤 애니메이션 주면서 상단으로 이동
-		navbarBrand.click(function(e){
-			e.preventDefault();
-			$('html, body').stop().animate( { scrollTop : 0 } );
-		})
-	})
-</script>
+<!-- frontEdn: my_javascript -->
+<script src="/drunkenCoders/script/frontEnd.js"></script>
+
 </body>
 </html>

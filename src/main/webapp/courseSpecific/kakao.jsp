@@ -1074,34 +1074,10 @@
 	    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-	-->
-		<script>
-			$(function(){
-				var dropdown = $('.dropdown a');
-				var userBtn = $('.bi-person-circle');
-				var navbarBrand =$('.navbar-brand');
-				var c_toggle_btn =$('#c-toggle-btn');
-				var c_toggle_contents =$('#c-toggle-contents')
+		-->
 
-				
-				// 상단 userBtn토글시 색 바뀌기
-				dropdown.click(function(){
-					userBtn.toggleClass('active');
-				})
-
-				// 상단 로고 클릭시 스크롤 애니메이션 주면서 상단으로 이동
-				navbarBrand.click(function(e){
-					e.preventDefault();
-					$('html, body').stop().animate( { scrollTop : 0 } );
-				})
-
-				//loading시 c_toggle_contents 숨기기
-				c_toggle_contents.hide();
-				//c_toggle_btn 클릭시 loading시 c_toggle_contents 보이기
-				c_toggle_btn.click(function(){
-					c_toggle_contents.slideToggle();
-				})
-			})
-		</script>
+		<!-- frontEdn: my_javascript -->
+		<script src="/drunkenCoders/script/frontEnd.js"></script>
+		
 </body>
 </html>

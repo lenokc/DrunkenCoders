@@ -192,7 +192,7 @@ nav .bi-bell-fill {
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active d-block d-lg-none"><a
-						class="nav-link" href="/member/memberLogin.do">Login</a></li>
+						class="nav-link" href=#>Login</a></li>
 					<li class="nav-item active"><a class="nav-link" href=#>Courses</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href=#>Challenges</a>
@@ -228,10 +228,10 @@ nav .bi-bell-fill {
 			<c:if test="${empty memId}">
 				<ul class="navbar-nav float-right">
 					<li class="nav-item active d-none d-lg-block">
-						<a class="nav-link" href="../member/memberLoginForm.do">Login</a> <!-- 이 부분 수정 필요 //////////////////////-->
+						<a class="nav-link" href="${pageContext.request.contextPath}/member/memberLoginForm.do">Login</a> <!-- 이 부분 수정 필요 //////////////////////-->
 					</li>
 					<a type="button" class="btn btn-primary px-4" 
-						href="../member/memberWriteForm.do">Join</a> <!-- 이 부분 수정 필요 //////////////////////-->
+						href="${pageContext.request.contextPath}/member/memberWriteForm.do">Join</a>
 				</ul>
 			</c:if>
 		</div>

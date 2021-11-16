@@ -7,11 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class MemberWriteFormController {
-	@RequestMapping(value="/member/memberWriteForm.do")
-	public String writeForm(HttpServletRequest request, HttpServletResponse response) {
+public class MemberLoginFormController {
+	@RequestMapping(value="/member/memberLoginForm.do")
+	public String loginForm(HttpServletRequest request, HttpServletResponse response) {
 	
-		request.setAttribute("req", "../member/memberWrite.jsp");
+		request.setAttribute("req", "../member/memberLogin.jsp");
 		return "../member/memberIndex.jsp";
 	}
 }

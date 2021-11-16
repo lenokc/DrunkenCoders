@@ -30,7 +30,3 @@ function checkCommunityModify() {
    }
 }
 
-function deleteConfirm() {
-	
-	alert("test");
-}

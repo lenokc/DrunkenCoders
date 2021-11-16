@@ -20,8 +20,6 @@
 <!-- myStyle -->
 <link rel="stylesheet" href="/drunkenCoders/css/styleSj.css">
 
-<!-- myScript -->
-<script type="text/javascript" src="/script/communityScript.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -78,7 +76,7 @@
 										class="btn-sm btn btn-danger py-0 px-2 float-left"
 										onclick="location.href='communityDelete.do?seq=${dto.seq}&pg=${pg}'">
 										<i class="bi bi-x-lg"></i>Delete
-									</a>onclick="checkCommunityWrite() --%>
+									</a>--%>
 									<a type="button" value=""
 										class="btn-sm btn btn-danger py-0 px-2 float-left"
 										onclick="deleteConfirm()">
@@ -113,6 +111,22 @@
 
 	</div>
 	<!--전체를 감싸는 .container-->
-
+	
+	<script type="text/javascript">
+		function deleteConfirm() {	
+			var str = "정말 삭제하시겠습니까?";
+		    var type;
+	
+		    type = confirm(str);
+	
+		     if(type== true)
+		    {
+		        location.href='communityDelete.do?seq=${dto.seq}&pg=${pg}'
+		    }else{
+		    	alert("게시글 삭제가 취소되었습니다.");
+		    	return;
+		    }
+		}
+	</script>
 </body>
 </html>

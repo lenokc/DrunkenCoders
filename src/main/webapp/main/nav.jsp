@@ -51,26 +51,29 @@
  ------------------------------------------>
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
 	<div class="container">
-		<button class="navbar-toggler float-left" type="button" data-toggle="collapse" data-target="#toggler" aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+		<div class="col-2">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggler" aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
 		
 		<!-- device-width 768px미만시 로고위치 센터-->
-		<div id="logo">
-			<a class="navbar-brand d-block d-lg-none mx-auto" href="/drunkenCoders/main/index.do" id="logo1">
-				<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="">
+		<div id="logo" class="col-8 d-block d-lg-none d-flex justify-content-center">
+			<a class="navbar-brand c-left-1" href="/drunkenCoders/main/index.do" id="logo1">
+				<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="" class="mx-auto">
 				<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
 			</a>
-
-			<!-- device-width 768px이상시 로고위치 좌측-->
-			<a class="navbar-brand d-none d-lg-block" href="/drunkenCoders/main/index.do" id="logo2">	
+		</div>
+		<!-- device-width 768px이상시 로고위치 좌측-->
+		<div id="logo" class="d-none d-lg-block">
+			<a class="navbar-brand" href="/drunkenCoders/main/index.do" id="logo2">	
 				<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="">
 				<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
 			</a>
 		</div>
 		<c:if test="${not empty memId}">
-			<div class="dropdown">
-				<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+			<div class="dropdown col-1">
+				<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false" class="bg-danger">
 					<!-- bs glyphicon icon -->
 					<i class="bi bi-person-circle mr-3 d-block d-lg-none" id="userBtn"></i>
 				</a>
@@ -78,12 +81,12 @@
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 					<a class="dropdown-item" href=#>Dashboard</a>
 					<a class="dropdown-item" href=#>Edit Profile</a>
-					<a class="dropdown-item" href=#>Sign out</a>
+					<a class="dropdown-item" href="/drunkenCoders/member/logout.do">Sign out</a>
 				</div>
 			</div>
 			
 			<!-- Button trigger modal -->
-			<a class="btn" data-toggle="modal" data-target="#alarmModal">
+			<a class="btn col-1" data-toggle="modal" data-target="#alarmModal">
 				<i class="bi bi-bell-fill mr-3 d-block d-lg-none"></i>
 			</a>
 		</c:if>
@@ -93,6 +96,7 @@
 					<li class="nav-item active d-block d-lg-none">
 						<a class="nav-link" href=/drunkenCoders//member/loginForm.do>Login</a>
 					</li>
+					<a type="button" class="btn btn-primary px-0 d-inline-block d-lg-none" href="#">Join</a>
 				</c:if>	
 				<li class="nav-item active">
 					<a class="nav-link" href=#>Courses</a>
@@ -116,19 +120,19 @@
 			</form> -->
 			<c:if test="${not empty memId}">		
 				<div class="dropdown">
-					<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+					<a href="#" role="button" class="float-right mr-0 flex-fill " id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
 						<!-- bs glyphicon icon -->
 						<i class="bi bi-person-circle mr-3 d-none d-lg-block"></i>
 					</a>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 						<a class="dropdown-item" href=#>Dashboard</a>
 						<a class="dropdown-item" href=#>Edit Profile</a>
-						<a class="dropdown-item" href="../member/logout.do">Sign out</a>
+						<a class="dropdown-item" href="/drunkenCoders/member/logout.do">Sign out</a>
 					</div>
 				</div>
 				
 				<!-- Button trigger modal -->
-				<a class="btn" data-toggle="modal" data-target="#alarmModal">
+				<a class="btn float-right" data-toggle="modal" data-target="#alarmModal">
 					<i class="bi bi-bell-fill mr-3 d-none d-lg-block"></i>
 				</a>
 			</c:if>
@@ -139,7 +143,7 @@
 				<li class="nav-item active d-none d-lg-block">
 					<a class="nav-link" href="/drunkenCoders//member/loginForm.do">Login</a>
 				</li>
-				<a type="button" class="btn btn-primary px-4" href="#">Join</a>
+				<a type="button" class="btn btn-primary px-4 d-none d-lg-block" href="#">Join</a>
 			</ul>
 		</c:if>
 	</div>

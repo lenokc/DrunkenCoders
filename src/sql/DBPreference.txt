@@ -7,6 +7,7 @@ create table community (
     content varchar2(4000) not null,    -- 내용
     hit number default 0,               -- 조회수
     logtime date default sysdate,       -- 작성일
+    category varchar2(40) not null,     -- 카테고리 선택
     primary key(seq)
 );
 -- 테이블 구조 확인

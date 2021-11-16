@@ -19,10 +19,9 @@
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js"></script>
 <script src="https://github.com/summernote/summernote/tree/master/lang/summernote-ko-KR.js"></script>
   
-<script type="text/javascript" src="../script/communityScript.js"></script><style type="text/css">
+<!-- myScript -->
+<script type="text/javascript" src="/script/communityScript.js"></script>
 
-
-</style>
 </head>
 <body>
 	<div class="container">
@@ -53,13 +52,28 @@
 		      			<input type="text" name="subject" placeholder="제목쓰기" class="help-block"  style="width:100%"></td>
 		    		</div>
 					<div class="form-group">		    		
-						<select class="form-select" aria-label="Default select example" style="width:100%">
+						<select class="form-select" aria-label="Default select example" style="width:100%" size="1" name="category">
 				  			<option selected>카테고리 고르기</option>
-				  			<option value="1">#javascript</option>
-				  			<option value="2">#html_css</option>
-				  			<option value="3">#to-do-list</option>
-				  			<option value="4">#bla-bla</option>
-				  			<option value="5">#python</option> 
+				  			<option value="#">#all</option>
+				  			<option value="#javascript">#javascript</option>
+				  			<option value="#html_css">#html_css</option>
+				  			<option value="#to-do-list">#to-do-list</option>
+				  			<option value="#bla-bla">#bla-bla</option>
+				  			<option value="#python">#python</option> 
+				  			<option value="#side_projects">#side_projects</option>
+				  			<option value="#twitter_clone ">#twitter_clone </option>
+				  			<option value="#announcement ">#announcement </option>
+				  			<option value="#tips">#tips </option>
+				  			<option value="#react">#react</option>
+				  			<option value="#portfolio">#portfolio</option>
+				  			<option value="#ssul">#ssul</option>
+				  			<option value="#mbti">#mbti</option>
+				  			<option value="#uber_eats">#uber_eats</option>
+				  			<option value="#insta_clone">#insta_clone</option>
+				  			<option value="#mobile_app">#mobile_app</option>
+				  			<option value="#interview">#interview</option>
+				  			<option value="#jobs">#jobs</option>
+				  			<option value="#ask">#ask</option>				  			
 						</select>
 					</div>
 					<p></p>		    
@@ -87,6 +101,7 @@
 		  height: 250,
 		  lang: "ko-KR"
 		});
+	
 </script>
 		
 </body>

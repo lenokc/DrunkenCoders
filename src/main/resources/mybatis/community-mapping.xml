@@ -6,12 +6,12 @@
 
 	<insert id="communityWrite" parameterType="Cdto">
 		insert into community values
-		(seq_community.nextval, #{id}, #{name}, #{subject}, #{content}, 0, sysdate)
+		(seq_community.nextval, #{id}, #{name}, #{subject}, #{content}, 0, sysdate, #{category})
 	</insert>
 	
 	<select id="communityList" parameterType="java.util.Map" resultType="Cdto">
 		<![CDATA[
-		select seq, id, name, subject, content, hit,
+		select seq, id, name, subject, content, hit, category,
 		to_char(logtime, 'YYYY.MM.DD') as logtime 
 		from(select rownum rn, tt.* from
 		(select * from community order by seq desc) tt)

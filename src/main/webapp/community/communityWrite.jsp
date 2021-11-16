@@ -6,7 +6,9 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
+	
 	window.onload = function() {
+		
 		if(${su > 0}) {
 			alert("작성하신 글을 저장하였습니다.");
 			location.href="communityList.do?pg=1";

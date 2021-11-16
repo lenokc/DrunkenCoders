@@ -12,7 +12,7 @@ public class CommunityWriteFormController {
 	
 	@RequestMapping(value= "/community/communityWriteForm.do")
 	public String boardList(HttpServletRequest request, HttpServletResponse response) {
-		request.setAttribute("req", "../community/communityWriteForm.jsp");
+		request.setAttribute("req", "/community/communityWriteForm.jsp");
 
 		return "/main/index.jsp";
 	}

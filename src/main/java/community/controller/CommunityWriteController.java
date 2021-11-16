@@ -34,6 +34,7 @@ public class CommunityWriteController {
 	    String content = request.getParameter("content");
 	    String name = (String)session.getAttribute("memName");
 	    String id = (String)session.getAttribute("memId");
+	    String category = request.getParameter("category");
 	    
 	    // DB
 	    CommunityDTO dto = new CommunityDTO();
@@ -41,6 +42,7 @@ public class CommunityWriteController {
 	    dto.setContent(content);
 	    dto.setName(name);
 	    dto.setId(id);
+	    dto.setCategory(category);
 	    
 	    int su = communityService.communityWrite(dto);
 	    
@@ -48,6 +50,6 @@ public class CommunityWriteController {
 
 	    request.setAttribute("req","/community/communityWrite.jsp");
 	    
-	    return "../main/index.jsp";
+	    return "/main/index.jsp";
 	}
 }

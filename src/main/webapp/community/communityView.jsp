@@ -20,7 +20,8 @@
 <!-- myStyle -->
 <link rel="stylesheet" href="/drunkenCoders/css/styleSj.css">
 
-</style>
+<!-- myScript -->
+<script type="text/javascript" src="/script/communityScript.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -55,7 +56,7 @@
 					<div class="col-7 card-body text-muted pl-0">
 						<h4 class="card-title text-dark">${dto.subject}</h4>
 						in <span class="bg-secondary text-white px-1 font-weight-bold">
-							#<span>python</span>
+							<span>${dto.category}</span>
 						</span> &nbsp;by&nbsp;<span class="font-weight-bold">${dto.id}</span>
 						&nbsp;•&nbsp;&nbsp;<span>5 days ago</span>&nbsp;&nbsp;•&nbsp; <i
 							class="bi bi-chat-left-dots"></i>&nbsp;&nbsp;<span>5</span>
@@ -73,9 +74,14 @@
 										onclick="location.href='communityModifyForm.do?pg=${pg}&seq=${dto.seq}'">
 										<i class="bi bi-pencil-fill"></i> Edit
 									</a>
-									<a type="button" value=""
+									<%-- <a type="button" value=""
 										class="btn-sm btn btn-danger py-0 px-2 float-left"
 										onclick="location.href='communityDelete.do?seq=${dto.seq}&pg=${pg}'">
+										<i class="bi bi-x-lg"></i>Delete
+									</a>onclick="checkCommunityWrite() --%>
+									<a type="button" value=""
+										class="btn-sm btn btn-danger py-0 px-2 float-left"
+										onclick="deleteConfirm()">
 										<i class="bi bi-x-lg"></i>Delete
 									</a>
 								</c:if>

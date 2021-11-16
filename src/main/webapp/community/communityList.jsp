@@ -113,7 +113,7 @@
 								<div class="col-8 card-body text-muted">
 									<h4 class="card-title text-dark">${dto.subject}</h4>in 
 									<span class="bg-secondary text-white px-1 font-weight-bold">
-										#<span>python</span>
+										${dto.category}
 									</span>
 									&nbsp;by&nbsp;<span class="font-weight-bold">${dto.id}</span>
 									&nbsp;•&nbsp;&nbsp;<span>5 days ago</span>&nbsp;&nbsp;•&nbsp;

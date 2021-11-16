@@ -51,53 +51,54 @@
  ------------------------------------------>
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
 	<div class="container">
-		<div class="col-2">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggler" aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		</div>
+		
+		<button class="col-2 col-md-1 navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#toggler" aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
 		
 		<!-- device-width 768px미만시 로고위치 센터-->
-		<div id="logo" class="col-8 d-block d-lg-none d-flex justify-content-center">
-			<a class="navbar-brand c-left-1" href="/drunkenCoders/main/index.do" id="logo1">
-				<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="" class="mx-auto">
+		<div id="logo" class="col-10 d-block d-lg-none d-flex justify-content-center">
+			<a class="navbar-brand align-content-center c-left-1" href="/drunkenCoders/main/index.do" id="logo1">
+				<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="" class="">
 				<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
 			</a>
 		</div>
+		
 		<!-- device-width 768px이상시 로고위치 좌측-->
-		<div id="logo" class="d-none d-lg-block">
+		<div id="logo" class="col-lg-1 d-none d-lg-block">
 			<a class="navbar-brand" href="/drunkenCoders/main/index.do" id="logo2">	
 				<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="">
 				<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
 			</a>
 		</div>
-		<c:if test="${not empty memId}">
-			<div class="dropdown col-1">
-				<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false" class="bg-danger">
-					<!-- bs glyphicon icon -->
-					<i class="bi bi-person-circle mr-3 d-block d-lg-none" id="userBtn"></i>
-				</a>
-	
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					<a class="dropdown-item" href=#>Dashboard</a>
-					<a class="dropdown-item" href=#>Edit Profile</a>
-					<a class="dropdown-item" href="/drunkenCoders/member/logout.do">Sign out</a>
-				</div>
-			</div>
-			
-			<!-- Button trigger modal -->
-			<a class="btn col-1" data-toggle="modal" data-target="#alarmModal">
-				<i class="bi bi-bell-fill mr-3 d-block d-lg-none"></i>
-			</a>
-		</c:if>
 		<div class="collapse navbar-collapse" id="toggler">
-			<ul class="navbar-nav mr-auto">
+			<ul class="navbar-nav">
 				<c:if test="${empty memId}">
 					<li class="nav-item active d-block d-lg-none">
 						<a class="nav-link" href=/drunkenCoders//member/loginForm.do>Login</a>
 					</li>
 					<a type="button" class="btn btn-primary px-0 d-inline-block d-lg-none" href="#">Join</a>
 				</c:if>	
+				<c:if test="${not empty memId}">
+					<div class="dropdown">
+						<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false" class="bg-danger">
+							<!-- bs glyphicon icon -->
+							<i class="bi bi-person-circle mr-3 d-block d-lg-none" id="userBtn"></i>
+						</a>
+			
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href=#>Dashboard</a>
+							<a class="dropdown-item" href=#>Edit Profile</a>
+							<a class="dropdown-item" href="/drunkenCoders/member/logout.do">Sign out</a>
+						</div>
+					</div>
+					
+					<!-- Button trigger modal -->
+					<a class="btn" data-toggle="modal" data-target="#alarmModal">
+						<i class="bi bi-bell-fill ml-3 d-block d-lg-none float-left c-left-1"></i>
+					</a>
+				</c:if>
 				<li class="nav-item active">
 					<a class="nav-link" href=#>Courses</a>
 				</li>
@@ -118,9 +119,18 @@
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form> -->
-			<c:if test="${not empty memId}">		
-				<div class="dropdown">
-					<a href="#" role="button" class="float-right mr-0 flex-fill " id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+		</div>
+		<c:if test="${empty memId}">		
+			<ul class="navbar-nav float-right">
+				<li class="nav-item active d-none d-lg-block">
+					<a class="nav-link" href="/drunkenCoders//member/loginForm.do">Login</a>
+				</li>
+				<a type="button" class="btn btn-primary px-4 d-none d-lg-block" href="#">Join</a>
+			</ul>
+		</c:if>
+		<c:if test="${not empty memId}">		
+				<div class="dropdown float-right">
+					<a href="#" role="button" class="" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
 						<!-- bs glyphicon icon -->
 						<i class="bi bi-person-circle mr-3 d-none d-lg-block"></i>
 					</a>
@@ -132,20 +142,10 @@
 				</div>
 				
 				<!-- Button trigger modal -->
-				<a class="btn float-right" data-toggle="modal" data-target="#alarmModal">
-					<i class="bi bi-bell-fill mr-3 d-none d-lg-block"></i>
+				<a class="btn float-right pl-2" data-toggle="modal" data-target="#alarmModal">
+					<i class="bi bi-bell-fill d-none d-lg-block pl-2"></i>
 				</a>
 			</c:if>
-			
-		</div>
-		<c:if test="${empty memId}">		
-			<ul class="navbar-nav float-right">
-				<li class="nav-item active d-none d-lg-block">
-					<a class="nav-link" href="/drunkenCoders//member/loginForm.do">Login</a>
-				</li>
-				<a type="button" class="btn btn-primary px-4 d-none d-lg-block" href="#">Join</a>
-			</ul>
-		</c:if>
 	</div>
 </nav>
 <!-- navbar end -->

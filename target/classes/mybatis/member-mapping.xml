@@ -10,34 +10,11 @@
 	
 	<insert id="write" parameterType="Mdto">
 		insert into member values 
-		(#{name}, #{id}, #{pwd}, #{gender}, #{email1}, #{email2},
-		 #{tel1}, #{tel2}, #{tel3}, #{addr}, sysdate)
+		(#{name}, #{id}, #{pwd}, EMPTY_BLOB(), sysdate)
 	</insert>
 	
 	<!-- mabatis에서 resultType으로는 boolean 값을 쓸 수 없다.=> string, integer, 객체 등은 가능 -->
 	<select id="isExistId" parameterType="String" resultType="Mdto">
 		select * from member where id=#{id}
-	</select>
-	
-	<select id="memberView" parameterType="String" resultType="Mdto">
-		select * from member where id=#{id}
-	</select>
-	
-	<update id="modify" parameterType="Mdto">
-		update member set pwd=#{pwd}, gender=#{gender}, email1=#{email1},
-		 email2=#{email2},tel1=#{tel1}, tel2=#{tel2}, tel3=#{tel3},
-		 addr=#{addr} where id=#{id}
-	</update>
-	
-	<select id="getTotalMember" resultType="int">
-		select count(*) as cnt from member
-	</select>
-	
-	<select id="selectList" parameterType="java.util.Map" resultType="Mdto">
-		<![CDATA[
-		select * from(select rownum rn, tt.* from 
-		(select * from member order by name asc) tt)
-		where rn>=#{startNum} and rn<=#{endNum}
-		]]>
 	</select>
 </mapper>

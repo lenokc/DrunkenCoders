@@ -76,9 +76,9 @@
 			<ul class="navbar-nav" id="main-nav">
 				<c:if test="${empty memId}">
 					<li class="nav-item active d-block d-lg-none">
-						<a class="nav-link" href=/drunkenCoders//member/loginForm.do>Login</a>
+						<a class="nav-link" href="${pageContext.request.contextPath}/member/memberLoginForm.do">Login</a>
 					</li>
-					<a type="button" class="btn btn-primary px-0 d-inline-block d-lg-none" href="#">Join</a>
+					<a type="button" class="btn btn-primary px-0 d-inline-block d-lg-none" href="${pageContext.request.contextPath}/member/memberWriteForm.do">Join</a>
 				</c:if>	
 				<c:if test="${not empty memId}">
 					<div class="dropdown">
@@ -123,9 +123,9 @@
 		<c:if test="${empty memId}">		
 			<ul class="navbar-nav float-right">
 				<li class="nav-item active d-none d-lg-block">
-					<a class="nav-link" href="/drunkenCoders//member/loginForm.do">Login</a>
+					<a class="nav-link" href="${pageContext.request.contextPath}/member/memberLoginForm.do">Login</a>
 				</li>
-				<a type="button" class="btn btn-primary px-4 d-none d-lg-block" href="#">Join</a>
+				<a type="button" class="btn btn-primary px-4 d-none d-lg-block" href="${pageContext.request.contextPath}/member/memberWriteForm.do">Join</a>
 			</ul>
 		</c:if>
 		<c:if test="${not empty memId}">		

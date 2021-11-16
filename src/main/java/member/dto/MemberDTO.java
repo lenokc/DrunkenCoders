@@ -1,12 +1,19 @@
 package member.dto;
 
 public class MemberDTO {
-    private String id;    		//-- ì•„ì´ë””, unique, not null
-    private String pwd;      	//-- ë¹„ë°€ë²ˆí˜¸.
-    private String email1;      //-- ì´ë©”ì¼ ì•ë¶€ë¶„
-    private String email2;      //-- ì´ë©”ì¼ ë’·ë¶€ë¶„
-    private String logtime;     //-- ê°€ì… ë‚ ì§œ
+	private String name;		//-- ÀÌ¸§ (È¸¿ø°¡ÀÔ¿ë)
+    private String id;    		//-- ¾ÆÀÌµğ, unique, not null, ÀÌ¸ŞÀÏ Çü½Ä
+    private String pwd;			//-- ºñ¹Ğ¹øÈ£
+    private String imgIdx;		//-- ÀÌ¹ÌÁö ÀÎµ¦½º ¹øÈ£
+    private byte[] img;			//-- ÀÌ¹ÌÁö
+    private String logtime;     //-- °¡ÀÔ ³¯Â¥
     
+    public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public String getId() {
 		return id;
 	}
@@ -19,24 +26,22 @@ public class MemberDTO {
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
-	public String getEmail1() {
-		return email1;
-	}
-	public void setEmail1(String email1) {
-		this.email1 = email1;
-	}
-	public String getEmail2() {
-		return email2;
-	}
-	public void setEmail2(String email2) {
-		this.email2 = email2;
-	}
 	public String getLogtime() {
 		return logtime;
+	}
+	public String getImgIdx() {
+		return imgIdx;
+	}
+	public void setImgIdx(String imgIdx) {
+		this.imgIdx = imgIdx;
+	}
+	public byte[] getImg() {
+		return img;
+	}
+	public void setImg(byte[] img) {
+		this.img = img;
 	}
 	public void setLogtime(String logtime) {
 		this.logtime = logtime;
 	}
-    
-    
 }

@@ -9,19 +9,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class LogoutController {
-
+public class MemberLogoutController {
+	
 	@RequestMapping(value="/member/logout.do")
 	public ModelAndView logout(HttpServletRequest request, HttpServletResponse response) {
 		HttpSession session = request.getSession();
 		session.removeAttribute("memName");
 		session.removeAttribute("memId");
 		
-		// ë¬´íš¨í™” : ëª¨ë‘ ì§€ìš°ê¸°
+		// ¹«È¿È­ : ¸ğµÎ Áö¿ì±â
 		session.invalidate();
 		ModelAndView modelAndView = new ModelAndView();
 		//modelAndView.setViewName("/member/logout.jsp");
-		modelAndView.addObject("req", "../member/logout.jsp");
+		modelAndView.addObject("req", "../member/logout.jsp");	// ¿©±â ¼öÁ¤ ÇÊ¿ä
 		modelAndView.setViewName("/main/index.do");
 		return modelAndView;
 	}

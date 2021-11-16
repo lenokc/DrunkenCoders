@@ -7,34 +7,32 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class LoginController {
-	
+public class MemberLoginController {
 	@Autowired
 	private MemberService memberService;
 	
-	@RequestMapping(value="/member/login.do")
-	public ModelAndView login(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping(value="/member/memberLogin.do")
+	public String login(HttpServletRequest request, HttpServletResponse response) {
 		String id = request.getParameter("id");
 		String pwd = request.getParameter("pwd");
-
+		
 		// DB
 		String name = memberService.login(id, pwd);
 		
-		// í˜ì´ì§€ ì´ë™
+		// ÆäÀÌÁö ÀÌµ¿
 		HttpSession session = request.getSession();
-		ModelAndView modelAndView = new ModelAndView();
-		if(name != null) {	// ë¡œê·¸ì¸ ì„±ê³µ
-			// ê³µìœ ë°ì´í„°ë¥¼ ì„¸ì…˜ì— ì €ì¥í•˜ê³  í˜ì´ì§€ ì´ë™
-			session.setAttribute("memName", name);
+		
+		if(name != null) {	// ·Î±×ÀÎ ¼º°ø
+			// °øÀ¯µ¥ÀÌÅÍ¸¦ ¼¼¼Ç¿¡ ÀúÀåÇÏ°í ÆäÀÌÁö ÀÌµ¿
 			session.setAttribute("memId", id);
 						
-			modelAndView.setViewName("/member/loginOk.jsp");
-		} else {			// ë¡œê·¸ì¸ ì‹¤íŒ¨
-			modelAndView.setViewName("/member/loginFail.jsp");
+			request.setAttribute("req", "/main/body.jsp");  // ·Î±×ÀÎ ¼º°ø ½Ã ¹Ù·Î ¸ŞÀÎ ÀÎµ¦½º·Î ÀÌµ¿.
+		} else {			// ·Î±×ÀÎ ½ÇÆĞ
+			request.setAttribute("req", "/member/memberLogin.jsp");  // ¿©±â ¼öÁ¤ ÇÊ¿ä.
+			// ÆäÀÌÁö ÀÌµ¿ÇÏÁö ¾Ê°í ÇØ´ç ÆäÀÌÁö¿¡¼­ ·Î±×ÀÎ ½ÇÆĞ°¡ µÇ°Ô ÇØ¾ßÇÔ. ajax ÀÌ¿ë ¿¹Á¤.
 		}
-		return modelAndView;
+		return "../main/index.jsp";
 	}
 }

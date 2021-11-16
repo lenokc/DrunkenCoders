@@ -5,10 +5,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class IndexController {
+public class MemberIndexController {
 
 	@RequestMapping(value="/main/index.do")
 	public String index(HttpServletRequest request, HttpServletResponse response) {

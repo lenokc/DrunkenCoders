@@ -5,17 +5,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class LoginFormController {
-
-	@RequestMapping(value = "/member/loginForm.do")
+public class MemberLoginFormController {
+	@RequestMapping(value="/member/memberLoginForm.do")
 	public String loginForm(HttpServletRequest request, HttpServletResponse response) {
-		request.setAttribute("req", "../member/loginForm.jsp");
-
-		return "/main/index.jsp";	
-	}
 	
-
+		request.setAttribute("req", "/member/memberLogin.jsp");
+		return "../main/index.jsp";
+	}
 }

@@ -8,42 +8,40 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 import member.dto.MemberDTO;
 
 @Controller
-public class WriteController {
+public class MemberWriteController {
 	
 	@Autowired
 	private MemberService memberService;
 
-	@RequestMapping(value = "/member/write.do")
-	public String modify(HttpServletRequest request, HttpServletResponse response) {
-
+	@RequestMapping(value = "/member/memberWrite.do")
+	public String write(HttpServletRequest request, HttpServletResponse response) {
+		
+		
 		try {
 			request.setCharacterEncoding("utf-8");
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
-		String id = request.getParameter("id");
+		String name = request.getParameter("username");
+		String id = request.getParameter("userid");
 		String pwd = request.getParameter("pwd");
-		String email1 = request.getParameter("email1");
-		String email2 = request.getParameter("email2");
 		
 		MemberDTO dto = new MemberDTO();
+		dto.setName(name);
 		dto.setId(id);
 		dto.setPwd(pwd);
-		dto.setEmail1(email1);
-		dto.setEmail2(email2);
-
+		
 		int su = memberService.write(dto);
 
 		request.setAttribute("su", su);
 		
-		request.setAttribute("req","/member/write.jsp");
+		request.setAttribute("req","/main/body.jsp"); 
 		
-		return "../main/index.jsp";
+		return "../main/index.jsp";	
 		
 	}
 }

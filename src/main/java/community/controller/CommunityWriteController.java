@@ -13,9 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import community.dto.CommunityDTO;
 
-// controller 역할을 수행 한다고 명시(해당 클래스를 Controller로 사용한다고 Spring Framework 에 알림)
-// 필요한 비즈니스 로직을 호출하여 전달할 모델(Model)과 이동할 (View)정보를 DispatcherServlet에 반환
-// Bean으로 등록
 @Controller	
 public class CommunityWriteController {
 	

@@ -7,7 +7,7 @@ import member.dto.MemberDTO;
 public interface MemberService {
 	public int write(MemberDTO dto);
 
-	public String login(String id, String pwd);
+	public String login(String id);
 
 	// 아이디 유무 검사
 	public boolean isExistId(String id);
@@ -20,6 +20,7 @@ public interface MemberService {
 
 	// 총 회원수 구하기
 	public int getTotalMember();
-
+	
+	// ȸ�� ����Ʈ(�����ڿ�)
 	public List<MemberDTO> selectList(int startNum, int endNum);
 }

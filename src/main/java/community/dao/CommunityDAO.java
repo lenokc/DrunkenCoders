@@ -13,6 +13,7 @@ import community.dto.CommunityDTO;
 @Repository
 public class CommunityDAO {
 
+
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 	
@@ -53,4 +54,5 @@ public class CommunityDAO {
 	public int communityModify(CommunityDTO dto) {
 		return sqlSession.update("mybatis.CommunityMapper.communityModify",dto);
 	}
+
 }

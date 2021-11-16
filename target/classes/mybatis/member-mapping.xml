@@ -40,4 +40,5 @@
 		where rn>=#{startNum} and rn<=#{endNum}
 		]]>
 	</select>
+	
 </mapper>

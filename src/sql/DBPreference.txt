@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -- 커뮤니티 글 관리 테이블
 create table community (
     seq number not null,                -- 글번호
@@ -41,4 +42,91 @@ delete community;
 update community set hit=hit+1 where seq=3;
 
 -- DB 저장
+=======
+Write database quotes here for preference.
+------------------------------------------------------------
+
+--- 1. Create Table
+create table member (
+    name varchar2(30) not null,     -- �̸�(�г���)
+    id varchar2(30) primary key,    -- ���̵�
+    pwd varchar2(30) not null,      -- �н�����
+    pic blob,                       -- ����
+    logtime date                    -- ���ӷα�
+);
+
+-- 2. Check Table Description
+desc member;
+-- 3. Delete Table
+drop table member purge;
+-- Table List
+select * from tab;
+-- 1) Data Appending into the Table
+insert into member values('ȫ�浿', 'hong@gmail.com', '1234', EMPTY_BLOB(), sysdate);
+
+-- 2) Data Searching
+select * from member;
+select * from member where id='hong@gmail.com';
+select * from member where id='hong@gmail.com' and pwd='1234';
+SELECT * FROM
+    (SELECT ROWNUM rn, tt.* FROM
+        (SELECT * FROM member ORDER BY name ASC) 
+    tt)
+WHERE rn>=1 and rn<=5;
+
+-- 3) Modify Data
+update member set tel2='5555' where id='hong@gmail.com';
+
+-- 3-1) Modify Data2
+UPDATE member SET pwd='1111' where id='hong@gmail.com';
+
+-- 4) Delete Data
+delete member where id='hong@gmail.com';
+
+-- 5) Commit
+>>>>>>> refs/heads/feature3
+commit;
+
+------------------------------feature3
+Write database quotes here for preference.
+------------------------------------------------------------
+
+--- 1. Create Table
+create table member (
+    name varchar2(30) not null,     -- �̸�(�г���)
+    id varchar2(30) primary key,    -- ���̵�
+    pwd varchar2(30) not null,      -- �н�����
+    pic blob,                       -- ����
+    logtime date                    -- ���ӷα�
+);
+
+-- 2. Check Table Description
+desc member;
+-- 3. Delete Table
+drop table member purge;
+-- Table List
+select * from tab;
+-- 1) Data Appending into the Table
+insert into member values('ȫ�浿', 'hong@gmail.com', '1234', EMPTY_BLOB(), sysdate);
+
+-- 2) Data Searching
+select * from member;
+select * from member where id='hong@gmail.com';
+select * from member where id='hong@gmail.com' and pwd='1234';
+SELECT * FROM
+    (SELECT ROWNUM rn, tt.* FROM
+        (SELECT * FROM member ORDER BY name ASC) 
+    tt)
+WHERE rn>=1 and rn<=5;
+
+-- 3) Modify Data
+update member set tel2='5555' where id='hong@gmail.com';
+
+-- 3-1) Modify Data2
+UPDATE member SET pwd='1111' where id='hong@gmail.com';
+
+-- 4) Delete Data
+delete member where id='hong@gmail.com';
+
+-- 5) Commit
 commit;

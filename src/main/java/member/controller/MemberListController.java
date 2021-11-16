@@ -8,13 +8,13 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 import member.dto.MemberDTO;
 
+/* Ajax ����ؼ� �ش� ��Ʈ�ѷ� ���� ������ �� ����غ��� ��. */
+
 @Controller
 public class MemberListController {
-
 	@Autowired
 	private MemberService memberService;
 
@@ -43,7 +43,7 @@ public class MemberListController {
 			request.setAttribute("list", list);
 			request.setAttribute("pg", pg);
 			
-			request.setAttribute("req","../member/memberList.jsp");
+			request.setAttribute("req","../member/memberList.jsp"); // �ش� �κ� ���� �ʿ�
 			
 			return "/main/index.do";
 		}

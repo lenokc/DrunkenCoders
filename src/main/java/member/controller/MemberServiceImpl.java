@@ -9,8 +9,8 @@ import member.dao.MemberDAO;
 import member.dto.MemberDTO;
 
 @Service
-public class MemberServiceImpl implements MemberService{
-
+public class MemberServiceImpl implements MemberService {
+	
 	@Autowired
 	private MemberDAO memberDAO;
 	
@@ -20,8 +20,8 @@ public class MemberServiceImpl implements MemberService{
 	}
 
 	@Override
-	public String login(String id, String pwd) {
-		return memberDAO.login(id, pwd);
+	public String login(String id) {
+		return memberDAO.login(id);
 	}
 
 	@Override
@@ -48,5 +48,4 @@ public class MemberServiceImpl implements MemberService{
 	public List<MemberDTO> selectList(int startNum, int endNum) {
 		return memberDAO.selectList(startNum, endNum);
 	}
-
 }

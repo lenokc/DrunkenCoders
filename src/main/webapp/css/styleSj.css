@@ -105,7 +105,9 @@ nav .bi-bell-fill{
 	font-size: 1.2em;
 	color: #969696;
 }
-
+#main-nav li a.active{
+	color:orange !important;
+}
 /************************
   index: card grid style
 *************************/

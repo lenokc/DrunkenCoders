@@ -1,4 +1,5 @@
 $(function(){
+	alert('test');
 		
 		/***********************************
 					nav_js
@@ -26,6 +27,19 @@ $(function(){
 		})
 		*/
 		
+		var path = window.location.href; 
+		var topNav_menu = $('#main-nav li');
+		
+	     topNav_menu.each(function() {
+	      if (this.href === path) {
+	       $(this).find('a').addClass('active');
+	      }
+	     })
+		
+		
+				
+		
+		
 		/***********************************
 					body_js
 		***********************************/
@@ -40,13 +54,13 @@ $(function(){
 		
 		
 		
-
+		
 		/***********************************
 					kakao_js
 		***********************************/
 		
 		var c_toggle_btn =$('#c-toggle-btn');
-		var c_toggle_contents =$('#c-toggle-contents')
+		var c_toggle_contents =$('#c-toggle-contents');
 
 		//loading시 c_toggle_contents 숨기기
 		c_toggle_contents.hide();
@@ -55,16 +69,16 @@ $(function(){
 			c_toggle_contents.slideToggle();
 		})
 		
+		
 		/***********************************
-				 communityList_js
+					communityList_js
 		***********************************/
 		
-		$(function(){
-			var sideBtn = $("#sideCategory li button");
-	
-			sideBtn.click(function(){
-				sideBtn.removeClass('active')
-				$(this).addClass('active');
-			})
+		var sideBtn = $("#sideCategory li button");
+
+		sideBtn.click(function(){
+			sideBtn.removeClass('active')
+			$(this).addClass('active');
 		})
+		
 	})

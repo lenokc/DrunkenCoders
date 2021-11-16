@@ -73,7 +73,7 @@
 			</a>
 		</div>
 		<div class="collapse navbar-collapse" id="toggler">
-			<ul class="navbar-nav">
+			<ul class="navbar-nav" id="main-nav">
 				<c:if test="${empty memId}">
 					<li class="nav-item active d-block d-lg-none">
 						<a class="nav-link" href=/drunkenCoders//member/loginForm.do>Login</a>
@@ -99,7 +99,7 @@
 						<i class="bi bi-bell-fill ml-3 d-block d-lg-none float-left c-left-1"></i>
 					</a>
 				</c:if>
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href=#>Courses</a>
 				</li>
 				<li class="nav-item">

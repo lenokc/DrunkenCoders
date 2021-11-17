@@ -21,14 +21,14 @@ function checkWrite() {
 }
 
 function checkLogin() {
-	if(!login-form.id.value) {
+	if(!loginform.id.value) {
 		alert("아이디를 입력해주세요");
-		login-form.id.focus();
-	} else if(!login-form.pwd.value) {
+		loginform.id.focus();
+	} else if(!loginform.pwd.value) {
 		alert("비밀번호를 틀렸습니다");
-		login-form.pwd.focus();
+		loginform.pwd.focus();
 	} else {
-		login-form.submit();
+		loginform.submit();
 	}
 }
 

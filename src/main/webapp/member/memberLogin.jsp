@@ -305,7 +305,7 @@ nav .bi-bell-fill {
 					class="row justify-content-center align-items-center">
 					<div id="login-column" class="col-md-6">
 						<div id="login-box" class="col-md-12">
-							<form name="login-form" id="login-form" class="form"
+							<form name="login-form" id="loginform" class="form"
 								action="${pageContext.request.contextPath}/member/memberLogin.do"
 								method="post" onsubmit="checkLogin();return false;">
 								<!-- 액션 = 로그인.do 추가  -->

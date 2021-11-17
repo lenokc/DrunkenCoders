@@ -1,8 +1,8 @@
 package courses.dto;
 
 public class CoursesDTO {
-    private String curri; // ì½”ìŠ¤ëª…
-    private String subject; // ì œëª©
+    private String curri; // ÄÚ½º¸í
+    private String subject; // Á¦¸ñ
     
 	public String getCurri() {
 		return curri;

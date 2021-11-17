@@ -1,47 +1,47 @@
--- 커뮤니티 글 관리 테이블--------------------------------
+-- community management table--------------------------------
 create table community (
-    seq number not null,                -- 글번호
-    id varchar2(30) not null,           -- 아이디
-    name varchar2(40) not null,         -- 이름
-    subject varchar2(255) not null,     -- 제목
-    content varchar2(4000) not null,    -- 내용
-    hit number default 0,               -- 조회수
-    logtime date default sysdate,       -- 작성일
-    category varchar2(40) not null,     -- 카테고리 선택
+    seq number not null,                -- sequence
+    id varchar2(30) not null,           -- id
+    name varchar2(40) not null,         -- name
+    subject varchar2(255) not null,     -- subject
+    content varchar2(4000) not null,    -- content
+    hit number default 0,               -- hit
+    logtime date default sysdate,       -- logtime when it's written
+    category varchar2(40) not null,     -- category
     primary key(seq)
 );
--- 테이블 구조 확인
+-- check table structure
 desc community; 
--- 테이블 삭제
+-- delete table
 drop table community purge;
--- table 목록
+-- table list
 select * from tab;
--- 시퀀스 객체 생성
+-- create sequence
 create sequence seq_community nocache nocycle;
--- 시퀀스 객체 삭제
+-- delete sequence
 drop sequence seq_community;
 
--- 글 데이터 저장
+-- insert data
 insert into community values
 (seq_community.nextval, 'hong', '홍길동', '내일은', '웃으리...', 0, sysdate, 'javascript');
 
--- 전체 확인
+-- check all
 select * from community;
 select * from member;
 
--- 특정 글번호로 확인
+-- check specific one by sequence
 select * from community where seq=3;
--- 총 데이터수 구하기
+-- check the count of the all board of community
 select count(*) as cnt from community;
 
--- 데이터 삭제
+-- delete data by sequence
 delete community where seq=3;
 delete community;
 
--- 조회수 증가
+-- hit up
 update community set hit=hit+1 where seq=3;
 
--- DB 저장
+-- DB commit
 commit;
 
 ----------------Member SQL-------------------
@@ -49,11 +49,11 @@ commit;
 
 --- 1. Create Table
 create table member (
-    name varchar2(30) not null,     -- 이름(닉네임)
-    id varchar2(30) primary key,    -- 아이디
-    pwd varchar2(30) not null,      -- 패스워드
-    pic blob,                       -- 사진
-    logtime date                    -- 접속로그
+    name varchar2(30) not null,     -- name(nickname)
+    id varchar2(30) primary key,    -- id
+    pwd varchar2(30) not null,      -- password
+    pic blob,                       -- picture
+    logtime date                    -- create member date
 );
 
 -- 2. Check Table Description
@@ -63,7 +63,7 @@ drop table member purge;
 -- Table List
 select * from tab;
 -- 1) Data Appending into the Table
-insert into member values('홍길동', 'hong@gmail.com', '1234', EMPTY_BLOB(), sysdate);
+insert into member values('honggildong', 'hong@gmail.com', '1234', EMPTY_BLOB(), sysdate);
 
 -- 2) Data Searching
 select * from member;

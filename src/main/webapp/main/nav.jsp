@@ -103,10 +103,10 @@
 					<a class="nav-link" href=#>Courses</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href=#>Challenges</a>
+					<a class="nav-link" href="${pageContext.request.contextPath}/challenge/challengeMain.do">Challenges</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/drunkenCoders/community/communityList.do">Community</a>
+					<a class="nav-link" href="${pageContext.request.contextPath}/community/communityList.do">Community</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href=#>FAQ</a>

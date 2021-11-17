@@ -36,7 +36,7 @@
 		
 		if (member_id == "null") {
 			alert("로그인을 먼저 하셔야 합니다.");  
-			window.location="../member/loginForm.do";	
+			window.location="../member/memberLoginForm.do";	
 		} else {	
 		window.location="/drunkenCoders/community/communityWriteForm.do";
 		}

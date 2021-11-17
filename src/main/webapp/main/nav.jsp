@@ -46,7 +46,7 @@
 
 </head>
 <body>
-<!-----------------------------------------
+<!------------------------------------------
  			상단 네비게이션 navbar 
  ------------------------------------------>
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">

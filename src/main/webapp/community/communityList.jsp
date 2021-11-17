@@ -40,7 +40,8 @@
 		} else {	
 		window.location="/drunkenCoders/community/communityWriteForm.do";
 		}
-	} 
+	}
+
 	</script>
 </head>
 <body>
@@ -106,7 +107,7 @@
 							<div class="row">
 								<div class="col-2 d-flex align-items-center pl-4">
 									<div class="rounded-lg align-self-center border c-border p-0 px-3  text-muted" id="recommendNum">
-										<i class="bi bi-caret-up-fill"></i><br><span>12</span>
+										<i class="bi bi-caret-up-fill"></i><br><span>${dto.hit}</span>
 									</div>
 								</div>
 	
@@ -115,8 +116,8 @@
 									<span class="bg-secondary text-white px-1 font-weight-bold">
 										${dto.category}
 									</span>
-									&nbsp;by&nbsp;<span class="font-weight-bold">${dto.id}</span>
-									&nbsp;•&nbsp;&nbsp;<span>5 days ago</span>&nbsp;&nbsp;•&nbsp;
+									&nbsp;by&nbsp;<span class="font-weight-bold">${dto.name}</span>
+									&nbsp;•&nbsp;&nbsp;<span>${dto.logtime}</span>&nbsp;&nbsp;•&nbsp;
 									<i class="bi bi-chat-left-dots"></i>&nbsp;&nbsp;<span>5</span>
 								</div>
 								<div class="col-2 d-flex align-items-center px-0">
@@ -138,7 +139,7 @@
 								href="communityList.do?pg=${startPage-1}">Previous</a>
 							</li>
 						</c:if>
-	
+
 						<c:forEach var="i" begin="${startPage }" end="${endPage }" step="1">
 							<c:if test="${pg==i}">
 								<li class="page-item"><a class="page-link"

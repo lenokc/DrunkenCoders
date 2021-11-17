@@ -16,12 +16,12 @@ public class CommunityDAO {
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 	
-	// ê¸€ ì‘ì„±í•˜ê¸°
+	// ±Û ÀÛ¼ºÇÏ±â
 	public int communityWrite(CommunityDTO dto) {
 		return sqlSession.insert("mybatis.CommunityMapper.communityWrite", dto);
 	}
 	
-	// 10ê°œì”© ëª©ë¡ë³´ê¸°
+	// 10°³¾¿ ¸ñ·Ïº¸±â
 	public List<CommunityDTO> communityList(int startNum, int endNum) {
 		Map<String, Object> map = new HashMap<String,Object>();
 		map.put("startNum", startNum);
@@ -29,27 +29,27 @@ public class CommunityDAO {
 		return sqlSession.selectList("mybatis.CommunityMapper.communityList",map);
 	}
 	
-	// ìƒì„¸ë³´ê¸°
+	// »ó¼¼º¸±â
 	public CommunityDTO communityView(int seq) {
 		return sqlSession.selectOne("mybatis.CommunityMapper.communityView",seq);
 	}
 
-	// ì¡°íšŒìˆ˜ ì¦ê°€í•˜ê¸°
+	// Á¶È¸¼ö Áõ°¡ÇÏ±â
 	public int updateHit(int seq) {
 		return sqlSession.update("mybatis.CommunityMapper.updateHit",seq);
 	}
 
-	// ì´ ë°ì´í„°ìˆ˜ êµ¬í•˜ê¸°
+	// ÃÑ µ¥ÀÌÅÍ¼ö ±¸ÇÏ±â
 	public int getTotalA() {
 		return sqlSession.selectOne("mybatis.CommunityMapper.getTotalA");
 	}
 
-	// ê²Œì‹œê¸€ ì‚­ì œí•˜ê¸°
+	// °Ô½Ã±Û »èÁ¦ÇÏ±â
 	public int delete(int seq) {
 		return sqlSession.delete("mybatis.CommunityMapper.delete",seq);
 	}
 
-	// ê¸€ìˆ˜ì •
+	// ±Û¼öÁ¤
 	public int communityModify(CommunityDTO dto) {
 		return sqlSession.update("mybatis.CommunityMapper.communityModify",dto);
 	}

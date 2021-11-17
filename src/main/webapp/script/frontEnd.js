@@ -1,4 +1,4 @@
-//í˜ì´ì§€ ë¡œë”©ì‹œ ì£¼ì†Œì— ë§ëŠ” ë„¤ë¹„ ë©”ë‰´ í™œì„±í™”
+//ÆäÀÌÁö ·Îµù½Ã ÁÖ¼Ò¿¡ ¸Â´Â ³×ºñ ¸Ş´º È°¼ºÈ­
 $(window).on('load',function(){
 	var path = window.location.href; 
 	var topNav_menu = $('#main-nav li');
@@ -29,16 +29,16 @@ $(function(){
 	var userBtn = $('.bi-person-circle');
 	var navbarBrand =$('#logo');
 	
-	// ìƒë‹¨ userBtní† ê¸€ì‹œ ìƒ‰ ë°”ë€Œê¸°
+	// »ó´Ü userBtnÅä±Û½Ã »ö ¹Ù²î±â
 	dropdown.click(function(){
 		userBtn.toggleClass('active');
 	})
 	
-	//nav í–„ë²„ê±° ë²„íŠ¼
+	//nav ÇÜ¹ö°Å ¹öÆ°
 	var burgerBtn = $('#toggler');
 	
 	
-	// ìƒë‹¨ ë¡œê³  í´ë¦­ì‹œ ìŠ¤í¬ë¡¤ ì• ë‹ˆë©”ì´ì…˜ ì£¼ë©´ì„œ ìƒë‹¨ìœ¼ë¡œ ì´ë™ì£¼ëŠ” ì½”ë“œëŠ” aíƒœê·¸ ë§í¬ì™€ ì¶©ëŒì´ ë‚˜ì„œ ì¼ë‹¨ ì£¼ì„ì²˜ë¦¬
+	// »ó´Ü ·Î°í Å¬¸¯½Ã ½ºÅ©·Ñ ¾Ö´Ï¸ŞÀÌ¼Ç ÁÖ¸é¼­ »ó´ÜÀ¸·Î ÀÌµ¿ÁÖ´Â ÄÚµå´Â aÅÂ±× ¸µÅ©¿Í Ãæµ¹ÀÌ ³ª¼­ ÀÏ´Ü ÁÖ¼®Ã³¸®
 	/*
 	navbarBrand.click(function(){
 		//e.preventDefault();
@@ -77,9 +77,9 @@ $(function(){
 	var c_toggle_btn =$('#c-toggle-btn');
 	var c_toggle_contents =$('#c-toggle-contents');
 
-	//loadingì‹œ c_toggle_contents ìˆ¨ê¸°ê¸°
+	//loading½Ã c_toggle_contents ¼û±â±â
 	c_toggle_contents.hide();
-	//c_toggle_btn í´ë¦­ì‹œ loadingì‹œ c_toggle_contents ë³´ì´ê¸°
+	//c_toggle_btn Å¬¸¯½Ã loading½Ã c_toggle_contents º¸ÀÌ±â
 	c_toggle_btn.click(function(){
 		c_toggle_contents.slideToggle();
 	})

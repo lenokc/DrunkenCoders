@@ -19,7 +19,7 @@ public class CommunityListController {
 	
 	@RequestMapping(value = "/community/communityList.do")
 	public String communityList(HttpServletRequest request, HttpServletResponse response) {
-		// ë°ì´í„° ì²˜ë¦¬
+		// µ¥ÀÌÅÍ Ã³¸®
 		int pg = 1;
 		if (request.getParameter("pg") != null) {
 			pg = Integer.parseInt(request.getParameter("pg"));
@@ -42,7 +42,7 @@ public class CommunityListController {
 
 		List<CommunityDTO> list = communityService.communityList(startNum, endNum);
 		
-		// ë°ì´í„° ê³µìœ  & í™”ë©´ ë„¤ë¹„ê²Œì´ì…˜
+		// µ¥ÀÌÅÍ °øÀ¯ & È­¸é ³×ºñ°ÔÀÌ¼Ç
 		if (list != null) {
 			request.setAttribute("totalPage", totalPage);
 			request.setAttribute("startPage", startPage);

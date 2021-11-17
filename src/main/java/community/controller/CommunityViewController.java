@@ -18,20 +18,20 @@ public class CommunityViewController {
 	
 	@RequestMapping(value = "/community/communityView.do")
 	public String communityView(HttpServletRequest request, HttpServletResponse response) {
-		// 1. ë°ì´í„° ì²˜ë¦¬
+		// 1. µ¥ÀÌÅÍ Ã³¸®
 		int seq = Integer.parseInt(request.getParameter("seq"));
 		int pg = Integer.parseInt(request.getParameter("pg"));
 		
 		communityService.updateHit(seq);
 		CommunityDTO dto = communityService.communityView(seq);
 		
-		// 2. ë°ì´í„° ê³µìœ 
+		// 2. µ¥ÀÌÅÍ °øÀ¯
 		request.setAttribute("dto", dto);
 		request.setAttribute("pg", pg);
 		
 		request.setAttribute("req","/community/communityView.jsp");
 		
-		// 3. view ì²˜ë¦¬ íŒŒì¼ ë¦¬í„´
+		// 3. view Ã³¸® ÆÄÀÏ ¸®ÅÏ
 		return "/main/index.jsp";
 	}
 }

@@ -6,24 +6,24 @@ import community.dto.CommunityDTO;
 
 public interface CommunityService {
 	
-	// ê¸€ì“°ê¸°
+	// ±Û¾²±â
 	public int communityWrite(CommunityDTO dto);
 
-	// 10ê°œì”© ëª©ë¡ë³´ê¸°
+	// 10°³¾¿ ¸ñ·Ïº¸±â
 	public List<CommunityDTO> communityList(int startNum, int endNum);
 
-	// ìƒì„¸ë³´ê¸°
+	// »ó¼¼º¸±â
 	public CommunityDTO communityView(int seq);
 
-	// ì¡°íšŒìˆ˜ ì¦ê°€í•˜ê¸°
+	// Á¶È¸¼ö Áõ°¡ÇÏ±â
 	public int updateHit(int seq);
 
-	// ì´ ë°ì´í„°ìˆ˜ êµ¬í•˜ê¸°
+	// ÃÑ µ¥ÀÌÅÍ¼ö ±¸ÇÏ±â
 	public int getTotalA();
 
-	// ê²Œì‹œê¸€ ì‚­ì œí•˜ê¸°
+	// °Ô½Ã±Û »èÁ¦ÇÏ±â
 	public int delete(int seq);
 
-	// ê¸€ìˆ˜ì •
+	// ±Û¼öÁ¤
 	public int communityModify(CommunityDTO dto);
 }

@@ -1,45 +1,89 @@
--- ì»¤ë®¤ë‹ˆí‹° ê¸€ ê´€ë¦¬ í…Œì´ë¸”
+-- Ä¿¹Â´ÏÆ¼ ±Û °ü¸® Å×ÀÌºí--------------------------------
 create table community (
-    seq number not null,                -- ê¸€ë²ˆí˜¸
-    id varchar2(30) not null,           -- ì•„ì´ë””
-    name varchar2(40) not null,         -- ì´ë¦„
-    subject varchar2(255) not null,     -- ì œëª©
-    content varchar2(4000) not null,    -- ë‚´ìš©
-    hit number default 0,               -- ì¡°íšŒìˆ˜
-    logtime date default sysdate,       -- ì‘ì„±ì¼
-    category varchar2(40) not null,     -- ì¹´í…Œê³ ë¦¬ ì„ íƒ
+    seq number not null,                -- ±Û¹øÈ£
+    id varchar2(30) not null,           -- ¾ÆÀÌµğ
+    name varchar2(40) not null,         -- ÀÌ¸§
+    subject varchar2(255) not null,     -- Á¦¸ñ
+    content varchar2(4000) not null,    -- ³»¿ë
+    hit number default 0,               -- Á¶È¸¼ö
+    logtime date default sysdate,       -- ÀÛ¼ºÀÏ
+    category varchar2(40) not null,     -- Ä«Å×°í¸® ¼±ÅÃ
     primary key(seq)
 );
--- í…Œì´ë¸” êµ¬ì¡° í™•ì¸
+-- Å×ÀÌºí ±¸Á¶ È®ÀÎ
 desc community; 
--- í…Œì´ë¸” ì‚­ì œ
+-- Å×ÀÌºí »èÁ¦
 drop table community purge;
--- table ëª©ë¡
+-- table ¸ñ·Ï
 select * from tab;
--- ì‹œí€€ìŠ¤ ê°ì²´ ìƒì„±
+-- ½ÃÄö½º °´Ã¼ »ı¼º
 create sequence seq_community nocache nocycle;
--- ì‹œí€€ìŠ¤ ê°ì²´ ì‚­ì œ
+-- ½ÃÄö½º °´Ã¼ »èÁ¦
 drop sequence seq_community;
 
--- ê¸€ ë°ì´í„° ì €ì¥
+-- ±Û µ¥ÀÌÅÍ ÀúÀå
 insert into community values
-(seq_community.nextval, 'hong', 'í™ê¸¸ë™', 'ë‚´ì¼ì€', 'ì›ƒìœ¼ë¦¬...', 0, sysdate);
+(seq_community.nextval, 'hong', 'È«±æµ¿', '³»ÀÏÀº', '¿ôÀ¸¸®...', 0, sysdate, 'javascript');
 
--- ì „ì²´ í™•ì¸
+-- ÀüÃ¼ È®ÀÎ
 select * from community;
 select * from member;
 
--- íŠ¹ì • ê¸€ë²ˆí˜¸ë¡œ í™•ì¸
+-- Æ¯Á¤ ±Û¹øÈ£·Î È®ÀÎ
 select * from community where seq=3;
--- ì´ ë°ì´í„°ìˆ˜ êµ¬í•˜ê¸°
+-- ÃÑ µ¥ÀÌÅÍ¼ö ±¸ÇÏ±â
 select count(*) as cnt from community;
 
--- ë°ì´í„° ì‚­ì œ
+-- µ¥ÀÌÅÍ »èÁ¦
 delete community where seq=3;
 delete community;
 
--- ì¡°íšŒìˆ˜ ì¦ê°€
+-- Á¶È¸¼ö Áõ°¡
 update community set hit=hit+1 where seq=3;
 
--- DB ì €ì¥
+-- DB ÀúÀå
 commit;
+
+----------------Member SQL-------------------
+------------------------------------------------------------
+
+--- 1. Create Table
+create table member (
+    name varchar2(30) not null,     -- ÀÌ¸§(´Ğ³×ÀÓ)
+    id varchar2(30) primary key,    -- ¾ÆÀÌµğ
+    pwd varchar2(30) not null,      -- ÆĞ½º¿öµå
+    pic blob,                       -- »çÁø
+    logtime date                    -- Á¢¼Ó·Î±×
+);
+
+-- 2. Check Table Description
+desc member;
+-- 3. Delete Table
+drop table member purge;
+-- Table List
+select * from tab;
+-- 1) Data Appending into the Table
+insert into member values('È«±æµ¿', 'hong@gmail.com', '1234', EMPTY_BLOB(), sysdate);
+
+-- 2) Data Searching
+select * from member;
+select * from member where id='hong@gmail.com';
+select * from member where id='hong@gmail.com' and pwd='1234';
+SELECT * FROM
+    (SELECT ROWNUM rn, tt.* FROM
+        (SELECT * FROM member ORDER BY name ASC) 
+    tt)
+WHERE rn>=1 and rn<=5;
+
+-- 3) Modify Data
+update member set tel2='5555' where id='hong@gmail.com';
+
+-- 3-1) Modify Data2
+UPDATE member SET pwd='1111' where id='hong@gmail.com';
+
+-- 4) Delete Data
+delete member where id='hong@gmail.com';
+
+-- 5) Commit
+commit;
+

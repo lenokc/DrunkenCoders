@@ -12,13 +12,13 @@ public class CoursesViewController {
 	
 	@RequestMapping(value = "/courseSpecific/kakao.do")
 	public String kakao(HttpServletRequest request, HttpServletResponse response) {
-		// 1. ë°ì´í„° ì²˜ë¦¬ : ì½”ìŠ¤ëª… ë§¤ê°œë³€ìˆ˜ë¡œ ìš”ì²­ë°›ê¸°
+		// 1. µ¥ÀÌÅÍ Ã³¸® : ÄÚ½º¸í ¸Å°³º¯¼ö·Î ¿äÃ»¹Ş±â
 		
-		// 2. ë°ì´í„° ê³µìœ  : ì½”ìŠ¤ëª… ë§¤ê°œë³€ìˆ˜ ê³µìœ 
+		// 2. µ¥ÀÌÅÍ °øÀ¯ : ÄÚ½º¸í ¸Å°³º¯¼ö °øÀ¯
 		
 		request.setAttribute("req","/courseSpecific/kakao.jsp");
 		
-		// 3. view ì²˜ë¦¬ íŒŒì¼ ë¦¬í„´
+		// 3. view Ã³¸® ÆÄÀÏ ¸®ÅÏ
 		return "/main/index.jsp";
 	}
 }

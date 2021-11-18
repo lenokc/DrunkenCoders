@@ -5,7 +5,6 @@ $(window).on('load',function(){
 	
 	if (path.indexOf('courses')	!= -1) {
 	   topNav_menu.eq(1).find('a').addClass('active');
-	   alert('2');
 	}else if (path.indexOf('challenges') != -1) {
 	   topNav_menu.eq(2).find('a').addClass('active');
 	   alert('3');

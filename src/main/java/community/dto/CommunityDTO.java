@@ -1,13 +1,15 @@
 package community.dto;
 
 public class CommunityDTO {
-	private int seq;         	 //--글번호.
+	private int seq;         	 //--글번호
 	private String id;           //--아이디
 	private String name;         //--이름
 	private String subject;      //--제목
 	private String content;      //--내용
 	private int hit; 			//--조회수
 	private String logtime;     //--작성일
+	private String category;    //--카테고리 선택
+	
 	
 	public int getSeq() {
 		return seq;
@@ -50,5 +52,12 @@ public class CommunityDTO {
 	}
 	public void setLogtime(String logtime) {
 		this.logtime = logtime;
+	}    
+	public String getCategory() {
+		return category;
 	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+    
 }

@@ -1,1 +1,89 @@
-ì—¬ê¸°ì— DB ë‚´ìš©(ì°¸ê³ ìš©) ì˜¬ë ¤ì£¼ì„¸ìš”.
+-- community management table--------------------------------
+create table community (
+    seq number not null,                -- sequence
+    id varchar2(30) not null,           -- id
+    name varchar2(40) not null,         -- name
+    subject varchar2(255) not null,     -- subject
+    content varchar2(4000) not null,    -- content
+    hit number default 0,               -- hit
+    logtime date default sysdate,       -- logtime when it's written
+    category varchar2(40) not null,     -- category
+    primary key(seq)
+);
+-- check table structure
+desc community; 
+-- delete table
+drop table community purge;
+-- table list
+select * from tab;
+-- create sequence
+create sequence seq_community nocache nocycle;
+-- delete sequence
+drop sequence seq_community;
+
+-- insert data
+insert into community values
+(seq_community.nextval, 'hong', 'È«±æµ¿', '³»ÀÏÀº', '¿ôÀ¸¸®...', 0, sysdate, 'javascript');
+
+-- check all
+select * from community;
+select * from member;
+
+-- check specific one by sequence
+select * from community where seq=3;
+-- check the count of the all board of community
+select count(*) as cnt from community;
+
+-- delete data by sequence
+delete community where seq=3;
+delete community;
+
+-- hit up
+update community set hit=hit+1 where seq=3;
+
+-- DB commit
+commit;
+
+----------------Member SQL-------------------
+------------------------------------------------------------
+
+--- 1. Create Table
+create table member (
+    name varchar2(30) not null,     -- name(nickname)
+    id varchar2(30) primary key,    -- id
+    pwd varchar2(30) not null,      -- password
+    pic blob,                       -- picture
+    logtime date                    -- create member date
+);
+
+-- 2. Check Table Description
+desc member;
+-- 3. Delete Table
+drop table member purge;
+-- Table List
+select * from tab;
+-- 1) Data Appending into the Table
+insert into member values('honggildong', 'hong@gmail.com', '1234', EMPTY_BLOB(), sysdate);
+
+-- 2) Data Searching
+select * from member;
+select * from member where id='hong@gmail.com';
+select * from member where id='hong@gmail.com' and pwd='1234';
+SELECT * FROM
+    (SELECT ROWNUM rn, tt.* FROM
+        (SELECT * FROM member ORDER BY name ASC) 
+    tt)
+WHERE rn>=1 and rn<=5;
+
+-- 3) Modify Data
+update member set tel2='5555' where id='hong@gmail.com';
+
+-- 3-1) Modify Data2
+UPDATE member SET pwd='1111' where id='hong@gmail.com';
+
+-- 4) Delete Data
+delete member where id='hong@gmail.com';
+
+-- 5) Commit
+commit;
+

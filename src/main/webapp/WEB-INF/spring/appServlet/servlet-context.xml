@@ -29,7 +29,26 @@
 	<resources location="/script/" mapping="/script/**"/>
 	
 	<!-- 어노테이션 사용 설정 -->
+	<context:component-scan base-package="courses"/>
 	<context:component-scan base-package="community"/>
 	<context:component-scan base-package="member"/>
+	<context:component-scan base-package="challenge"/>
+	
+	<!-- 회원가입 메일 인증 -->
+	<beans:bean id="mailSender"	class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<beans:property name="host" value="smtp.gmail.com" />
+		<beans:property name="port" value="587" /><!-- 465 or 25 -->
+		<beans:property name="username" value="이메일@gmail.com" /> <!-- 이메일 수정 필요 -->
+		<beans:property name="password" value="비밀번호" />		  <!-- 비밀번호 수정 필요 -->
+		<beans:property name="defaultEncoding" value="utf-8" />
+		<beans:property name="javaMailProperties">
+			<beans:props>
+				<beans:prop key="mail.transport.protocol">smtp</beans:prop>
+				<beans:prop key="mail.smtp.auth">true</beans:prop>
+				<beans:prop key="mail.smtp.starttls.enable">true</beans:prop>
+				<beans:prop key="mail.debug">true</beans:prop>
+			</beans:props>
+		</beans:property>
+	</beans:bean>
 	
 </beans:beans>

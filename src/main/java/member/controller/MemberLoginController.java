@@ -30,7 +30,7 @@ public class MemberLoginController {
 						
 			request.setAttribute("req", "/main/body.jsp");  // 로그인 성공 시 바로 메인 인덱스로 이동.
 		} else {			// 로그인 실패
-			request.setAttribute("req", "/member/memberLogin.jsp");  // 여기 수정 필요.
+			request.setAttribute("req", "/member/loginFail.jsp");  
 			// 페이지 이동하지 않고 해당 페이지에서 로그인 실패가 되게 해야함. ajax 이용 예정.
 		}
 		return "../main/index.jsp";

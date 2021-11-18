@@ -96,8 +96,8 @@
 			<div class="col-md-6 px-0 text-muted" id="boardList">
 				<div class="row d-flex">
 					<div class="col-12 c-fontSize-small font-weight-bold mb-4 flex-fill">Sort by: 
-						<a href="#" class="px-3 c-text-lightgray"><span><i class="fab fa-hotjar"></i>Popular</span></a> 
-						<a href="#" class="c-text-lightgray active"><span><i class="bi bi-lightning-fill"></i>New</span></a>
+						<a href="/drunkenCoders/community/communityHitList.do" class="px-3 c-text-lightgray"><span><i class="fab fa-hotjar"></i>Popular</span></a> 
+						<a href="/drunkenCoders/community/communityList.do" class="c-text-lightgray active"><span><i class="bi bi-lightning-fill"></i>New</span></a>
 						<a href="#" class="c-text-lightgray float-right"><span><i class="fas fa-search"></i>search</span></a>
 					</div>
 				</div>

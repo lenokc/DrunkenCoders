@@ -1,14 +1,15 @@
 
+
 function checkCommunityWrite() {
 	
 	   if(!communityWriteForm.subject.value) {
-      	  alert("Á¦¸ñÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä");
+      	  alert("ì œëª©ì„ ì…ë ¥í•´ì£¼ì„¸ìš”");
       	  communityWriteForm.subject.focus();
-	   } else if(communityWriteForm.category.value == "Ä«Å×°í¸® °í¸£±â") {
-	      alert("³»¿ë°ú °ü·ÃµÈ Ä«Å×°í¸®¸¦ ¼±ÅÃÇØ ÁÖ¼¼¿ä.");
+	   } else if(communityWriteForm.category.value == "ì¹´í…Œê³ ë¦¬ ê³ ë¥´ê¸°") {
+	      alert("ë‚´ìš©ê³¼ ê´€ë ¨ëœ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•´ ì£¼ì„¸ìš”.");
 	      communityWriteForm.category.focus();
 	   } else if(!communityWriteForm.content.value) {
-	      alert("³»¿ëÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä");
+	      alert("ë‚´ìš©ì„ ì…ë ¥í•´ì£¼ì„¸ìš”");
 	      communityWriteForm.content.focus();
 	   } else {
 	      communityWriteForm.submit();
@@ -17,16 +18,14 @@ function checkCommunityWrite() {
 
 function checkCommunityModify() {
    if (!communityModifyForm.subject.value) {
-      alert("Á¦¸ñÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+      alert("ì œëª©ì„ ì…ë ¥í•˜ì„¸ìš”.");
       communityModifyForm.subject.focus();
       return false;
    } else if (!communityModifyForm.content.value) {
-      alert("³»¿ë ÀÔ·ÂÇÏ¼¼¿ä.");
+      alert("ë‚´ìš© ì…ë ¥í•˜ì„¸ìš”.");
       communityModifyForm.content.focus();
       return false;
    } else {
       communityModifyForm.submit();
    }
 }
-
-

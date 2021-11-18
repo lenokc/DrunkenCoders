@@ -1,4 +1,4 @@
-//페이지 로딩시 주소에 맞는 네비 메뉴 활성화
+//front-end dynamic interface js
 $(window).on('load',function(){
 	var path = window.location.href; 
 	var topNav_menu = $('#main-nav li');
@@ -29,16 +29,16 @@ $(function(){
 	var userBtn = $('.bi-person-circle');
 	var navbarBrand =$('#logo');
 	
-	// 상단 userBtn토글시 색 바뀌기
+	// userBtn
 	dropdown.click(function(){
 		userBtn.toggleClass('active');
 	})
 	
-	//nav 햄버거 버튼
+	// navBtn
 	var burgerBtn = $('#toggler');
 	
 	
-	// 상단 로고 클릭시 스크롤 애니메이션 주면서 상단으로 이동주는 코드는 a태그 링크와 충돌이 나서 일단 주석처리
+	// not working so change annotation
 	/*
 	navbarBrand.click(function(){
 		//e.preventDefault();
@@ -77,9 +77,9 @@ $(function(){
 	var c_toggle_btn =$('#c-toggle-btn');
 	var c_toggle_contents =$('#c-toggle-contents');
 
-	//loading시 c_toggle_contents 숨기기
+	//loading占쏙옙 c_toggle_contents 占쏙옙占쏙옙占�
 	c_toggle_contents.hide();
-	//c_toggle_btn 클릭시 loading시 c_toggle_contents 보이기
+	//c_toggle_btn 클占쏙옙占쏙옙 loading占쏙옙 c_toggle_contents 占쏙옙占싱깍옙
 	c_toggle_btn.click(function(){
 		c_toggle_contents.slideToggle();
 	})

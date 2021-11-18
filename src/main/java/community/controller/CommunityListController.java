@@ -19,7 +19,7 @@ public class CommunityListController {
 	
 	@RequestMapping(value = "/community/communityList.do")
 	public String communityList(HttpServletRequest request, HttpServletResponse response) {
-		// 데이터 처리
+		// data processing
 		int pg = 1;
 		if (request.getParameter("pg") != null) {
 			pg = Integer.parseInt(request.getParameter("pg"));
@@ -42,7 +42,7 @@ public class CommunityListController {
 
 		List<CommunityDTO> list = communityService.communityList(startNum, endNum);
 		
-		// 데이터 공유 & 화면 네비게이션
+		// data share & view navigation
 		if (list != null) {
 			request.setAttribute("totalPage", totalPage);
 			request.setAttribute("startPage", startPage);

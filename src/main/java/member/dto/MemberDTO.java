@@ -1,12 +1,12 @@
 package member.dto;
 
 public class MemberDTO {
-	private String name;		//-- 이름 (회원가입용)
-    private String id;    		//-- 아이디, unique, not null, 이메일 형식
-    private String pwd;			//-- 비밀번호
-    private String imgIdx;		//-- 이미지 인덱스 번호
-    private byte[] img;			//-- 이미지
-    private String logtime;     //-- 가입 날짜
+	private String name;		//--name
+    private String id;    		//--id, unique, not null, email format
+    private String pwd;			//-- pwd
+    private String imgIdx;		//-- image index num
+    private byte[] img;			//-- image
+    private String logtime;     //-- registered date
     
     public String getName() {
 		return name;

@@ -1,8 +1,8 @@
 package courses.dto;
 
 public class CoursesDTO {
-    private String curri; // 코스명
-    private String subject; // 제목
+    private String curri; // curriculum name
+    private String subject; // subject name
     
 	public String getCurri() {
 		return curri;

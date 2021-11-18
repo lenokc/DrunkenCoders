@@ -21,17 +21,17 @@ public class MemberLoginController {
 		// DB
 		String name = memberService.login(id, pwd);
 		
-		// 페이지 이동
+		// go to page
 		HttpSession session = request.getSession();
 		
-		if(name != null) {	// 로그인 성공
-			// 공유데이터를 세션에 저장하고 페이지 이동
+		if(name != null) {	// login success
+			// save share data to session and go to page
 			session.setAttribute("memId", id);
 						
-			request.setAttribute("req", "/main/body.jsp");  // 로그인 성공 시 바로 메인 인덱스로 이동.
-		} else {			// 로그인 실패
-			request.setAttribute("req", "/member/memberLogin.jsp");  // 여기 수정 필요.
-			// 페이지 이동하지 않고 해당 페이지에서 로그인 실패가 되게 해야함. ajax 이용 예정.
+			request.setAttribute("req", "/main/body.jsp");  // go to index if user success login
+		} else {			// login fail
+			request.setAttribute("req", "/member/memberLogin.jsp");  // needs modify
+			// needs that user don't go to page and must fail login. needs to use ajax
 		}
 		return "../main/index.jsp";
 	}

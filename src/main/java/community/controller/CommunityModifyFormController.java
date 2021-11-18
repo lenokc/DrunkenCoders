@@ -27,6 +27,6 @@ public class CommunityModifyFormController {
 	   	
 	   	request.setAttribute("req","/community/communityModifyForm.jsp");
 	   	
-	   	return "../main/index.jsp";
+	   	return "/main/index.jsp";
 	}
 }

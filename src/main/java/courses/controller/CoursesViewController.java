@@ -12,13 +12,13 @@ public class CoursesViewController {
 	
 	@RequestMapping(value = "/courseSpecific/kakao.do")
 	public String kakao(HttpServletRequest request, HttpServletResponse response) {
-		// 1. 데이터 처리 : 코스명 매개변수로 요청받기
+		// 1. data processing
 		
-		// 2. 데이터 공유 : 코스명 매개변수 공유
+		// 2. share data
 		
 		request.setAttribute("req","/courseSpecific/kakao.jsp");
 		
-		// 3. view 처리 파일 리턴
+		// 3. view return
 		return "/main/index.jsp";
 	}
 }

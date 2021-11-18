@@ -6,24 +6,24 @@ import community.dto.CommunityDTO;
 
 public interface CommunityService {
 	
-	// 글쓰기
+	//write
 	public int communityWrite(CommunityDTO dto);
 
-	// 10개씩 목록보기
+	// view list per 10ea
 	public List<CommunityDTO> communityList(int startNum, int endNum);
 
-	// 상세보기
+	// view community card details
 	public CommunityDTO communityView(int seq);
 
-	// 조회수 증가하기
+	// increase hit if user click community card
 	public int updateHit(int seq);
 
-	// 총 데이터수 구하기
+	// get sum of community card
 	public int getTotalA();
 
-	// 게시글 삭제하기
+	// delete own community card
 	public int delete(int seq);
 
-	// 글수정
+	// modify own community card
 	public int communityModify(CommunityDTO dto);
 }

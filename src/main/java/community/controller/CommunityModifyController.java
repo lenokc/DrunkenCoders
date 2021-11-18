@@ -42,7 +42,7 @@ public class CommunityModifyController {
 		
 		request.setAttribute("req","/community/communityModify.jsp");
 		
-		return "../main/index.jsp";
+		return "/main/index.jsp";
 		
 	}
 }

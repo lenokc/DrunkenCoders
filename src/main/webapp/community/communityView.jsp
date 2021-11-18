@@ -19,7 +19,7 @@
 <title></title>
 <!-- myStyle -->
 <link rel="stylesheet" href="/drunkenCoders/css/styleSj.css">
-
+<script type="text/javascript" src="/drunkenCoders/script/communityScript.js"> </script>
 </head>
 <body>
 	<div class="container">
@@ -47,7 +47,10 @@
 					<div class="col-2 d-flex align-items-center pl-4">
 						<div class="rounded-lg align-self-center border c-border p-3  text-muted"
 							id="recommendNum">
-							<i class="bi bi-caret-up-fill"></i><br> <span>12</span>
+							<i class="bi bi-caret-up-fill"></i><br>
+							<div class="text-center">
+								<span>${dto.hit}</span>
+							</div>
 						</div>
 					</div>
 
@@ -56,7 +59,7 @@
 						in <span class="bg-secondary text-white px-1 font-weight-bold">
 							<span>${dto.category}</span>
 						</span> &nbsp;by&nbsp;<span class="font-weight-bold">${dto.id}</span>
-						&nbsp;•&nbsp;&nbsp;<span>5 days ago</span>&nbsp;&nbsp;•&nbsp; <i
+						&nbsp;•&nbsp;&nbsp;<span>${dto.logtime}</span>&nbsp;&nbsp;•&nbsp; <i
 							class="bi bi-chat-left-dots"></i>&nbsp;&nbsp;<span>5</span>
 					</div>
 					<div class="col-3 flex-fill">

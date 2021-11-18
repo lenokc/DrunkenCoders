@@ -14,11 +14,11 @@ public class MemberDAO {
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 	
-	// 회원가입
+	// register
 	public int write(MemberDTO dto) {
 		return sqlSession.insert("mybatis.MemberMapper.write", dto);
 	}
-	// 로그인
+	// login
 	public String login(String id, String pwd) {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("id", id);
@@ -26,7 +26,7 @@ public class MemberDAO {
 		return sqlSession.selectOne("mybatis.MemberMapper.login", map);
 	}
 
-	// 아이디 유무 검사
+	// validate id exist
 	public int isExistId(String id) {
 		MemberDTO memberDTO = sqlSession.selectOne("mybatis.MemberMapper.isExistId", id);
 		int exist = 0;

@@ -13,7 +13,7 @@ public class ChallengeViewController {
 		
 		request.setAttribute("req","/challenges/challengeMain.jsp");
 		
-		// 3. view 贸府 颇老 府畔
+		// 3. view page by including
 		return "../main/index.jsp";
 	}
 }

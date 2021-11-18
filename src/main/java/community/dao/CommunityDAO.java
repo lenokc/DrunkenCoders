@@ -16,12 +16,12 @@ public class CommunityDAO {
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 	
-	// 글 작성하기
+	// community write
 	public int communityWrite(CommunityDTO dto) {
 		return sqlSession.insert("mybatis.CommunityMapper.communityWrite", dto);
 	}
 	
-	// 10개씩 목록보기
+	// view list per 10
 	public List<CommunityDTO> communityList(int startNum, int endNum) {
 		Map<String, Object> map = new HashMap<String,Object>();
 		map.put("startNum", startNum);
@@ -29,27 +29,27 @@ public class CommunityDAO {
 		return sqlSession.selectList("mybatis.CommunityMapper.communityList",map);
 	}
 	
-	// 상세보기
+	// community detail view
 	public CommunityDTO communityView(int seq) {
 		return sqlSession.selectOne("mybatis.CommunityMapper.communityView",seq);
 	}
 
-	// 조회수 증가하기
+	// increase hit number if user click a community card list
 	public int updateHit(int seq) {
 		return sqlSession.update("mybatis.CommunityMapper.updateHit",seq);
 	}
 
-	// 총 데이터수 구하기
+	// get Total card num
 	public int getTotalA() {
 		return sqlSession.selectOne("mybatis.CommunityMapper.getTotalA");
 	}
 
-	// 게시글 삭제하기
+	// delete own community card
 	public int delete(int seq) {
 		return sqlSession.delete("mybatis.CommunityMapper.delete",seq);
 	}
 
-	// 글수정
+	// modify own community card
 	public int communityModify(CommunityDTO dto) {
 		return sqlSession.update("mybatis.CommunityMapper.communityModify",dto);
 	}

@@ -23,7 +23,9 @@ drop sequence seq_community;
 
 -- insert data
 insert into community values
-(seq_community.nextval, 'hong', 'ȫ�浿', '������', '������...', 0, sysdate, 'javascript');
+(seq_community.nextval, 'hong@gmail.com', '홍길동', '힘내자', '나는 오늘도 발전한다.', 0, sysdate, 'javascript');
+insert into community values
+(seq_community.nextval, 'fulfeel2@gmail.com', '풀빛', '오늘하루', '즐코딩', 5, sysdate, 'javascript');
 
 -- check all
 select * from community;
@@ -64,6 +66,7 @@ drop table member purge;
 select * from tab;
 -- 1) Data Appending into the Table
 insert into member values('honggildong', 'hong@gmail.com', '1234', EMPTY_BLOB(), sysdate);
+insert into member values('fullbit', 'fulfeel2@gmail.com', '1234', EMPTY_BLOB(), sysdate);
 
 -- 2) Data Searching
 select * from member;

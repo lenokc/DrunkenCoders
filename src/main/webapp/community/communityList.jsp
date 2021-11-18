@@ -29,7 +29,8 @@
 	<!-- myStyle -->
 	<link rel="stylesheet" href="/drunkenCoders/css/styleSj.css">
 
-	<!-- <script type="text/javascript" src="../script/communityScript.js"> </script> -->
+	<!-- myScript -->
+	<script type="text/javascript" src="/drunkenCoders/script/communityScript.js"></script>
 	<script type="text/javascript">
 	function checkCommunityLogin() {
 		var member_id = "<%=(String)session.getAttribute("memId")%>"
@@ -107,7 +108,10 @@
 							<div class="row">
 								<div class="col-2 d-flex align-items-center pl-4">
 									<div class="rounded-lg align-self-center border c-border p-0 px-3  text-muted" id="recommendNum">
-										<i class="bi bi-caret-up-fill"></i><br><span>${dto.hit}</span>
+										<i class="bi bi-caret-up-fill"></i><br>
+										<div class="text-center">
+											<span>${dto.hit}</span>
+										</div>
 									</div>
 								</div>
 	

@@ -20,7 +20,7 @@
 <script src="https://github.com/summernote/summernote/tree/master/lang/summernote-ko-KR.js"></script>
   
 <!-- myScript -->
-<script type="text/javascript" src="/script/communityScript.js"></script>
+<script type="text/javascript" src="/drunkenCoders/script/communityScript.js"></script>
 
 </head>
 <body>
@@ -54,7 +54,7 @@
 					<div class="form-group">		    		
 						<select class="form-select" aria-label="Default select example" style="width:100%" size="1" name="category">
 				  			<option selected>카테고리 고르기</option>
-				  			<option value="#">#all</option>
+				  			<option value="#all">#all</option>
 				  			<option value="#javascript">#javascript</option>
 				  			<option value="#html_css">#html_css</option>
 				  			<option value="#to-do-list">#to-do-list</option>

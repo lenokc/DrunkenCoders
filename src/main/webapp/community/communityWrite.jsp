@@ -5,6 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<!-- myScript -->
+<script type="text/javascript" src="/drunkenCoders/script/communityScript.js"></script>
 <script type="text/javascript">
 	
 	window.onload = function() {

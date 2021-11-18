@@ -1,18 +1,18 @@
 function checkWrite() {
 	if (!writeForm.username.value) {
-		alert("ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		alert("ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		writeForm.username.focus();
 		return false;
 	} else if(!writeForm.userid.value) {
-		alert("¾ÆÀÌµğ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		alert("ì•„ì´ë””ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		writeForm.userid.focus();
 		return false;
 	} else if(!writeForm.pwd.value) {
-		alert("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		alert("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		writeForm.pwd.focus();
 		return false;
 	} else if(writeForm.pwd.value != writeForm.pwd2.value) {
-		alert("ºñ¹Ğ¹øÈ£°¡ ´Ù¸¨´Ï´Ù");
+		alert("ë¹„ë°€ë²ˆí˜¸ê°€ ë‹¤ë¦…ë‹ˆë‹¤");
 		writeForm.pwd2.focus();
 		return false;
 	} else {
@@ -22,10 +22,10 @@ function checkWrite() {
 
 function checkLogin() {
 	if(!loginform.id.value) {
-		alert("¾ÆÀÌµğ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		alert("ì•„ì´ë””ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		loginform.id.focus();
 	} else if(!loginform.pwd.value) {
-		alert("ºñ¹Ğ¹øÈ£¸¦ Æ²·È½À´Ï´Ù");
+		alert("ë¹„ë°€ë²ˆí˜¸ë¥¼ í‹€ë ¸ìŠµë‹ˆë‹¤");
 		loginform.pwd.focus();
 	} else {
 		loginform.submit();

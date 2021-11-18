@@ -21,11 +21,7 @@ public class MemberLogoutController {
 		session.invalidate();
 		ModelAndView modelAndView = new ModelAndView();
 		//modelAndView.setViewName("/member/logout.jsp");
-<<<<<<< HEAD
 		modelAndView.addObject("req", "../member/memberLogout.jsp");	// needs to modify
-=======
-		modelAndView.addObject("req", "../member/memberLogout.jsp");	// 여기 수정 필요
->>>>>>> branch 'feature8-1' of https://github.com/lenokc/DrunkenCoders.git
 		modelAndView.setViewName("/main/index.do");
 		return modelAndView;
 	}

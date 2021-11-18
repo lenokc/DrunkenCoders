@@ -30,7 +30,6 @@ hs_err_pid*
 # End of https://www.toptal.com/developers/gitignore/api/java
 
 # properties
-pom.properties
+*.properties
 MANIFEST.MF
-target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
-target/m2e-wtp/web-resources/META-INF/maven/kr.co/drunkenCoders/pom.properties
+pom.xml

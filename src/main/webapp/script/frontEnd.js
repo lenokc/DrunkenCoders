@@ -1,13 +1,13 @@
 //front-end dynamic interface js
+
 $(window).on('load',function(){
 	var path = window.location.href; 
 	var topNav_menu = $('#main-nav li');
 	
 	if (path.indexOf('courses')	!= -1) {
 	   topNav_menu.eq(1).find('a').addClass('active');
-	}else if (path.indexOf('challenges') != -1) {
+	}else if (path.indexOf('challenge') != -1) {
 	   topNav_menu.eq(2).find('a').addClass('active');
-	   alert('3');
 	}else if (path.indexOf('community')	!= -1) {
 	   topNav_menu.eq(3).find('a').addClass('active');
 	}else if (path.indexOf('faq')!= -1) {

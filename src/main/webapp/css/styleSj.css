@@ -42,6 +42,7 @@ body, html {
 	position: relative;
 	z-index: 99999 !important;
 }
+
 /*kokoatalk customize css*/
 .c-color-yellow{
 	background-color: #FFEF6D !important;
@@ -88,6 +89,18 @@ body, html {
 	left:-22px;
 }
 	
+/* kakaoList customize css */
+.c-my-8{
+	margin-top: 8em;
+	margin-bottom: 8em;
+}
+.c-color-lightgray{
+	color: #B8B8B8;
+}
+.c-color-lightblue{
+	background-color: #E0F1FC;
+}
+	
 /************************
 	 index:navbar css
 ************************/
@@ -111,31 +124,31 @@ nav .bi-bell-fill{
 /************************
   index: card grid style
 *************************/
-#card .card-body{
+.cardList .card-body{
 	width: 90%;
 	position: relative;
 	top: -3.5rem;
 }
-#card a{
+.cardList a{
 	text-decoration: none;
 }
-#card .card{
+.cardList .card{
 	top: 0;
 	transition: top 0.2s;
 }	
-#card .card:hover{
+.cardList .card:hover{
 	top: -0.4rem;
 }
-#card .card .badge-pill{
+.cardList .card .badge-pill{
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-#card .card-img-top .img-fluid{
+.cardList .card-img-top .img-fluid{
 	position: relative;
 	transition: transform 0.2s;
 }
-#card .card:hover .card-img-top .img-fluid{
+.cardList .card:hover .card-img-top .img-fluid{
 	transform: scale(1.1);
 }
 
@@ -264,6 +277,19 @@ nav .bi-bell-fill{
 	color: #16E3E5;
 }
 
+/* 비디오 리스트 비활성화 */
+#curri ul li{
+	cursor: not-allowed;
+}
+#firstCard li:nth-child(1),
+#firstCard li:nth-child(2),
+#firstCard li:nth-child(3),
+#firstCard li:nth-child(4),
+#firstCard li:nth-child(5),
+#lastCard li:last-child{
+	cursor: default;
+}
+
 /*************************
 	 communityList page
 *************************/
@@ -302,6 +328,42 @@ nav .bi-bell-fill{
 }
 .btn btn-primary {
 	justify-content: center;
+}
+
+/*************************
+	 kakaoList page
+*************************/
+
+.cardList .card li a{
+	float: right;
+}
+.cardList .card ul.list-group li:nth-child(odd){
+	background-color:#F7F7F7;
+}
+.cardList ul li{
+	cursor: not-allowed;
+}
+.cardList ul li span.lock{
+	color: lightgray;
+}
+.cardList ul li span.lock::after{
+	content: "\f023";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: lightgray;
+	margin-left: 5px;
+}
+.cardList ul li span.lock+a{
+	color: lightgray;
+	cursor: not-allowed;
+}
+.cardList .card:nth-of-type(1) ul.list-group li:nth-child(1),
+.cardList .card:nth-of-type(1) ul.list-group li:nth-child(2),
+.cardList .card:nth-of-type(1) ul.list-group li:nth-child(3),
+.cardList .card:nth-of-type(1) ul.list-group li:nth-child(4),
+.cardList .card:nth-of-type(1) ul.list-group li:nth-child(5),
+.cardList .card:last-child ul.list-group li:last-child{
+	cursor: default;
 }
 
 /****************************

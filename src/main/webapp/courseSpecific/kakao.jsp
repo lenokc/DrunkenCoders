@@ -387,7 +387,7 @@
 		 	<!-----------------------------------------
 		 				 course curriculum
 		 	------------------------------------------>
-		 	<div class="container c-mb-8" id="curri">
+		 	<div class="container c-mb-8 cardList" id="curri">
 		 		<div class="row">
 		 			<div class="col-12 mt-5">
 		 				<h2 class="text-center font-weight-bold h1">Course Curriculum</h2>
@@ -397,17 +397,16 @@
 		 					<div class="card-header bg-info text-white">
 		 						#1 INTRODUCTION
 		 					</div>
-		 					<ul class="list-group list-group-flush">
-		 						<li class="list-group-item">#1.1 🚨 Read this First 🚨 <a href="#">Free Preview →</a></li>
-		 						<li class="list-group-item">#1.2 Welcome (01:49)<a href="#">Free Preview →</a></li>
-		 						<li class="list-group-item">#1.3 Software Requirements (03:55)<a href="#">Free Preview →</a></li>
-		 						<li class="list-group-item">#1.4 Join the Challenge (02:26)<a href="#">Free Preview →</a></li>
-		 						<li class="list-group-item">#1.5 What Makes a Website? (05:34)<a href="#">Free Preview →</a></li>
+		 					<ul class="list-group list-group-flush" id="firstCard">
+		 						<li class="list-group-item">#1.1 🚨 Read this First 🚨 <a href="../courseList/kakaoList.do">Free Preview →</a></li>
+		 						<li class="list-group-item">#1.2 Welcome (01:49)<a href="../courseList/kakaoList.do">Free Preview →</a></li>
+		 						<li class="list-group-item">#1.3 Software Requirements (03:55)<a href="../courseList/kakaoList.do">Free Preview →</a></li>
+		 						<li class="list-group-item">#1.4 Join the Challenge (02:26)<a href="../courseList/kakaoList.do">Free Preview →</a></li>
+		 						<li class="list-group-item">#1.5 What Makes a Website? (05:34)<a href="../courseList/kakaoList.do">Free Preview →</a></li>
 		 						<li class="list-group-item"><span class="lock">#1.6 What is HTML (07:27)</span><a href="#">Watch now →</a></li>
 		 						<li class="list-group-item"><span class="lock">#1.7 What is CSS (07:57)</span><a href="#">Watch now →</a></li>
 		 						<li class="list-group-item"><span class="lock">#1.8 What is JavaScript (04:15)</span><a href="#">Watch now →</a></li>
 		 						<li class="list-group-item"><span class="lock">#1.9 Recap (01:42)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock"></span><a href="#">Watch now →</a></li>
 		 					</ul>
 		 				</div>
 		 			</div><!-- col-12 col-lg-8 mx-auto -->
@@ -550,7 +549,7 @@
 		 					<div class="card-header bg-info text-white">
 		 						#7 PUBLISHING OUR WEBSITE
 		 					</div>
-		 					<ul class="list-group list-group-flush">
+		 					<ul class="list-group list-group-flush" id="lastCard">
 		 						<li class="list-group-item"><span class="lock">#7.0 Branches on Git (09:22)</span><a href="#">Watch now →</a></li>
 		 						<li class="list-group-item"><span class="lock">#7.1 Publishing on Github Pages (05:24)</span><a href="#">Watch now →</a></li>
 		 						<li class="list-group-item"><span class="lock">#7.2 Updating Github Pages (07:30)</span><a href="#">Watch now →</a></li>

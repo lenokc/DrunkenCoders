@@ -30,7 +30,7 @@ public class MemberLoginController {
 						
 			request.setAttribute("req", "/main/body.jsp");  // go to index if user success login
 		} else {			// login fail
-			request.setAttribute("req", "/member/memberLogin.jsp");  // needs modify
+			request.setAttribute("req", "/member/loginFail.jsp");
 			// needs that user don't go to page and must fail login. needs to use ajax
 		}
 		return "../main/index.jsp";

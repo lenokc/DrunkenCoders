@@ -34,6 +34,8 @@
 <!-- bs glyphicon -->
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+<script type="text/javascript" src="c:url value="../../script/jquery-3.6.0.min.js"/></script>
+
 
 <style>
 body, html {
@@ -316,7 +318,7 @@ nav .bi-bell-fill {
 										type="password" name="pwd" id="pwd" class="form-control">
 								</div>
 								<div class="form-group">
-									<input type="submit" name="submit" class="btn btn-info btn-md"
+									<input type="submit" name="submit" id="submit" class="btn btn-info btn-md"
 										value="Continue">
 								</div>
 							</form>

@@ -18,6 +18,16 @@
 		where rn>=#{startNum} and rn<=#{endNum}
 		]]>
 	</select>
+
+	<select id="communityHitList" parameterType="java.util.Map" resultType="Cdto">
+		<![CDATA[
+		select seq, id, name, subject, content, hit, category,
+		to_char(logtime, 'YYYY.MM.DD') as logtime 
+		from(select rownum rn, tt.* from
+		(select * from community order by hit desc) tt)
+		where rn>=#{startNum} and rn<=#{endNum}
+		]]>
+	</select>	
 	
 	<select id="communityView" parameterType="int" resultType="Cdto">
 		select * from community where seq=#{seq}

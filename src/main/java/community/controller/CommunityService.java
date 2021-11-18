@@ -11,6 +11,9 @@ public interface CommunityService {
 
 	// view list per 10ea
 	public List<CommunityDTO> communityList(int startNum, int endNum);
+	
+	// view list per 10ea
+	public List<CommunityDTO> communityHitList(int startNum, int endNum);	
 
 	// view community card details
 	public CommunityDTO communityView(int seq);

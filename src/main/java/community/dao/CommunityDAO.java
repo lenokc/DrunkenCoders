@@ -29,6 +29,14 @@ public class CommunityDAO {
 		return sqlSession.selectList("mybatis.CommunityMapper.communityList",map);
 	}
 	
+	// view list per 10 by hit(popularity)
+	public List<CommunityDTO> communityHitList(int startNum, int endNum) {
+		Map<String, Object> map = new HashMap<String,Object>();
+		map.put("startNum", startNum);
+		map.put("endNum", endNum);
+		return sqlSession.selectList("mybatis.CommunityMapper.communityHitList",map);
+	}	
+	
 	// community detail view
 	public CommunityDTO communityView(int seq) {
 		return sqlSession.selectOne("mybatis.CommunityMapper.communityView",seq);

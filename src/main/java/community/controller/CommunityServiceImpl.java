@@ -23,6 +23,12 @@ public class CommunityServiceImpl implements CommunityService{
 	public List<CommunityDTO> communityList(int startNum, int endNum) {
 		return communityDAO.communityList(startNum, endNum);
 	}
+	
+	// list by hit
+	@Override
+	public List<CommunityDTO> communityHitList(int startNum, int endNum) {
+		return communityDAO.communityHitList(startNum, endNum);
+	}	
 
 	@Override
 	public CommunityDTO communityView(int seq) {

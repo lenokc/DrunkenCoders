@@ -82,7 +82,7 @@
 				</div>
 				<!-- row end -->
 				<div class="row">
-					<button type="button" class="btn btn-primary btn-lg mx-auto px-5 my-5">Start Coding Now!</button>
+					<a type="button" class="btn btn-primary btn-lg mx-auto px-5 my-5" href="${pageContext.request.contextPath}/courseSpecific/enroll.do">Start Coding Now!</a>
 				</div>
 			</div>
 			<!-- .container #point3 end	 -->

@@ -23,7 +23,7 @@ drop sequence seq_community;
 
 -- insert data
 insert into community values
-(seq_community.nextval, 'hong', 'È«±æµ¿', '³»ÀÏÀº', '¿ôÀ¸¸®...', 0, sysdate, 'javascript');
+(seq_community.nextval, 'hong', 'í™ê¸¸ë™', 'ë‚´ì¼ì€', 'ì›ƒìœ¼ë¦¬...', 0, sysdate, 'javascript');
 
 -- check all
 select * from community;

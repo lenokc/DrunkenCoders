@@ -16,7 +16,7 @@ import community.dto.CommunityDTO;
 public class CommunityModifyController {
 	@Autowired
 	private CommunityService communityService;
-
+	//dasgpokijdgp
 	@RequestMapping(value = "/community/communityModify.do")
 	public String communityModify(HttpServletRequest request, HttpServletResponse response) {
 		try {

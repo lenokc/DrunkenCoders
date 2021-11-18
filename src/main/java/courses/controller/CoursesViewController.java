@@ -18,7 +18,7 @@ public class CoursesViewController {
 		
 		request.setAttribute("req","/courseSpecific/kakao.jsp");
 		
-		// 3. view return..
+		// 3. view return.....
 		return "/main/index.jsp";
 	}
 }

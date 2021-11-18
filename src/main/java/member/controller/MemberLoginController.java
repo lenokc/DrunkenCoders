@@ -27,7 +27,8 @@ public class MemberLoginController {
 		if(name != null) {	// login success
 			// save share data to session and go to page
 			session.setAttribute("memId", id);
-						
+			session.setAttribute("memName", name);
+			
 			request.setAttribute("req", "/main/body.jsp");  // go to index if user success login
 		} else {			// login fail
 			request.setAttribute("req", "/member/loginFail.jsp");

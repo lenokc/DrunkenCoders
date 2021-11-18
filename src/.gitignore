@@ -30,5 +30,6 @@ hs_err_pid*
 # End of https://www.toptal.com/developers/gitignore/api/java
 
 # properties
-pom.properties
+*.properties
 MANIFEST.MF
+pom.xml

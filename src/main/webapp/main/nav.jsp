@@ -113,7 +113,7 @@
 					</a>
 				</c:if>
 				<li class="nav-item">
-					<a class="nav-link" href=#>Courses</a>
+					<a class="nav-link" href="${pageContext.request.contextPath}/courses/course.do">Courses</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="${pageContext.request.contextPath}/challenge/challengeMain.do">Challenges</a>

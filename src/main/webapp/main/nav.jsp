@@ -81,6 +81,7 @@
 					<a type="button" class="btn btn-primary px-0 d-inline-block d-lg-none" href="${pageContext.request.contextPath}/member/memberWriteForm.do">Join</a>
 				</c:if>	
 				<c:if test="${not empty memId}">
+<<<<<<< HEAD
 					<li>
 						<div class="dropdown">
 							<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false" class="bg-danger">
@@ -93,6 +94,18 @@
 								<a class="dropdown-item" href=#>Edit Profile</a>
 								<a class="dropdown-item" href="${pageContext.request.contextPath}/member/memberLogout.do">Sign out</a>
 							</div>
+=======
+					<div class="dropdown">
+						<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false" class="bg-danger">
+							<!-- bs glyphicon icon -->
+							<i class="bi bi-person-circle mr-3 d-block d-lg-none" id="userBtn"></i>
+						</a>
+			
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href=#>Dashboard</a>
+							<a class="dropdown-item" href=#>Edit Profile</a>
+							<a class="dropdown-item" href="${pageContext.request.contextPath}/member/memberLogout.do">Sign out</a>
+>>>>>>> branch 'feature8-1' of https://github.com/lenokc/DrunkenCoders.git
 						</div>
 					</li>	
 					

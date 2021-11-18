@@ -37,6 +37,8 @@
 <script type="text/javascript" src="c:url value="../../script/jquery-3.6.0.min.js"/></script>
 
 
+<script type="text/javascript" src="c:url value="../../script/jquery-3.6.0.min.js"/></script>
+
 <style>
 body, html {
 	font-family: 'Noto Sans KR', sans-serif;

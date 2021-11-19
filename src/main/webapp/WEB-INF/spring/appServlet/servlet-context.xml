@@ -33,6 +33,7 @@
 	<context:component-scan base-package="community"/>
 	<context:component-scan base-package="member"/>
 	<context:component-scan base-package="challenge"/>
+	<context:component-scan base-package="courseList"/>
 	
 	<!-- 회원가입 메일 인증 -->
 	<beans:bean id="mailSender"	class="org.springframework.mail.javamail.JavaMailSenderImpl">

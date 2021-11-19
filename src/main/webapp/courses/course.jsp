@@ -313,17 +313,17 @@ function concatValues( obj ) {
 			<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 			<div class="row">
 				<div class="col-md-6 col-xl-4 rounded-lg">
-					<a href="#">
+					<a href="../courseSpecific/twitter.do">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
-								<img src="/drunkenCoders/img/01_index/thumb_01.jpg" alt="..."
+								<img src="/drunkenCoders/img/01_index/thumb_01_twitter.jpg" alt="..."
 									class="img-fluid rounded-lg"> <span
-									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
+									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급 무료</span>
 							</div>
 							<div
 								class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
-								<h5 class="card-title disabled">[풀스택] 유튜브 클론코딩</h5>
-								<p class="card-text">유튜브 백엔드 + 프런트엔드 + 배포</p>
+								<h5 class="card-title disabled">[풀스택]트위터 클론코딩</h5>
+								<p class="card-text">React Firebase for Beginners</p>
 							</div>
 						</div>
 					</a>
@@ -398,7 +398,7 @@ function concatValues( obj ) {
 							<div class="card-img-top overflow-hidden rounded-lg">
 								<img src="/drunkenCoders/img/01_index/thumb_06.jpg" alt="..."
 									class="img-fluid rounded-lg"> <span
-									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
+									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">중급 무료</span>
 							</div>
 							<div
 								class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">

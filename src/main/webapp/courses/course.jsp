@@ -313,7 +313,7 @@ function concatValues( obj ) {
 			<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 			<div class="row">
 				<div class="col-md-6 col-xl-4 rounded-lg">
-					<a href="../courseSpecific/twitter.do">
+					<a href="../courseList/twitterFree.do">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
 								<img src="/drunkenCoders/img/01_index/thumb_01_twitter.jpg" alt="..."

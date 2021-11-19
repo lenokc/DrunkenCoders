@@ -4,7 +4,7 @@ $(window).on('load',function(){
 	var path = window.location.href; 
 	var topNav_menu = $('#main-nav li');
 	
-	if (path.indexOf('courses')	!= -1) {
+	if (path.indexOf('course')	!= -1) {
 	   topNav_menu.eq(1).find('a').addClass('active');
 	}else if (path.indexOf('challenge') != -1) {
 	   topNav_menu.eq(2).find('a').addClass('active');

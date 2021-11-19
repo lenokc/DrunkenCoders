@@ -9,6 +9,7 @@
 		<typeAlias type="member.dto.MemberDTO" alias="Mdto"/>
 		<typeAlias type="courses.dto.CoursesDTO" alias="Sdto"/>
 		<typeAlias type="challenge.dto.ChallengeDTO" alias="Chdto"/>
+		<typeAlias type="courseList.dto.CourseListDTO" alias="CLdto"/>
 	</typeAliases>
 	
 	<!-- sql mapper 등록 -->
@@ -16,6 +17,7 @@
 		<mapper resource="/mybatis/community-mapping.xml" />
 		<mapper resource="/mybatis/member-mapping.xml" />
 		<mapper resource="/mybatis/courses-mapping.xml" />
-		<mapper resource="/mybatis/challenge-mapping.xml" />		
+		<mapper resource="/mybatis/challenge-mapping.xml" />
+		<mapper resource="/mybatis/courseList-mapping.xml" />				
 	</mappers>
 </configuration>

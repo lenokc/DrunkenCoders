@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class EnrollViewController {
 
 	
-	@RequestMapping(value = "/courseSpecific/enroll.do")
+	@RequestMapping(value = "enrollTwttierFree.do")
 	public String kakao(HttpServletRequest request, HttpServletResponse response) {
 		// 1. data processing
 		
 		// 2. share data
 		
-		request.setAttribute("req","/courseSpecific/enroll.jsp");
+		request.setAttribute("req","/courseList/enrollTwttierFree.jsp");
 		
 		// 3. view return........
 		return "/main/index.jsp";

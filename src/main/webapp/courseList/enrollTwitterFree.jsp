@@ -140,17 +140,29 @@ ul {
 	text-align: center;
 }
 </style>
+<script type="text/javascript">
+function checkFreeLogin() {
+	var member_id = "<%=(String)session.getAttribute("memId")%>"
+	
+	if (member_id == "null") {
+		alert("로그인을 먼저 하셔야 합니다.");  
+		window.location="../member/memberLoginForm.do"; 	
+	} else {	
+	window.location="/drunkenCoders/courseList/twitterList.do";
+	}
+}
+</script>
 </head>
 <body>
 	<!-----------------------------------------
  	네비 제외한 전체 컨텐츠 container-fluid 
  ------------------------------------------>
-	<div class="container-fluid px-0 c-skew-5">
+	<div class="container-fluid px-0 c-skew-5 pt-0">
 		<!-- 상단 문구 main top -->
-		<div class="container c-pt-8">
+		<div class="container py-0">
 			<div class="row">
-				<div class="jumbotron text-center col bg-white">
-					<h1 class="display-5 font-weight-bold">
+				<div class="jumbotron text-center col bg-white py-0">
+					<h1 class="display-5 font-weight-bold py-0">
 						<strong>Confirm Enrollment</strong>
 					</h1>
 				</div>
@@ -163,38 +175,42 @@ ul {
 		<!-----------------------------------------
  			카드디자인 grid : 과정소개
  	------------------------------------------>
-		<div class="container" id="card">
+		<div class="container cardList" id="card">
 			<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 			<div class="row">
 				<div class="col-md-6 col-xl-4 rounded-lg mx-auto">
 					<div class="card border-0">
 						<div class="card-img-top overflow-hidden rounded-lg">
-							<img src="/drunkenCoders/img/01_index/thumb_02.jpg" alt="..."
+							<img src="/drunkenCoders/img/01_index/thumb_01_twitter.jpg" alt="..."
 								class="img-fluid rounded-lg"> <span
-								class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
+								class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급 무료</span>
 						</div>
 						<div
 							class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
-							<h5 class="card-title disabled">코코아톡 클론코딩</h5>
-							<p class="card-text">HTML, CSS, Github</p>
+							<h5 class="card-title disabled">트위터 클론코딩</h5>
+							<p class="card-text">React Firebase for Beginners</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-----------------------------------------
- 			 강의 소개글 
- 	------------------------------------------>
-		<p class="text-center">
-			"이 강의는 무.료. 입니다. 야호!" <br> <br> "드렁큰 코더의 성장을 이끌었던 힘은 무엇보다
-			수강생분들의 추천과 소개였습니다. 감사한 마음에 보답하고 싶어서 이렇게 무료 강의를 제공합니다." <br> <br>
-			"저희가 계속 쭉~ 좋은 강의를 만들 수 있도록 유튜브 채널 구독으로 응원해주세요. 고맙습니다 ;)"
-		</p>
-
-		<div class="row">
-			<a type="button" class="btn btn-primary btn-lg mx-auto px-5 my-5"
-				href="#">Enroll for Free
-			</a>
+			<div class="row">
+				<div class="col-md-6 mx-auto">
+					<!-----------------------------------------
+		 			 				강의 소개글 
+				 	------------------------------------------>
+					<p class="text-center">
+						"이 강의는 무.료. 입니다. 야호!" <br> <br> "드렁큰 코더의 성장을 이끌었던 힘은 무엇보다
+						수강생분들의 추천과 소개였습니다. 감사한 마음에 보답하고 싶어서 이렇게 무료 강의를 제공합니다." <br> <br>
+						"저희가 계속 쭉~ 좋은 강의를 만들 수 있도록 유튜브 채널 구독으로 응원해주세요. 고맙습니다 ;)"
+					</p>
+			
+					<div class="row pb-5">
+						<a type="button" class="btn btn-primary btn-lg mx-auto px-5 my-5"
+							onClick="checkFreeLogin()">Enroll for Free
+						</a>
+					</div>
+				</div>
+			</div>					
 		</div>
 	</div>
 </body>

@@ -4,38 +4,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Required meta tags... -->
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>트위터 클론코딩Free</title>
-<script type="text/javascript" src="../script/memberScript.js?v=1"></script>
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-	integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-	crossorigin="anonymous">
-
-<!-- google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-	rel="stylesheet">
-
-<!-- font awesome cdn -->
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-	integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-	crossorigin="anonymous">
-
-<!-- bs glyphicon -->
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
-
-<!-- myStyle -->
-<link rel="stylesheet" href="/drunkenCoders/css/styleSj.css">
+	<!-- Required meta tags... -->
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>트위터 클론코딩Free</title>
+	<script type="text/javascript" src="../script/memberScript.js?v=1"></script>
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+		crossorigin="anonymous">
+	
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
+	
+	<!-- font awesome cdn -->
+	<link rel="stylesheet"
+		href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+		crossorigin="anonymous">
+	
+	<!-- bs glyphicon -->
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+	
+	<!-- myStyle -->
+	<link rel="stylesheet" href="/drunkenCoders/css/styleSj.css">
+	
+	<!-- frontEdn: my_javascript -->
+	<script src="/drunkenCoders/script/frontEnd.js"></script>
+	
 </head>
 <body>
 	<!-----------------------------------------
@@ -58,8 +62,7 @@
 						<h6 class="font-weight-bold text-black-50">실제 구현되어 있는 서비스를 따라
 							만들면서 코딩을 배우세요.</h6>
 					</div>
-					<a class="btn btn-primary btn-lg p px-5 shadow-sm" href="enrollTwttierFree.do"
-						role="button" id="test">무료 수강하기 <!-- <i class="bi-alarm"></i> -->
+					<a class="btn btn-primary btn-lg p px-5 shadow-sm" role="button" id="test" href="../courseList/enrollTwitterFree.do">무료 수강하기 <!-- <i class="bi-alarm"></i> -->
 						<i class="bi bi-boxes"></i>
 					</a>
 				</div>
@@ -93,7 +96,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 -->
 
-	<!-- frontEdn: my_javascript -->
-	<script src="/drunkenCoders/script/frontEnd.js"></script>
+	
 </body>
 </html>

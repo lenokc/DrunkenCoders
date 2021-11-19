@@ -22,15 +22,5 @@ public class CoursesViewController {
 		return "/main/index.jsp";
 	}
 	
-	@RequestMapping(value = "/courseList/twitterFree.do")
-	public String twitterFree(HttpServletRequest request, HttpServletResponse response) {
-		// 1. data processing
-		
-		// 2. share data
-		
-		request.setAttribute("req","/courseList/twitterFree.jsp");
-		
-		// 3. view return........
-		return "/main/index.jsp";
-	}
+	
 }

@@ -38,8 +38,7 @@ public class CourseListController {
 	
 	@RequestMapping(value = "/courseList/enrollTwitterFree.do")
 	public String twitterEnroll(HttpServletRequest request, HttpServletResponse response) {
-		// 1. data processing		   		
-		HttpSession session = request.getSession();
+		// 1. data processing
 		
 		// 2. share data
 		request.setAttribute("req","/courseList/enrollTwitterFree.jsp");
@@ -72,6 +71,30 @@ public class CourseListController {
 		return "/main/index.jsp";
 	}
 	
+	@RequestMapping(value = "/courseList/kakaoVideoLock.do")
+	public String kakaoVideo(HttpServletRequest request, HttpServletResponse response) {
+		// 1. data processing
+		HttpSession session = request.getSession();
+		try {
+			request.setCharacterEncoding("utf-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		String name = (String)session.getAttribute("memName");
+	    String id = (String)session.getAttribute("memId");
+	    
+	    // DB
+	    CourseListDTO dto = new CourseListDTO();
+	    dto.setName(name);
+	    dto.setId(id);		
+		
+		// 2. share data
+		request.setAttribute("req","/courseList/kakaoVideoLock.jsp");
+		
+		// 3. temp view return before including
+		return "/courseList/kakaoVideoLock.jsp";
+		//return "/courseList/video.jsp";
+	}
 
 }
 

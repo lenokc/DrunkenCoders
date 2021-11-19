@@ -101,6 +101,21 @@ body, html {
 	background-color: #E0F1FC;
 }
 	
+/* fixed navbar customize css */
+.c-mt-5 {
+	margin-top: 5em;
+}
+.c-my-8{
+	margin-top: 8em;
+	margin-bottom: 8em;
+}
+.c-color-lightgray{
+	color: #B8B8B8;
+}
+.c-color-lightblue{
+	background-color: #E0F1FC;
+}
+
 /************************
 	 index:navbar css
 ************************/
@@ -364,6 +379,76 @@ nav .bi-bell-fill{
 .cardList .card:nth-of-type(1) ul.list-group li:nth-child(5),
 .cardList .card:last-child ul.list-group li:last-child{
 	cursor: default;
+}
+
+/************************
+ video : fixed navbar css
+************************/
+#sideList .card li a{
+	float: left;
+	text-decoration: none;
+	color:  black;
+}
+#sideList .card ul.list-group li:nth-child(odd){
+	background-color:#F7F7F7;
+}
+#sideList .card ul li{
+	cursor: not-allowed;
+}
+#sideList .card ul li span.lock{
+	color: lightgray;
+}
+#sideList .card ul li span.lock::after{
+	content: "\f023";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: lightgray;
+	margin-left: 5px;
+}
+#sideList .card ul li span.lock+a{
+	color: lightgray;
+	cursor: not-allowed;
+}
+#sideList .card:nth-of-type(1) ul.list-group li:nth-child(1),
+#sideList .card:nth-of-type(1) ul.list-group li:nth-child(2),
+#sideList .card:nth-of-type(1) ul.list-group li:nth-child(3),
+#sideList .card:nth-of-type(1) ul.list-group li:nth-child(4),
+#sideList .card:nth-of-type(1) ul.list-group li:nth-child(5),
+#sideList .card:last-child ul.list-group li:last-child{
+	cursor: default;
+}
+#video .navbar a{
+	font-size: 0.8em !important;
+}
+#video .navbar a span{
+	position: relative;
+	top: -6px;
+}
+#video .navbar i{
+	font-size: 1.7em;
+}
+#video .navbar i.bi.left{
+	color: #E5E0E0;
+}
+#sideList .bg-warning{
+	background-color: #FCF1C3 !important;
+	color: #FF9B22 !important;
+	font-weight: bold;
+}
+#sideList li{
+	cursor: pointer;
+}
+#sideList li.active{
+	background-color: #F89941 !important;
+	border-bottom: 0;
+	border-top: 0;
+}
+#sideList ul li.active a::after{
+	content: "\f144";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: white;
+	padding-left: 5px;
 }
 
 /****************************

@@ -76,16 +76,16 @@ $(function(){
 	var c_toggle_btn =$('#c-toggle-btn');
 	var c_toggle_contents =$('#c-toggle-contents');
 
-	//loading�� c_toggle_contents �����
+	//hide c_toggle_contents if loading 
 	c_toggle_contents.hide();
-	//c_toggle_btn Ŭ���� loading�� c_toggle_contents ���̱�
+	//hide c_toggle_contents if user click c_toggle_btn or load a page 
 	c_toggle_btn.click(function(){
 		c_toggle_contents.slideToggle();
 	})
 	
 	
 	/***********************************
-				communityList_js
+			communityList_js
 	***********************************/
 	
 	var sideBtn = $("#sideCategory li button");
@@ -94,5 +94,36 @@ $(function(){
 		sideBtn.removeClass('active')
 		$(this).addClass('active');
 	})
+	
+	/***********************************
+			 videoLockPage_js
+	***********************************/
+	
+	//activation menu if user click lecture list in #sideList area
+	var lecBtn = $('#sideList .card:nth-child(1) li.unlocked');
+
+	lecBtn.click(function(){
+		lecBtn.removeClass('active');
+		$(this).toggleClass('active');
+	})
+
+	//recommend apply to lecture if use click a locked list
+	var lockBtn = $('#sideList .card li .lock');
+
+	lockBtn.click(function(){
+		alert('수강 신청하시고 즐거운 코딩 함께해요 :)');
+		preventDefault();
+	})
+	
+	//show and hide sideList if user click to toggle sidebar btn on a top 
+	var sideToggleBtn = $('.sideToggleBtn');
+	var sideList = $('#sideList')
+
+	sideToggleBtn.click(function(){
+		sideToggleBtn.toggleClass('d-none');
+		sideList.fadeToggle();
+	})
+	
+	
 	
 })

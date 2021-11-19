@@ -89,11 +89,17 @@ $(function(){
 	***********************************/
 	
 	var sideBtn = $("#sideCategory li button");
+	var icon = $('.sortBoard .sort a');
 
 	sideBtn.click(function(){
 		sideBtn.removeClass('active')
 		$(this).addClass('active');
 	})
+	/*
+	icon.click(function(){
+		icon.toggleClass('active');
+	})
+	*/
 	
 	/***********************************
 			 videoLockPage_js

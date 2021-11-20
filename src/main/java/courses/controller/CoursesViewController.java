@@ -21,4 +21,6 @@ public class CoursesViewController {
 		// 3. view return........
 		return "/main/index.jsp";
 	}
+	
+	
 }

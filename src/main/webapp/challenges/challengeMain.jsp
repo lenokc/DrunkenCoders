@@ -391,7 +391,7 @@ ul {
 					<div class="card border-0 shadow-lg">
 						<div class="card-body">
 							<h6 class="card-title h4">
-								유튜브 클론 <span class="float-right"> <span
+								트위터 클론코딩 <span class="float-right"> <span
 									class="btn btn-primary btn-sm rounded-pill">6주 완성반</span> <span
 									class="text-danger small"> <small>D-1 시작</small>
 								</span>

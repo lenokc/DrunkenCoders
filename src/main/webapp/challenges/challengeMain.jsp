@@ -201,8 +201,8 @@ ul {
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<img src="../img/challenge/chal01.jpg" alt="chal01" width="1100"
-								height="500"> <a class="chal_img_btn" href="#">바닐라JS
-								챌린지→</a>
+								height="500"> <a class="chal_img_btn" 
+								href="${pageContext.request.contextPath}/challenge/challengeVanilla.do">바닐라JS 챌린지→</a>
 						</div>
 						<div class="carousel-item">
 							<img src="../img/challenge/chal02.jpg" alt="chal02" width="1100"
@@ -223,7 +223,6 @@ ul {
 						<span class="carousel-control-next-icon"></span>
 					</a>
 				</div>
-
 			</div>
 		</div>
 		<!-- row ends-->
@@ -450,7 +449,7 @@ ul {
 								</div>
 							</div>
 
-							<span>신청자 498명</span> <a href="#"
+							<span>신청자 498명</span> <a href="${pageContext.request.contextPath}/challenge/challengeVanilla.do"
 								class="btn btn-primary float-right">자세히 보기 →</a>
 						</div>
 					</div>

@@ -104,15 +104,15 @@
 	<!-----------------------------------------
 			 		타이틀 : 바닐라 JS
 	------------------------------------------>
-	<div class="container-fluid px-0 c-skew-5 bg-light mt-5">
+	<div class="container-fluid px-0 bg-light mt-5">
 		<div class=" c-color-yellow pt-5 mb-5 c-size-5">
 			<div class="container">
 				<h2 class="text-center font-weight-bold h1 mb-5">바닐라JS 챌린지</h2>
-				<h5 class="text-center pt-2"><span class="badge badge-pill badge-primary text-white">2주완성반</span></h4>	
+				<h5 class="text-center pt-2"><span class="badge badge-pill badge-primary text-white">2주완성반</span></h5>	
 			</div>
 		</div>
 	</div>
-			<!-- c-skew-minus-5 c-color-yellow pt-5 end -->
+	
 
 	<!-----------------------------------------
 			 		인포1 : 그리드 모음
@@ -163,7 +163,8 @@
 					</div>
 				</div>
 				<div class="row">
-					<a type="button" class="btn btn-primary btn-md mx-auto px-5 my-3" href="#">19기 등록하기</a>
+					<a type="button" class="btn btn-primary btn-md mx-auto px-5 my-3" 
+					href="${pageContext.request.contextPath}/challenge/challengeApply.do?ref=vanilla">19기 등록하기</a>
 				</div>
 				<p class="font-weight-light">마감 : 12월 12(일) 자정까지</p>
 			</div>
@@ -332,7 +333,8 @@
 					</div>
 					<div class="col-md-1 col-lg-2 col-xl-4"></div>
 					<div class="col-md-4 col-lg-3 col-xl-3">
-						<a type="button" class="btn btn-primary btn-md mx-auto px-5 my-3" href="#">19기 등록하기</a>
+						<a type="button" class="btn btn-primary btn-md mx-auto px-5 my-3" 
+						href="${pageContext.request.contextPath}/challenge/challengeApply.do?ref=vanilla">19기 등록하기</a>
 					</div>
 				</div>
 			</div>

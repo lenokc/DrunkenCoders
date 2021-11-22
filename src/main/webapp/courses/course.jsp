@@ -9,7 +9,8 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Courses</title>
-
+<script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/js/isotope.min.js">
+</script>
 <!-- favicon -->
 <link rel="shortcut icon" type="image/x-icon" href="img/m.png" />
 <!-- Bootstrap CSS -->
@@ -214,36 +215,37 @@ nav .bi-bell-fill {
 	-webkit-transform: translate(0px, 0px);
 	transform: translate(0px, 0px);
 }
-/****************************
-			스크립트 플러그인
-			*****************************/
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+/* clear fix */
+.level-Price:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
 /****************************
 			스크립트 플러그인
 			*****************************/
 <script>			
-$('.grid').isotope({
-  // options
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
+var $grid = $('#card').isotope({
+  itemSelector: '.level-Price'
 });
 
+/*** 
+	store filter for each group
+							****/
 var filters = {};
 
-$demo.on( 'click', '.button', function() {
-  var $this = $(this);
-  // get group key
-  var $buttonGroup = $this.parents('.button-group');
+$('#Filter').on( 'click', '#btn', function( event ) {
+  var $button = $( event.currentTarget );
+  var $buttonGroup = $button.parents('.btn-group');
   var filterGroup = $buttonGroup.attr('data-filter-group');
-  // set filter for group
-  filters[ filterGroup ] = $this.attr('data-filter');
-  // combine filters
+  filters[ filterGroup ] = $button.attr('data-filter');
   var filterValue = concatValues( filters );
-  $grid.isotope({ filter: filterValue });
+  $site-board.isotope({ filter: filterValue });
 });
-
-// flatten object by concatting values
+/***  
+	flatten object by concatting values
+										***/
 function concatValues( obj ) {
   var value = '';
   for ( var prop in obj ) {
@@ -253,8 +255,6 @@ function concatValues( obj ) {
 }
 </script>
 /****************************
-
-
 			디바이스가 바뀌면 변하는 스타일
 			*****************************/
 @media ( max-width : 575.98px) {
@@ -308,27 +308,84 @@ function concatValues( obj ) {
 		</div>
 		<!-- container end -->
 		<!-- 최상단 All Courses 로고 끝-->
+		
+		<!-- 필터  -->
+		<div class="row mb-20" id="Filter">
+			<div class="container mb-20">
+				<!-- Level , price 필터 -->
+				<div>
+					<div class="d-flex flex-row justify-content-around">
+						<!-- Level -->
+						<div class="d-flex flex-column align-items-center">
+							<span
+								class="h-5 cursor-pointer mb-5 text-center font-weight-bolder">Filter
+								by Level</span>
+							<div class="row">
+								<div class="btn-group btn-group-toggle" data-toggle="buttons"
+									data-filter-group="level">
+									<label class="btn btn-secondary btn-sm" id="btn" data-filter=".Beginner">
+										<input type="radio" name="options">초급
+									</label> 
+									<label class="btn btn-secondary btn-sm" id="btn" data-filter=".intermediate"> 
+										<input type="radio" name="options">중급
+									</label> <label class="btn btn-secondary btn-sm" id="btn" data-filter=".advanced"> 
+										<input type="radio" name="options">고급
+									</label>
+								</div>
+							</div>
+						</div>
+						<!-- Level 끝-->
+
+						<!-- Price -->
+						<div class="d-flex flex-column align-items-center">
+							<span
+								class="h-5 cursor-pointer mb-5 text-center font-weight-bolder">Filter
+								by Price</span>
+								
+							<div class="row">
+								<div class="button-group btn-group btn-group-toggle"  data-filter-group="Price">
+									<div class="col">
+										<button type="button" id="btn" class="button btn-secondary btn-sm"
+											data-toggle="button" aria-pressed="false"
+											data-filter=".free">Free</button>
+									</div>
+
+									<div class="col">
+										<button type="button" id="btn" class="button btn-secondary btn-sm"
+											data-toggle="button" aria-pressed="false"
+											data-filter=".paid">Paid</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Price 끝 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Level , price 필터끝 -->
+		
 		<!-- 카드 게시판  -->
 		<div class="container" id="card">
 			<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 			<div class="row">
-				<div class="col-md-6 col-xl-4 rounded-lg">
-					<a href="#">
+				<div class="col-md-6 col-xl-4 rounded-lg level-Price Beginner free">
+					<a href="../courseList/twitterFree.do">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
-								<img src="/drunkenCoders/img/01_index/thumb_01.jpg" alt="..."
+								<img src="/drunkenCoders/img/01_index/thumb_01_twitter.jpg" alt="..."
 									class="img-fluid rounded-lg"> <span
-									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
+									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급 무료</span>
 							</div>
 							<div
 								class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
-								<h5 class="card-title disabled">[풀스택] 유튜브 클론코딩</h5>
-								<p class="card-text">유튜브 백엔드 + 프런트엔드 + 배포</p>
+								<h5 class="card-title disabled">[풀스택]트위터 클론코딩</h5>
+								<p class="card-text">React Firebase for Beginners</p>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg">
+				<div class="col-md-6 col-xl-4 rounded-lg level-Price Beginner paid">
 					<a href="${pageContext.request.contextPath}/courseSpecific/kakao.do">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
@@ -344,7 +401,7 @@ function concatValues( obj ) {
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg">
+				<div class="col-md-6 col-xl-4 rounded-lg level-Price advanced Paid">
 					<a href="#">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
@@ -360,7 +417,7 @@ function concatValues( obj ) {
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg">
+				<div class="col-md-6 col-xl-4 rounded-lg level-Price intermediate Paid">
 					<a href="#">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
@@ -376,7 +433,7 @@ function concatValues( obj ) {
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg">
+				<div class="col-md-6 col-xl-4 rounded-lg level-Price intermediate Paid">
 					<a href="#">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
@@ -392,13 +449,13 @@ function concatValues( obj ) {
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg">
+				<div class="col-md-6 col-xl-4 rounded-lg level-Price intermediate Free">
 					<a href="#">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
 								<img src="/drunkenCoders/img/01_index/thumb_06.jpg" alt="..."
 									class="img-fluid rounded-lg"> <span
-									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
+									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">중급 무료</span>
 							</div>
 							<div
 								class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">

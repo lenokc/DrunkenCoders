@@ -62,7 +62,7 @@
 						<h6 class="font-weight-bold text-black-50">실제 구현되어 있는 서비스를 따라
 							만들면서 코딩을 배우세요.</h6>
 					</div>
-					<a class="btn btn-primary btn-lg p px-5 shadow-sm" role="button" id="test" href="../courseList/enrollTwitterFree.do">무료 수강하기 <!-- <i class="bi-alarm"></i> -->
+					<a class="btn btn-primary btn-lg p px-5 shadow-sm" role="button" id="test" href="${pageContext.request.contextPath}/courseList/enrollTwitterFree.do">무료 수강하기 <!-- <i class="bi-alarm"></i> -->
 						<i class="bi bi-boxes"></i>
 					</a>
 				</div>

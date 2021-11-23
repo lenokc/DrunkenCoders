@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.VideoMapper">
+
+	<select id="kakaoVideoView" parameterType="int" resultType="KAdto">
+		select * from kakaoVideo where knum=${knum}
+	</select>
+	
+	<select id="vanillaVideoView" parameterType="int" resultType="VAdto">
+		select * from vanillaVideo where vnum=${vnum}
+	</select>
+	
+	<select id="twitterVideoView" parameterType="int" resultType="TWdto">
+		select * from twitterVideo where tnum=${tnum}
+	</select>		
+	
+</mapper>

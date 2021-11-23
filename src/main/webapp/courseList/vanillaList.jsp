@@ -58,11 +58,11 @@
 	 								#1 INTRODUCTION
 	 							</div>
 	 							<ul class="list-group list-group-flush">
-	 								<li class="list-group-item">#1.1 🚨 Read this First 🚨 <a href="">Free Preview →</a></li>
-	 								<li class="list-group-item">#1.2 Welcome (01:49)<a href="#">Free Preview →</a></li>
-	 								<li class="list-group-item">#1.3 Software Requirements (03:55)<a href="#">Free Preview →</a></li>
-	 								<li class="list-group-item">#1.4 Join the Challenge (02:26)<a href="#">Free Preview →</a></li>
-	 								<li class="list-group-item">#1.5 What Makes a Website? (05:34)<a href="#">Free Preview →</a></li>
+	 								<li class="list-group-item">#1.1 🚨 Read this First 🚨 <a href="../courseList/vanillaVideoView.do?vnum=1">Free Preview →</a></li>
+	 								<li class="list-group-item">#1.2 Welcome (01:49)<a href="../courseList/vanillaVideoView.do">Free Preview →</a></li>
+	 								<li class="list-group-item">#1.3 Software Requirements (03:55)<a href="../courseList/vanillaVideoView.do?vnum=2">Free Preview →</a></li>
+	 								<li class="list-group-item">#1.4 Join the Challenge (02:26)<a href="../courseList/vanillaVideoView.do?vnum=3">Free Preview →</a></li>
+	 								<li class="list-group-item">#1.5 What Makes a Website? (05:34)<a href="../courseList/vanillaVideoView.do?vnum=4">Free Preview →</a></li>
 	 								<li class="list-group-item"><span class="lock">#1.6 What is HTML (07:27)</span><a href="#">Watch now →</a></li>
 	 								<li class="list-group-item"><span class="lock">#1.7 What is CSS (07:57)</span><a href="#">Watch now →</a></li>
 	 								<li class="list-group-item"><span class="lock">#1.8 What is JavaScript (04:15)</span><a href="#">Watch now →</a></li>

@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class CoursesViewController {
-
-	
 	@RequestMapping(value = "/courseSpecific/kakao.do")
 	public String kakao(HttpServletRequest request, HttpServletResponse response) {
 		// 1. data processing
@@ -17,6 +15,18 @@ public class CoursesViewController {
 		// 2. share data
 		
 		request.setAttribute("req","/courseSpecific/kakao.jsp");
+		
+		// 3. view return........
+		return "/main/index.jsp";
+	}
+	
+	@RequestMapping(value = "/courseSpecific/vanilla.do")
+	public String vanilla(HttpServletRequest request, HttpServletResponse response) {
+		// 1. data processing
+		
+		// 2. share data
+		
+		request.setAttribute("req","/courseSpecific/vanilla.jsp");
 		
 		// 3. view return........
 		return "/main/index.jsp";

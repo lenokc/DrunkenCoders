@@ -43,10 +43,16 @@ body, html {
 	z-index: 99999 !important;
 }
 
+/* vanilla js customize css */
+.c-color-orange {
+	background-color: #FFB829 !important;
+}
+
 /*kokoatalk customize css*/
 .c-color-yellow{
 	background-color: #FFEF6D !important;
 }
+
 .c-skew-translate{
 	transform: skewY(5deg) translateY(50px);
 }

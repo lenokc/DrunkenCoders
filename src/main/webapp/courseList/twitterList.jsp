@@ -59,6 +59,7 @@
 	 								#1 INTRODUCTION
 	 							</div>
 	 							<ul class="list-group list-group-flush">
+
 	 								<li class="list-group-item">#1.1 🚨 Read this First 🚨 <a href="../courseList/twitterVideoView.do?tnum=1">Free Preview →</a></li>
 	 								<li class="list-group-item">#1.2 Welcome! (03:22)<a href="../courseList/twitterVideoView.do?tnum=2">Free Preview →</a></li>
 	 								<li class="list-group-item">#1.3 Requirements (01:11)<a href="../courseList/twitterVideoView.do?tnum=3">Free Preview →</a></li>

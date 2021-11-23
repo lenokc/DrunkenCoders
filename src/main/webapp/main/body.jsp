@@ -97,7 +97,7 @@
 							<div class="card-img-top overflow-hidden rounded-lg">
 								<img src="/drunkenCoders/img/01_index/thumb_02.jpg" alt="..."
 									class="img-fluid rounded-lg"> <span
-									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
+									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급 무료</span>
 							</div>
 							<div
 								class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
@@ -108,17 +108,17 @@
 					</a>
 				</div>
 				<div class="col-md-6 col-xl-4 rounded-lg">
-					<a href="#">
+					<a href="${pageContext.request.contextPath}/courseSpecific/vanilla.do">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
-								<img src="/drunkenCoders/img/01_index/thumb_03.jpg" alt="..."
+								<img src="/drunkenCoders/img/01_index/jsThumb.jpg" alt="..."
 									class="img-fluid rounded-lg"> <span
-									class="badge badge-pill badge-danger text-white align-top my-2 mx-2">고급</span>
+									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급 무료</span>
 							</div>
 							<div
 								class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
-								<h5 class="card-title disabled">[풀스택] 우버 이츠 클론코딩</h5>
-								<p class="card-text">우버이츠 백엔드 + 프런트엔드 + 결제</p>
+								<h5 class="card-title disabled">바닐라 JS로 크롬 웹 만들기</h5>
+								<p class="card-text">Javascript For Beginners</p>
 							</div>
 						</div>
 					</a>

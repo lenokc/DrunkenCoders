@@ -115,6 +115,7 @@ public class CourseListController {
 		request.setAttribute("req","/courseList/kakaoVideoLock.jsp");
 		
 		// 3. temp view return before including
+
 		// return "/courseList/kakaoVideoLock.jsp"; 
 		return "/courseList/video.jsp";
 	}

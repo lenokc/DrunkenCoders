@@ -71,6 +71,7 @@ public class CourseListController {
 		return "/main/index.jsp";
 	}
 	
+/*
 	@RequestMapping(value = "/courseList/kakaoVideoLock.do")
 	public String kakaoVideo(HttpServletRequest request, HttpServletResponse response) {
 		// 1. data processing
@@ -92,9 +93,10 @@ public class CourseListController {
 		request.setAttribute("req","/courseList/kakaoVideoLock.jsp");
 		
 		// 3. temp view return before including
-		/* return "/courseList/kakaoVideoLock.jsp"; */
+		// return "/courseList/kakaoVideoLock.jsp";
 		return "/courseList/video.jsp";
 	}
-
+*/
+	
 }
 

@@ -62,7 +62,11 @@
 	 								<li class="list-group-item">#1.2 Welcome (01:49)<a href="../courseList/kakaoVideoView.do?knum=2">Free Preview →</a></li>
 	 								<li class="list-group-item">#1.3 Software Requirements (03:55)<a href="../courseList/kakaoVideoView.do?knum=3">Free Preview →</a></li>
 	 								<li class="list-group-item">#1.4 Join the Challenge (02:26)<a href="../courseList/kakaoVideoView.do?knum=4">Free Preview →</a></li>
+<<<<<<< HEAD
 	 								<li class="list-group-item">#1.5 What Makes a Website? (05:34)<a href="kakaoVideoView.do">Free Preview →</a></li>
+=======
+	 								<li class="list-group-item">#1.5 What Makes a Website? (05:34)<a href="../courseList/kakaoVideoView.do?knum=5">Free Preview →</a></li>
+>>>>>>> refs/remotes/origin/seonghyun
 	 								<li class="list-group-item"><span class="lock">#1.6 What is HTML (07:27)</span><a href="#">Watch now →</a></li>
 	 								<li class="list-group-item"><span class="lock">#1.7 What is CSS (07:57)</span><a href="#">Watch now →</a></li>
 	 								<li class="list-group-item"><span class="lock">#1.8 What is JavaScript (04:15)</span><a href="#">Watch now →</a></li>

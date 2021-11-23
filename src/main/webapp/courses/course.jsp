@@ -145,6 +145,18 @@ nav .bi-bell-fill {
 .cursor-pointer {
 	cursor: pointer;
 }
+.filter_btns label.c-blue.active, .filter_btns button.btn-secondary.c-blue.active{
+	background-color: #23BBEE !important;
+}
+.filter_btns label.c-yellow.active, .filter_btns button.btn-secondary.c-yellow.active{
+	background-color: #FAD211 !important;
+}
+.filter_btns label.c-green.active, .filter_btns button.btn-secondary.c-green.active{
+	background-color: #53E290 !important;
+}
+.filter_btns label.c-purple.active, .filter_btns button.btn-secondary.c-purple.active{
+	background-color: #CB58F2 !important;
+}
 /*card grid style*/
 #card .card-body {
 	width: 90%;
@@ -214,47 +226,13 @@ nav .bi-bell-fill {
 	-webkit-transform: translate(0px, 0px);
 	transform: translate(0px, 0px);
 }
-/****************************
-			스크립트 플러그인
-			*****************************/
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-
-/****************************
-			스크립트 플러그인
-			*****************************/
-<script>			
-$('.grid').isotope({
-  // options
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
-});
-
-var filters = {};
-
-$demo.on( 'click', '.button', function() {
-  var $this = $(this);
-  // get group key
-  var $buttonGroup = $this.parents('.button-group');
-  var filterGroup = $buttonGroup.attr('data-filter-group');
-  // set filter for group
-  filters[ filterGroup ] = $this.attr('data-filter');
-  // combine filters
-  var filterValue = concatValues( filters );
-  $grid.isotope({ filter: filterValue });
-});
-
-// flatten object by concatting values
-function concatValues( obj ) {
-  var value = '';
-  for ( var prop in obj ) {
-    value += obj[ prop ];
-  }
-  return value;
+/* clear fix */
+.level-Price:after {
+  content: '';
+  display: block;
+  clear: both;
 }
-</script>
 /****************************
-
-
 			디바이스가 바뀌면 변하는 스타일
 			*****************************/
 @media ( max-width : 575.98px) {
@@ -308,11 +286,73 @@ function concatValues( obj ) {
 		</div>
 		<!-- container end -->
 		<!-- 최상단 All Courses 로고 끝-->
+		<!-- 필터  -->
+		<div class="row mb-20" id="Filter">
+			<div class="container mb-20">
+				<!-- Level , price 필터 -->
+				<div>
+					<div class="d-flex flex-row justify-content-around filter_btns">
+						<!-- Level -->
+						<div class="d-flex flex-column align-items-center">
+							<span
+								class="h-5 cursor-pointer mb-5 text-center font-weight-bolder">Filter
+								by Level</span>
+							<div class="row">
+								<div class="btn-group btn-group-toggle" data-toggle="buttons"
+									data-filter-group="level">
+									<label class="btn btn-secondary c-blue btn-sm fBtn" id="btn"
+										data-filter=""> <input type="radio" name="options">모든
+										레벨
+									</label> <label class="btn btn-secondary c-yellow btn-sm fBtn" id="btn"
+										data-filter=".beginner"> <input type="radio"
+										name="options">초급
+									</label> <label class="btn btn-secondary c-green btn-sm fBtn" id="btn"
+										data-filter=".intermediate"> <input type="radio"
+										name="options">중급
+									</label> <label class="btn btn-secondary c-purple btn-sm fBtn" id="btn"
+										data-filter=".advanced"> <input type="radio"
+										name="options">고급
+									</label>
+								</div>
+							</div>
+						</div>
+						<!-- Level 끝-->
+
+						<!-- Price -->
+						<div class="d-flex flex-column align-items-center">
+							<span
+								class="h-5 cursor-pointer mb-5 text-center font-weight-bolder">Filter
+								by Price</span>
+							<div class="row">
+								<div class="button-group btn-group btn-group-toggle"
+									data-filter-group="price">
+									<div class="btn-group btn-group-toggle" data-toggle="buttons"
+										data-filter-group="level">
+										<label class="btn btn-secondary c-blue btn-sm fBtn" id="btn"
+											data-filter=""> <input type="radio" name="options">all
+										</label> <label class="btn btn-secondary c-yellow btn-sm fBtn"
+											id="btn" data-filter=".free"> <input type="radio"
+											name="options">Free
+										</label> <label class="btn btn-secondary c-purple btn-sm fBtn"
+											id="btn" data-filter=".paid"> <input type="radio"
+											name="options">Paid
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Price 끝 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Level , price 필터끝 -->
+
 		<!-- 카드 게시판  -->
 		<div class="container" id="card">
 			<!-- Stack the columns on mobile by making one full-width and the other half-width -->
-			<div class="row">
-				<div class="col-md-6 col-xl-4 rounded-lg">
+			<div class="row filter_group">
+				<div class="col-md-6 col-xl-4 rounded-lg level-Price beginner free">
 					<a href="../courseList/twitterFree.do">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
@@ -328,7 +368,7 @@ function concatValues( obj ) {
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg">
+				<div class="col-md-6 col-xl-4 rounded-lg level-Price beginner paid">
 					<a href="${pageContext.request.contextPath}/courseSpecific/kakao.do">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
@@ -344,7 +384,7 @@ function concatValues( obj ) {
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg">
+				<div class="col-md-6 col-xl-4 rounded-lg level-Price advanced paid">
 					<a href="#">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
@@ -360,7 +400,7 @@ function concatValues( obj ) {
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg">
+				<div class="col-md-6 col-xl-4 rounded-lg level-Price intermediate paid">
 					<a href="#">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
@@ -376,7 +416,7 @@ function concatValues( obj ) {
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg">
+				<div class="col-md-6 col-xl-4 rounded-lg level-Price intermediate paid">
 					<a href="#">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
@@ -392,13 +432,13 @@ function concatValues( obj ) {
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg">
+				<div class="col-md-6 col-xl-4 rounded-lg level-Price intermediate free">
 					<a href="#">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
 								<img src="/drunkenCoders/img/01_index/thumb_06.jpg" alt="..."
 									class="img-fluid rounded-lg"> <span
-									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">중급 무료</span>
+									class="badge badge-pill badge-success text-white align-top my-2 mx-2">중급 무료</span>
 							</div>
 							<div
 								class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
@@ -421,6 +461,9 @@ function concatValues( obj ) {
 <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/js/isotope.min.js"> -->
+<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+</script>
 
 <!-- Option 2: Separate Popper and Bootstrap JS -->
    <!--
@@ -431,5 +474,35 @@ function concatValues( obj ) {
 
 <!-- frontEdn: my_javascript -->
 <script src="/drunkenCoders/script/frontEnd.js"></script>
+
+<script>	
+/*filter plug-in*/		
+var $grid = $('.filter_group').isotope({
+  itemSelector: '.level-Price'
+});
+
+/*** 
+	store filter for each group
+							****/
+var filters = {};
+
+$('.filter_btns').on( 'click', '.fBtn', function( event ) {
+  var $button = $( event.currentTarget );
+  var $buttonGroup = $button.parents('.btn-group');
+  var filterGroup = $buttonGroup.attr('data-filter-group');
+  filters[ filterGroup ] = $button.attr('data-filter');
+  var filterValue = concatValues( filters );
+  $grid.isotope({ filter: filterValue });
+});
+
+
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
+}
+</script>
 </body>
 </html>

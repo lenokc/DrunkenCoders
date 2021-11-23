@@ -1,3 +1,140 @@
+----- Course Video DB ---------
+-------------------------------------------------------------------
+
+--- 1. Create Table
+create table twitterVideo (
+    tnum number not null,           -- video seq
+    tsub varchar2(255) not null,    -- video subject
+    turl varchar2(500) not null,    -- video youtube url
+    primary key(tnum)
+);
+
+-- check the table structure
+desc twitterVideo; 
+-- delete the table
+drop table twitterVideo purge;
+-- list of table
+select * from tab;
+
+-- insert
+insert into twitterVideo values
+(1, '#1.1 Read this First', 'https://www.youtube.com/embed/DQ2AU6ELd4U');
+insert into twitterVideo values
+(2, '#1.2 Welcome!', 'https://www.youtube.com/embed/DQ2AU6ELd4U');
+insert into twitterVideo values
+(3, '#1.3 Requirements', 'https://www.youtube.com/embed/-3x-bxOK93w');
+insert into twitterVideo values
+(4, '#1.4 What is Firebase', 'https://www.youtube.com/embed/o4zO7T3VjV0');
+insert into twitterVideo values
+(5, '#1.5 When To Use Firebase', 'https://www.youtube.com/embed/dVz3OVMRQaY');
+insert into twitterVideo values
+(6, '#1.6 Pricing in Firebase', 'https://www.youtube.com/embed/saNerws8q2k');
+
+
+-- select
+select * from twitterVideo;
+
+--select by seq
+select * from twitterVideo where tnum=1;
+
+-- delete data
+delete twitterVideo where tnum=4;
+delete twitterVideo;
+
+-- commit
+commit;
+
+-------------------------------------------------------------------
+--- 1. Create Table
+create table vanillaVideo (
+    vnum number not null,           -- video seq
+    vsub varchar2(255) not null,    -- video subject
+    vurl varchar2(500) not null,    -- video youtube url
+    primary key(vnum)
+);
+
+-- check the table structure
+desc vanillaVideo; 
+-- delete the table
+drop table vanillaVideo purge;
+-- list of table
+select * from tab;
+
+-- insert
+insert into vanillaVideo values
+(1, '#1.1 2021 Update Anouncements', 'https://www.youtube.com/embed/rfICvBrPjV8');
+insert into vanillaVideo values
+(2, '#1.2 Welcome', 'https://www.youtube.com/embed/rfICvBrPjV8');
+insert into vanillaVideo values
+(3, '#1.3 What are we building', 'https://www.youtube.com/embed/a_jXokoY0q8');
+insert into vanillaVideo values
+(4, '#1.4 Requirements', 'https://www.youtube.com/embed/x152ocXmgT4');
+insert into vanillaVideo values
+(5, '#1.5 Software Requirements', 'https://www.youtube.com/embed/D818Qsq0KjQ');
+insert into vanillaVideo values
+(6, '#1.6 Why JS', 'https://www.youtube.com/embed/7GQcA9spIQs');
+insert into vanillaVideo values
+(7, '#1.7 Why JS 2', 'https://www.youtube.com/embed/x2oiZkzL0Cs');
+insert into vanillaVideo values
+(8, '#1.8 Online IDE', 'https://www.youtube.com/embed/GJ1dExBd-7U');
+
+-- select
+select * from vanillaVideo;
+
+--select by seq
+select * from vanillaVideo where vnum=1;
+
+-- delete data
+delete vanillaVideoo where vnum=1;
+delete vanillaVideo;
+
+-- commit
+commit;
+
+-------------------------------------------------------------------
+
+--- 1. Create Table
+create table kakaoVideo (
+    knum number not null,           -- video seq
+    ksub varchar2(255) not null,    -- video subject
+    kurl varchar2(500) not null,    -- video youtube url
+    primary key(knum)
+);
+
+-- check the table structure
+desc kakaoVideo; 
+-- delete the table
+drop table kakaoVideo purge;
+-- list of table
+select * from tab;
+
+-- insert
+insert into kakaoVideo values
+(1, '#1.1 Read This First', 'https://www.youtube.com/embed/T0l6C6f6bEw');
+insert into kakaoVideo values
+(2, '#1.2 Welcome', 'https://www.youtube.com/embed/T0l6C6f6bEw');
+insert into kakaoVideo values
+(3, '#1.3 Software Requirements', 'https://www.youtube.com/embed/NFETSCJON2M');
+insert into kakaoVideo values
+(4, '#1.4 Join the Challenge', 'https://www.youtube.com/embed/BEVnxbxBqi8');
+insert into kakaoVideo values
+(5, '#1.5 What Makes a Website?', 'https://www.youtube.com/embed/Bor_CRWEIXo');
+-- select
+select * from kakaoVideo;
+
+--select by seq
+select * from kakaoVideo where knum=1;
+
+-- delete data
+delete kakaoVideo where knum=1;
+delete kakaoVideo;
+
+-- commit
+commit;
+
+
+
+
 -- community management table--------------------------------
 create table community (
     seq number not null,                -- sequence

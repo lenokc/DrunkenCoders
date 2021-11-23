@@ -7,13 +7,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class ChallengeViewController {
-	@RequestMapping(value = "/challenge/challengeMain.do")
-	public String challenge(HttpServletRequest request, HttpServletResponse response) {
+public class ChallengeVanillaController {
+	@RequestMapping(value = "/challenge/challengeVanilla.do")
+	public String chalVanilla(HttpServletRequest request, HttpServletResponse response) {
 		
-		request.setAttribute("req","/challenges/challengeMain.jsp");
+		request.setAttribute("req", "/challenges/chalVanilla.jsp");
 		
-		// 3. view page by including
 		return "/main/index.jsp";
 	}
 }

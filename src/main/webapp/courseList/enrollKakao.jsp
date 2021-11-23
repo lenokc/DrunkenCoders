@@ -148,7 +148,7 @@ function checkFreeLogin() {
 		alert("로그인을 먼저 하셔야 합니다.");  
 		window.location="../member/memberLoginForm.do"; 	
 	} else {	
-	window.location="#"; // 여기에 카카오 리스트 넣어야 함.
+	window.location="/drunkenCoders/courseList/kakaoList.do"; // 여기에 카카오 리스트 넣어야 함.
 	}
 }
 </script>

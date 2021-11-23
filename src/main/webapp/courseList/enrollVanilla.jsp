@@ -148,7 +148,7 @@ function checkFreeLogin() {
 		alert("로그인을 먼저 하셔야 합니다.");  
 		window.location="../member/memberLoginForm.do"; 	
 	} else {	
-	window.location="/drunkenCoders/courseList/twitterList.do";
+	window.location="/drunkenCoders/courseList/vanillaList.do";
 	}
 }
 </script>

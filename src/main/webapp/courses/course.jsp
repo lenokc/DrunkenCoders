@@ -286,7 +286,6 @@ nav .bi-bell-fill {
 		</div>
 		<!-- container end -->
 		<!-- 최상단 All Courses 로고 끝-->
-		
 		<!-- 필터  -->
 		<div class="row mb-20" id="Filter">
 			<div class="container mb-20">
@@ -301,17 +300,18 @@ nav .bi-bell-fill {
 							<div class="row">
 								<div class="btn-group btn-group-toggle" data-toggle="buttons"
 									data-filter-group="level">
-									<label class="btn btn-secondary c-blue btn-sm fBtn" id="btn" data-filter="">
-										<input type="radio" name="options">모든 레벨
-									</label> 
-									<label class="btn btn-secondary c-yellow btn-sm fBtn" id="btn" data-filter=".beginner">
-										<input type="radio" name="options">초급
-									</label> 
-									<label class="btn btn-secondary c-green btn-sm fBtn" id="btn" data-filter=".intermediate">
-										<input type="radio" name="options">중급
-									</label>
-									<label class="btn btn-secondary c-purple btn-sm fBtn" id="btn" data-filter=".advanced"> 
-										<input type="radio" name="options">고급
+									<label class="btn btn-secondary c-blue btn-sm fBtn" id="btn"
+										data-filter=""> <input type="radio" name="options">모든
+										레벨
+									</label> <label class="btn btn-secondary c-yellow btn-sm fBtn" id="btn"
+										data-filter=".beginner"> <input type="radio"
+										name="options">초급
+									</label> <label class="btn btn-secondary c-green btn-sm fBtn" id="btn"
+										data-filter=".intermediate"> <input type="radio"
+										name="options">중급
+									</label> <label class="btn btn-secondary c-purple btn-sm fBtn" id="btn"
+										data-filter=".advanced"> <input type="radio"
+										name="options">고급
 									</label>
 								</div>
 							</div>
@@ -347,7 +347,7 @@ nav .bi-bell-fill {
 			</div>
 		</div>
 		<!-- Level , price 필터끝 -->
-		
+
 		<!-- 카드 게시판  -->
 		<div class="container" id="card">
 			<!-- Stack the columns on mobile by making one full-width and the other half-width -->

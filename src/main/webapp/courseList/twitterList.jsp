@@ -59,12 +59,13 @@
 	 								#1 INTRODUCTION
 	 							</div>
 	 							<ul class="list-group list-group-flush">
-	 								<li class="list-group-item">#1.1 🚨 Read this First 🚨 <a href="../courseList/twitterVideoView.do?tnum=1">Free Preview →</a></li>
-	 								<li class="list-group-item">#1.2 Welcome! (03:22)<a href="../courseList/twitterVideoView.do?tnum=2">Free Preview →</a></li>
-	 								<li class="list-group-item">#1.3 Requirements (01:11)<a href="../courseList/twitterVideoView.do?tnum=3">Free Preview →</a></li>
-	 								<li class="list-group-item">#1.4 What is Firebase (06:27)<a href="../courseList/twitterVideoView.do?tnum=4">Free Preview →</a></li>
-	 								<li class="list-group-item">#1.5 When to use Firebase (04:15)<a href="../courseList/twitterVideoView.do?tnum=5">Free Preview →</a></li>
-	 								<li class="list-group-item">#1.6 Pricing in Firebase (04:12)<a href="../courseList/twitterVideoView.do?tnum=6">Free Preview →</a></li>
+
+	 								<li class="list-group-item">#1.1 🚨 Read this First 🚨 <a href="../courseList/twitterVideoView.do?tnum=1"> &nbsp; Watch now →</a></li>
+	 								<li class="list-group-item">#1.2 Welcome! (03:22)<a href="../courseList/twitterVideoView.do?tnum=2"> &nbsp; Watch now →</a></li>
+	 								<li class="list-group-item">#1.3 Requirements (01:11)<a href="../courseList/twitterVideoView.do?tnum=3"> &nbsp; Watch now →</a></li>
+	 								<li class="list-group-item">#1.4 What is Firebase (06:27)<a href="../courseList/twitterVideoView.do?tnum=4"> &nbsp; Watch now →</a></li>
+	 								<li class="list-group-item">#1.5 When to use Firebase (04:15)<a href="../courseList/twitterVideoView.do?tnum=5"> &nbsp; Watch now →</a></li>
+	 								<li class="list-group-item">#1.6 Pricing in Firebase (04:12)<a href="../courseList/twitterVideoView.do?tnum=6"> &nbsp; Watch now →</a></li>
 	 							</ul>
 	 						</div>
 
@@ -73,15 +74,15 @@
 	 								#2 LEARNING HTML
 	 							</div>
 	 							<ul class="list-group list-group-flush">
-	 								<li class="list-group-item"><span class="lock">#2.4 Tag Attributes (10:16)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#2.5 More Tags and Head (08:12)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#2.6 Its All About the Head (10:55)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#2.7 More Tags (12:10)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#2.8 Form Tags (12:04)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#2.9 More Tags and IDs (09:34)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#2.10 Semantic HTML (11:01)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#2.11 Recap (09:10)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#1.9 Recap (01:42)</span><a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#2.4 Tag Attributes (10:16) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#2.5 More Tags and Head (08:12) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#2.6 Its All About the Head (10:55) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#2.7 More Tags (12:10) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#2.8 Form Tags (12:04) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#2.9 More Tags and IDs (09:34) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#2.10 Semantic HTML (11:01) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#2.11 Recap (09:10) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#1.9 Recap (01:42) &nbsp;<a href="#">Watch now →</a></li>
 	 							</ul>
 	 						</div><!-- card end -->
 	 						<div class="card shadow-sm mb-5">
@@ -89,26 +90,26 @@
 	 								#3 LEARNING CSS
 	 							</div>
 	 							<ul class="list-group list-group-flush">
-	 								<li class="list-group-item"><span class="lock">#3.0 How to Add CSS to HTML (05:19)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.1 Writing Our First CSS Lines (09:42)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.2 What Does Cascading Mean (05:31)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.3 Blocks and Inlines (09:28)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.4 Margin Part One (12:18)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.5 Margin Part Two (06:20)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.6 Paddings and IDs (10:39)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.7 Border (05:49)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.8 Classes (11:27)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.9 Inline Block (07:37)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.10 Flexbox Part One (12:08)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.11 Flexbox Part Two (09:02)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.12 Fixed (08:19)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.13 Relative Absolute (07:45)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.14 Pseudo Selectors part One (08:57)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.15 Combinators (08:46)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.16 Pseudo Selectors part Two (08:08)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.17 States (10:15)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.18 Recap (05:41)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#3.19 Colors and Variables (07:16)</span><a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.0 How to Add CSS to HTML (05:19) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.1 Writing Our First CSS Lines (09:42) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.2 What Does Cascading Mean (05:31) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.3 Blocks and Inlines (09:28) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.4 Margin Part One (12:18) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.5 Margin Part Two (06:20) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.6 Paddings and IDs (10:39) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.7 Border (05:49) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.8 Classes (11:27) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.9 Inline Block (07:37) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.10 Flexbox Part One (12:08) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.11 Flexbox Part Two (09:02) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.12 Fixed (08:19) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.13 Relative Absolute (07:45) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.14 Pseudo Selectors part One (08:57) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.15 Combinators (08:46) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.16 Pseudo Selectors part Two (08:08) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.17 States (10:15) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.18 Recap (05:41) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#3.19 Colors and Variables (07:16) &nbsp;<a href="#">Watch now →</a></li>
 	 							</ul>
 	 						</div><!-- card end -->
 	 						<div class="card shadow-sm mb-5">
@@ -116,13 +117,13 @@
 	 								#4 ADVANCED CSS
 	 							</div>
 	 							<ul class="list-group list-group-flush">
-	 								<li class="list-group-item"><span class="lock">#4.0 Transitions (09:40)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#4.1 Transitions part Two (07:45)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#4.2 Transformations (12:33)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#4.3 Animations part One (04:52)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#4.4 Animations part Two (07:27)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#4.5 Media Queries (11:21)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#4.6 Media Queries Recap (05:31)</span><a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#4.0 Transitions (09:40) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#4.1 Transitions part Two (07:45) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#4.2 Transformations (12:33) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#4.3 Animations part One (04:52) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#4.4 Animations part Two (07:27) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#4.5 Media Queries (11:21) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#4.6 Media Queries Recap (05:31) &nbsp;<a href="#">Watch now →</a></li>
 	 							</ul>
 	 						</div><!-- card end -->
 	 						<div class="card shadow-sm mb-5">
@@ -130,10 +131,10 @@
 	 								#5 GIT AND GITHUB
 	 							</div>
 	 							<ul class="list-group list-group-flush">
-	 								<li class="list-group-item"><span class="lock">#5.0 What is Git (04:06)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#5.1 What is Github (07:40)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#5.2 Creating a Github Repository (07:10)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#5.3 Making Our First Commits (09:10)</span><a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#5.0 What is Git (04:06) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#5.1 What is Github (07:40) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#5.2 Creating a Github Repository (07:10) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#5.3 Making Our First Commits (09:10) &nbsp;<a href="#">Watch now →</a></li>
 	 							</ul>
 	 						</div><!-- card end -->
 	 						<div class="card shadow-sm mb-5">
@@ -141,46 +142,46 @@
 	 								#6 CLONING TIME
 	 							</div>
 	 							<ul class="list-group list-group-flush">
-	 								<li class="list-group-item"><span class="lock">#6.0 Introduction (06:15)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.1 Sign Up Screen part One (09:44)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.2 BEM (06:39)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.3 Font Awesome (07:59)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.4 Sign Up Screen part Two (05:53)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.5 Status Bar CSS (13:34)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.6 Sign Up Screen part Three (11:16)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.7 Log In Form part One (10:11)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.8 Log In Form part Two (07:54)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.9 Recap and Forms (10:22)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.10 Navigation Bar part One (12:32)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.11 Navigation Bar part Two (06:34)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.12 Border Box (05:46)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.13 Navigation Bar part Three (07:04)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.14 Screen Header (07:41)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.15 Friends Screen part One (07:40)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.17 User Component part Two (07:45)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.18 Finishing Friends Screen (06:51)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.19 Chats Screen part One (07:49)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.20 Chats Screen part Two (08:52)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.21 Find Screen Part One (10:38)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.22 Find Screen Part Two (06:52)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.23 Find Screen Part Three (13:10)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.24 Find Screen Part Four (07:47)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.25 More Screen part One (14:22)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.26 More Screen part Two (06:28)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.27 Settings Screen part One (12:55)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.28 Settings and Chat Screen part One (07:01)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.29 Chat Screen part Two (10:03)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.30 Chat Screen part Three (08:39)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.31 Chat Screen part Four (07:41)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.32 Chat Screen part Five (07:36)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.33 Write Message Input (11:54)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.34 Splash Screen part One (06:41)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.35 Splash Screen part Two (06:22)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.36 Navigation Animation (10:46)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.37 More Animations (08:57)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.38 Animating Chats Screen (12:44)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.39 Recap (04:43)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#6.40 No Mobile Media Query (07:06)</span><a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.0 Introduction (06:15) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.1 Sign Up Screen part One (09:44) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.2 BEM (06:39) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.3 Font Awesome (07:59) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.4 Sign Up Screen part Two (05:53) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.5 Status Bar CSS (13:34) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.6 Sign Up Screen part Three (11:16) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.7 Log In Form part One (10:11) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.8 Log In Form part Two (07:54) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.9 Recap and Forms (10:22) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.10 Navigation Bar part One (12:32) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.11 Navigation Bar part Two (06:34) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.12 Border Box (05:46) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.13 Navigation Bar part Three (07:04) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.14 Screen Header (07:41) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.15 Friends Screen part One (07:40) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.17 User Component part Two (07:45) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.18 Finishing Friends Screen (06:51) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.19 Chats Screen part One (07:49) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.20 Chats Screen part Two (08:52) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.21 Find Screen Part One (10:38) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.22 Find Screen Part Two (06:52) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.23 Find Screen Part Three (13:10) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.24 Find Screen Part Four (07:47) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.25 More Screen part One (14:22) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.26 More Screen part Two (06:28) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.27 Settings Screen part One (12:55) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.28 Settings and Chat Screen part One (07:01) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.29 Chat Screen part Two (10:03) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.30 Chat Screen part Three (08:39) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.31 Chat Screen part Four (07:41) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.32 Chat Screen part Five (07:36) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.33 Write Message Input (11:54) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.34 Splash Screen part One (06:41) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.35 Splash Screen part Two (06:22) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.36 Navigation Animation (10:46) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.37 More Animations (08:57) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.38 Animating Chats Screen (12:44) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.39 Recap (04:43) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#6.40 No Mobile Media Query (07:06) &nbsp;<a href="#">Watch now →</a></li>
 	 							</ul>
 	 						</div><!-- card end -->
 	 						<div class="card shadow-sm mb-5">
@@ -188,9 +189,9 @@
 	 								#7 PUBLISHING OUR WEBSITE
 	 							</div>
 	 							<ul class="list-group list-group-flush">
-	 								<li class="list-group-item"><span class="lock">#7.0 Branches on Git (09:22)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#7.1 Publishing on Github Pages (05:24)</span><a href="#">Watch now →</a></li>
-	 								<li class="list-group-item"><span class="lock">#7.2 Updating Github Pages (07:30)</span><a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#7.0 Branches on Git (09:22) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#7.1 Publishing on Github Pages (05:24) &nbsp;<a href="#">Watch now →</a></li>
+	 								<li class="list-group-item">#7.2 Updating Github Pages (07:30) &nbsp;<a href="#">Watch now →</a></li>
 	 								<li class="list-group-item">#7.3 Conclusions (01:44)<a href="#">Free Preview →</a></li>
 	 							</ul>
 	 						</div>

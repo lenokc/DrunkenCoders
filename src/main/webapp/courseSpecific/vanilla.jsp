@@ -1,65 +1,56 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
-<!doctype html>
-	<html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>코코아톡 클론 코딩</title>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>바닐라 JS 클론 코딩</title>
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-		<!-- google fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-		<!-- font awesome cdn -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<!-- font awesome cdn -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-		<!-- bs glyphicon -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+<!-- bs glyphicon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
-		<!-- myStyle -->
-		<link rel="stylesheet" href="/drunkenCoders/css/styleSj.css">
-	</head>
-	<body>
+<!-- myStyle -->
+<link rel="stylesheet" href="/drunkenCoders/css/styleSj.css?v=1">
+
+</head>
+<body>
 		<!-- nav include -->
 		
 		<!-----------------------------------------
 		 	네비 제외한 전체 컨텐츠 container-fluid sj
 		 ------------------------------------------>
 		<div class="container-fluid px-0 c-skew-5 bg-light">
-			<div class="c-skew-minus-5 c-color-yellow pt-5 mb-5">
+			<div class="c-skew-minus-5 c-color-orange pt-5 mb-5">
 				<div class="container">
 					<div class="row">
-						<div class="jumbotron text-center col c-color-yellow pb-0">
+						<div class="jumbotron text-center col c-color-orange pb-0">
 							<div class="c-skew-plus-5">
-								<div class="row pt-5 pb-3">
-									<div class="col-8 col-md-4 mx-auto">
-										<img src="/drunkenCoders/img/kokoa/kokoaClone.svg" alt="" class="img-fluid">
-									</div>
-								</div>
-								<h1 class="display-4 font-weight-bold">코코아톡 클론 코딩</h1>
-								<h4 class="display-5">HTML, CSS, Github</h4>
-								<h4 class=" pt-2"><span class="badge badge-pill badge-warning text-white">초급</span></h4>
+								<h1 class="display-4 font-weight-bold">바닐라 JS로 크롬 앱 만들기</h1>
+								<h4 class="display-5 mb-5">Javascript for Beginners</h4>
+								<h4 class=" pt-2">
+									<span class="badge badge-pill badge-warning text-white">초급</span>
+									<span class="badge badge-pill badge-primary text-white">무료</span>
+								</h4>
 							</div>
-						</div>
-					</div>
-					<div class="row c-skew-plus-5 c-skew-translate">
-						<div class="col-3 col-md-2 offset-3 offset-md-4">
-							<img src="/drunkenCoders/img/kokoa/html5_logo.png" alt="" class="img-fluid rounded-circle shadow-sm">
-						</div>
-						<div class="col-3 col-md-2 ">
-							<img src="/drunkenCoders/img/kokoa/css3_logo.png" alt="" class="img-fluid rounded-circle shadow-sm">
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- c-skew-minus-5 c-color-yellow pt-5 end -->
+			<!-- c-skew-minus-5 c-color-orange pt-5 end -->
 
 			<!-----------------------------------------
 		 				 	  point3
@@ -68,11 +59,11 @@
 				<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 				<div class="row c-rounded-xl shadow-lg c-mt-8 bg-white">
 					<div class="col-md-4 border-right border-bottom p-3">
-						<h1 class="text-primary display-4 font-weight-bold">95개</h1>
+						<h1 class="text-primary display-4 font-weight-bold">60개</h1>
 						<h5 class="text-muted">동영상</h4>
 					</div>
 					<div class="col-md-4 border-right border-bottom p-3">
-						<h1 class="text-primary display-4 font-weight-bold">795분</h1>
+						<h1 class="text-primary display-4 font-weight-bold">8시간</h1>
 						<h5 class="text-muted">강의 분량</h4>
 					</div>
 					<div class="col-md-4 border-bottom p-3">
@@ -82,7 +73,7 @@
 				</div>
 				<!-- row end -->
 				<div class="row">
-					<a type="button" class="btn btn-primary btn-lg mx-auto px-5 my-5" href="${pageContext.request.contextPath}/courseList/enrollKakao.do">Start Coding Now!</a>
+					<a type="button" class="btn btn-primary btn-lg mx-auto px-5 my-5" href="${pageContext.request.contextPath}/courseList/enrollVanilla.do">Start Coding Now!</a>
 				</div>
 			</div>
 			<!-- .container #point3 end	 -->
@@ -92,37 +83,33 @@
 		 				course explain card
 		 	------------------------------------------>
 		 	<div class="container" id="courseExplain">
+		 		<h3>실전형 코딩을 시작하세요</h3>
+				<p class="font-weight-bold">왜 직접 만들면서 배워야.<span class="text-primary"> 진짜 지식이 될까요?</span></p>
 				<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 				<div class="row align-items-center my-5">
 					<div class="col-lg-3 col-md-4 col-6 mx-auto my-4">
-						<img src="/drunkenCoders/img/kokoa/codeCloning.svg" alt="" class="img-fluid">
+						<img src="/drunkenCoders/img/vanilla/freeCourse01.svg" alt="" class="img-fluid">
 					</div>
 					<div class="col-lg-9 c-rounded-xl shadow-lg bg-white p-5">
-						<h3 class="text-black">클론코딩 이란</h3>
-						<h5 class="text-muted">실용성 100% 교육 방식 <br>	
-						클론코딩은 인스타그램, 카카오톡, 유튜브 등등 실제 서비스를 따라 만들면서 배우는 공부 방식입니다. 실제 구현되어있는 서비스를 직접 내 손으로 한땀 한땀 따라 만들면서 배우는 것만큼 빠르고 효과적인 공부 방법은 없습니다.</h5>
+						<h5 class="text-muted">우리는 그동안<br>딱딱한 이론과 문법 중심의<br>한국식 코딩을 배워왔어요.</h5>
 					</div>
 				</div>
 				<!-- row end -->
 				<div class="row align-items-center my-5">
 					<div class="order-lg-2 col-lg-4 col-md-5 col-7 mx-auto my-4">
-						<img src="/drunkenCoders/img/kokoa/kokoaClone.png" alt="" class="img-fluid">
+						<img src="/drunkenCoders/img/vanilla/freeCourse02.svg" alt="" class="img-fluid">
 					</div>
 					<div class="order-lg-1 col-lg-8 c-rounded-xl shadow-lg bg-white p-5">
-						<h3 class="text-black">무엇을 클론코딩 하나요?</h3>
-						<h5 class="text-muted">코코아톡 프론트엔드<br>	
-						코코아톡의 외부 모습을 따라 만들어봅니다. 기본적인 HTML, CSS를 활용하여 이쁘장한 프로필, 채팅창을 만들어봅니다"</h5>
+						<h5 class="text-muted">이렇게 배운 지식은<br>현업에서 바로 활용하기 어려워요.</h5>
 					</div>
 				</div>
 				<!-- row end -->
 				<div class="row align-items-center my-5">
 					<div class="col-lg-3 col-md-4 col-6 mx-auto my-4">
-						<img src="/drunkenCoders/img/kokoa/nico.jfif" alt="" class="img-fluid c-rounded-xl">
+						<img src="/drunkenCoders/img/vanilla/freeCourse03.svg" alt="" class="img-fluid c-rounded-xl">
 					</div>
 					<div class="col-lg-9 c-rounded-xl shadow-lg bg-white p-5">
-						<h3 class="text-black">누가 가르쳐요?</h3>
-						<h5 class="text-muted">풀스택 100% 커버하는 니꼬 선생님<br>	
-						딱 1명의 스타강사가 처음부터 끝까지! 왕초보 (코코아클론)부터 고급 (우버 클론)까지 밀착 커버해서 설명해줍니다. 찰떡같이 재밌게 설명 너무 잘해준다고 이미 10만 명 넘는 구독자들이 검증했습니다!</h5>
+						<h5 class="text-muted">하지만 존재하는 서비스와 기능을<br>따라 만들면서 배우면,<br>온전히 나의 기술로 습득할 수 있어요.</h5>
 					</div>
 				</div>
 				<!-- row end -->
@@ -131,9 +118,9 @@
 			<!-----------------------------------------
 		 				 provide 컨텐츠
 		 	------------------------------------------>
-			<div class="container-fluid pt-2 c-skew-minus-5 c-color-yellow p-0 c-mt-8" id="provide">
+			<div class="container-fluid pt-2 c-skew-minus-5 c-color-orange p-0 c-mt-8" id="provide">
 				<!--  provide contents 시작문구 -->
-				<div class="container-fluid c-skew-plus-5 c-color-yellow pb-1">
+				<div class="container-fluid c-skew-plus-5 c-color-orange pb-1">
 					<div class="container">
 						<div class="row my-5">
 							<div class="col mt-5">
@@ -148,8 +135,8 @@
 							<div class="col mb-4">
 								<div class="card mb-1 bg-white shadow-lg c-rounded-xl text-center p-4">
 									<h1 class="mb-4"><i class="bi bi-clock"></i></h1>
-									<h6>총 95개의 동영상 강의</h6>
-									<h6>총 795분 강의 분량을 제공합니다.</h6>
+									<h6>총 60개의 동영상 강의</h6>
+									<h6>총 8시간 강의 분량을 제공합니다.</h6>
 								</div><!-- col-md-6 col-xl-3 mb-5 -->
 							</div>	
 							<div class="col mb-4">
@@ -180,7 +167,7 @@
 				<!-- container end -->
 			</div>
 			<!-- .container#provide -->
-			<div class="container-fluid c-color-yellow p-5"></div>
+			<div class="container-fluid c-color-orange p-5"></div>
 
 
 			<!-----------------------------------------
@@ -195,47 +182,39 @@
 		 		<!-- row end -->
 
 		 		<div class="row mx-0">
-		 			<div class="col-6 col-lg-3 mb-4">
+		 			<div class="col-6 col-lg-6 mb-4">
 		 				<div class="card shadow-lg">
 		 					<div class="card-header bg-white text-center font-weight-bold h5">Theory</div>
 		 					<div class="card-body bg-light h6  mb-0">
 		 						<ul class="list-unstyled">
-		 							<li>&nbsp; IDs & Classes</li>
-		 							<li>&nbsp; HTML Tags</li>
-		 							<li>&nbsp; Semantic & non-semantic tags</li>
-		 							<li>&nbsp; Box Model</li>
-		 							<li>&nbsp; Inline, Block, inline-block</li>
-		 							<li>&nbsp; CSS Position</li>
-		 							<li>&nbsp; Flexbox</li>
-		 							<li>&nbsp; Selectors</li>
-		 							<li>&nbsp; Pseudo Selectors</li>
-		 							<li>&nbsp; Transitions</li>
-		 							<li>&nbsp; Animations</li>
-		 							<li>&nbsp; Media Queries</li>
+		 							<li>&nbsp; Variables</li>
+		 							<li>&nbsp; Functions</li>
+		 							<li>&nbsp; Data Types</li>
+		 							<li>&nbsp; Arrays, Objects</li>
+		 							<li>&nbsp; DOM Functions</li>
+		 							<li>&nbsp; Events</li>
+		 							<li>&nbsp; if / else / for</li>
 		 						</ul>
 		 					</div>
 		 				</div>
 		 				<!-- card -->
 		 			</div>
-		 			<div class="col-6 col-lg-3 mb-4 d-flex">
+		 			<div class="col-6 col-lg-6 mb-4 d-flex">
 		 				<div class="card shadow-lg">
 		 					<div class="card-header bg-white text-center font-weight-bold h5">Practice</div>
 		 					<div class="card-body bg-light h6 align-self-stretch mb-0 c-w-100 c-pr-7 d-flex">
 		 						<ul class="list-unstyled">
-		 							<li class="">&nbsp; Status Bar</li>
-		 							<li class="">&nbsp; Chat</li>
-		 							<li class="">&nbsp; Friends</li>
-		 							<li class="">&nbsp; Find</li>
-		 							<li class="">&nbsp; Settings</li>
-		 							<li class="">&nbsp; Message Animations</li>
-		 							<li class="">&nbsp; Chats</li>
-		 							<li class="">&nbsp; More</li>
+		 							<li class="">&nbsp; JS Clock</li>
+		 							<li class="">&nbsp; JS To Do List</li>
+		 							<li class="">&nbsp; Get Geolocation</li>
+		 							<li class="">&nbsp; Get Weather Information</li>
+		 							<li class="">&nbsp; Deploy to Github Pages</li>
 		 						</ul>
 		 					</div>
 		 				</div>
 		 				<!-- card -->
 		 			</div>
-		 			<div class="col col-lg-6 mb-4 d-flex">
+		 			<div class="col mb-4 d-flex">
 		 				<div class="card">
 		 					<div class="card-header bg-black text-center font-weight-bold h5 bg-secondary c-w-100">
 		 						<i class="bi bi-circle-fill text-danger float-left mr-1 "></i>
@@ -245,14 +224,16 @@
 		 					<div class="card-body bg-light h6 mb-0 bg-dark align-self-stretch  c-pr-7">
 		 						<pre class="text-white text-left h6 overflow-hidden">
 {
-  "<span class="text-warning">name</span>":"<span class="c-text-mint">Kokoa Clone</span>",
-  "<span class="text-warning">section</span>":"<span class="c-text-mint">What are we using</span>?",
-  "<span class="text-warning">packages</span>": [
-  "<span class="c-text-mint">HTML5</span>"
-  "<span class="c-text-mint">CSS3</span>"
-  "<span class="c-text-mint">VSCode</span>"
-  "<span class="c-text-mint">Github Desktop</span>"
-  "<span class="c-text-mint">Font Awesome</span>"
+  "<span class="text-warning">이름</span>":"<span class="c-text-mint">바닐라 JS로 크롬 앱 만들기</span>",
+  "<span class="text-warning">섹션</span>":"<span class="c-text-mint">무엇을 사용하나요??</span>?",
+  "<span class="text-warning">패키지</span>": [
+  "<span class="c-text-mint">Javascript</span>"
+  "<span class="c-text-mint">localStorage</span>"
+  "<span class="c-text-mint">AJAX</span>"
+  "<span class="c-text-mint">JSON</span>"
+  "<span class="c-text-mint">DOM</span>"
+  "<span class="c-text-mint">fetch</span>"
+  "<span class="c-text-mint">OpenWeather API</span>"
   ]
 }
 		 						</pre>
@@ -313,7 +294,7 @@
 		 				 	after course
 		 	------------------------------------------>
 		 	<div class="container-fluid px-0 c-skew-5 bg-light" id="after">
-		 		<div class="c-skew-minus-5 c-color-yellow mb-5 pt-1 pb-5">
+		 		<div class="c-skew-minus-5 c-color-orange mb-5 pt-1 pb-5">
 		 			<div class="container c-mt-8 c-skew-plus-5">
 		 				<div class="row">
 		 					<div class="col-12 mt-5">
@@ -325,9 +306,9 @@
 		 					<div class="col-12 col-sm-6 d-flex align-items-center mb-3">
 		 						<div class="row">
 		 							<ul class="list-unstyled h5 col-12">
-		 								<li>&nbsp; 기초적인 수준이지만 웹, 프로그래밍, HTML, CSS 에 대하여 이해할 수 있게된다.</li><br>
-		 								<li>&nbsp; 현재 가장 핫한 서비스인 카카오톡을 직접 처음부터 끝까지 (채팅창 프런트엔드) 만들어보는 경험을 하게된다.</li><br>
-		 								<li>&nbsp; 퀴즈, 숙제, 스터디자료를 통해 강의 후에도 혼자서 학습하고 코딩하는 방법을 알게된다.</li>
+		 								<li>&nbsp; 기초적인 수준이지만 자바스크립트 기본기에 대하여 이해하게된다.</li><br>
+		 								<li>&nbsp; 자바스크립트로 시계. 할일목록. 날씨등 기본 기능을 구현할 수 있게된다.</li><br>
+		 								<li>&nbsp; 바닐라 자바스크립트를 활용해서 간단한 웹 서비스를 만들수 있다.</li>
 		 							</ul>
 		 							<br>
 		 							<div class="text-center col-12">
@@ -337,7 +318,7 @@
 		 					</div><!--col-12 col-sm-6 d-flex align-items-center end -->
 		 					<div class="col-12 col-sm-6 d-flex align-items-center">
 		 						<div class="embed-responsive embed-responsive-16by9">
-		 							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T0l6C6f6bEw" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		 							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yLNuqWCUA8A" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		 						</div>
 		 					</div><!-- col-12 col-sm-6 d-flex align-items-center end -->
 		 				</div>
@@ -356,23 +337,25 @@
 		 			<div class="container c-mt-8 c-skew-plus-5">
 		 				<div class="row pb-5">
 		 					<div class="col-8 mx-auto">
-		 						<h2 class="font-weight-bold h4">코코아 클론코딩 SUMMARY</h2>
+		 						<h2 class="font-weight-bold h4">2021 UPDATED SUMMARY</h2>
 		 						<hr>
 		 						<ul class="h6">
-		 							<li class="">&nbsp; 총 강의수: 95개 (13시간 15분)</li>
-		 							<li class="">&nbsp; 프론트엔드: HTML5, CSS3</li>
-		 							<li class="">&nbsp; HTML. CSS를 활용한 왕 기초적인 프론트엔드 빌드 배우고 + 결과물 까지!</li>
-		 							<li class="">&nbsp; 완료된 코코아톡 ⭐️ <a href="#">최종 데모</a> ⭐️ 를 살펴보세요.</li>
+		 							<li class="">&nbsp; 총 강의수: 60개 (8시간!!!)</li>
+		 							<li class="">&nbsp; JS를 활용한 왕 기초적인 프론트엔드 빌드 배우고 + 결과물 까지!</li>
+		 							<li class="">&nbsp; 더 친절하고. 더 자세한 설명으로 2021년 업데이트 되었어요!</li>
+		 							<li class="">&nbsp; 무료 강의도 업데이트 해주는 것은 무엇? #노마진코더</li>
+		 							<li class="">&nbsp; 네! 맞아요! 게다가 무료입니다!!</li>
+		 							<li class="">&nbsp; 완료된 결과물 ⭐️ <a href="#">최종 데모</a> ⭐️ 를 살펴보세요.</li>
 		 						</ul>
 		 						<hr class="c-hr-bold mb-4">
-		 						<h2 class="font-weight-bold h4">코코아 클론 코딩 2주 완성반</h2>
+		 						<h2 class="font-weight-bold h4">자바스크립트 2주 완성반</h2>
 		 						<hr>
 		 						<ul class="h6">
-		 							<li class="">&nbsp; 강의도 100% 완료하고, 30% 할인쿠폰도 받을 수 있는 기회!</li>
-		 							<li class="">&nbsp; 2주 안에 코코아 클론코딩을 뿌셔버릴 수 있는 학습 스케쥴표를 제공!</li>
+		 							<li class="">&nbsp; 강의도 100% 완료하고, 10% 할인쿠폰도 받을 수 있는 기회!</li>
+		 							<li class="">&nbsp; 2주 안에 JS를 뿌셔버릴 수 있는 학습 스케쥴표를 제공!</li>
 		 							<li class="">&nbsp; 니꼬샘이 직접 제작한 퀴즈, 코딩 과제를 하면서 진짜 내 지식으로 만드세요.</li>
 		 							<li class="">&nbsp; 모르는 내용은 개발자 수만여명이 모인 노마드 커뮤니티에서 실시간으로 물어보면서 해결할 수 있어요.</li>
-		 							<li class="">&nbsp; <a href="#">2주 코코아 클론 완성반 알아보기</a></li>
+		 							<li class="">&nbsp; <a href="#">2주 바닐라JS 완성반 알아보기</a></li>
 		 							<li class="">&nbsp; 이미 수백명이 완주했어요! 수강생 완성작? <a href="#">구경하기</a></li>
 		 						</ul>
 		 					</div>
@@ -395,42 +378,48 @@
 		 			<div class="col-12 col-lg-8 mx-auto">
 		 				<div class="card shadow-sm">
 		 					<div class="card-header bg-info text-white">
-		 						#1 INTRODUCTION
+		 						#1 [2021 UPDATE] INTRODUCTION
 		 					</div>
 		 					<ul class="list-group list-group-flush" id="firstCard">
-		 						<li class="list-group-item">#1.1 🚨 Read this First 🚨 <a href="../courseList/kakaoList.do">Free Preview →</a></li>
-		 						<li class="list-group-item">#1.2 Welcome (01:49)<a href="../courseList/kakaoList.do">Free Preview →</a></li>
-		 						<li class="list-group-item">#1.3 Software Requirements (03:55)<a href="../courseList/kakaoList.do">Free Preview →</a></li>
-		 						<li class="list-group-item">#1.4 Join the Challenge (02:26)<a href="../courseList/kakaoList.do">Free Preview →</a></li>
-		 						<li class="list-group-item">#1.5 What Makes a Website? (05:34)<a href="../courseList/kakaoList.do">Free Preview →</a></li>
-		 						<li class="list-group-item"><span class="lock">#1.6 What is HTML (07:27)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#1.7 What is CSS (07:57)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#1.8 What is JavaScript (04:15)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#1.9 Recap (01:42)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item">♥ 2021 Update Announcement ♥ <a href="#">Free Preview →</a></li>
+		 						<li class="list-group-item">#1.0 Welcome (01:54)<a href="#">Free Preview →</a></li>
+		 						<li class="list-group-item">#1.1 What Are We Building (02:13)<a href="#">Free Preview →</a></li>
+		 						<li class="list-group-item">#1.2 Requirements (02:00)<a href="#">Free Preview →</a></li>
+		 						<li class="list-group-item">#1.3 Software Requirements (02:42)<a href="#">Free Preview →</a></li>
+		 						<li class="list-group-item"><span class="lock">#1.4 Why JS (07:39)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#1.5 Why JS II (06:30)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#1.6 Online IDE (03:30)</span><a href="#">Watch now →</a></li>
 		 					</ul>
 		 				</div>
 		 			</div><!-- col-12 col-lg-8 mx-auto -->
 		 			<div class="col-12 col-lg-8 mx-auto my-5">
 		 				<div class="card shadow-sm">
 		 					<div class="card-header bg-info text-white">
-		 						#2 LEARNING HTML
+		 						#2 [2021 UPDATE] WELCOME TO JAVASCRIPT
 		 					</div>
 		 					<ul class="list-group list-group-flush">
-		 						<li class="list-group-item"><span class="lock">#2.4 Tag Attributes (10:16)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#2.5 More Tags and Head (08:12)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#2.6 Its All About the Head (10:55)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#2.7 More Tags (12:10)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#2.8 Form Tags (12:04)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#2.9 More Tags and IDs (09:34)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#2.10 Semantic HTML (11:01)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#2.11 Recap (09:10)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#1.9 Recap (01:42)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">See all (7) sections</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.0 Your First JS Project (11:11)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.1 Basic Data Types (04:32)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.2 Variables (10:39)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.3 const and let (09:45)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.4 Booleans (07:22)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.5 Arrays (13:53)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.6 Objects (13:05)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.7 Functions part One (08:44)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.8 Functions part Two (12:45)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.9 Recap (10:04)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.10 Recap II (12:52)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.11 Returns (15:43)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.12 Recap (06:37)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.13 Conditionals (11:35)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.14 Conditionals part Two (09:02)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.15 Conditionals part Three (13:49)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#2.16 Recap (07:34)</span><a href="#">Watch now →</a></li>
 		 					</ul>
 		 				</div><!-- card end -->
 		 				<div class="text-center col-12 my-5">
 		 					<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" id="c-toggle-btn">
-		 						↓ See all (7) sections
+		 						↓ See all (8) sections
 		 					</button>
 		 				</div>
 		 			</div><!-- col-12 col-lg-8 mx-auto -->
@@ -440,120 +429,90 @@
 		 			<div class="col-12 col-lg-8 mx-auto my-5">
 		 				<div class="card shadow-sm">
 		 					<div class="card-header bg-info text-white">
-		 						#3 LEARNING CSS
+		 						#3 [2021 UPDATE] JAVASCRIPT ON THE BROWSER
 		 					</div>
 		 					<ul class="list-group list-group-flush">
-		 						<li class="list-group-item"><span class="lock">#3.0 How to Add CSS to HTML (05:19)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.1 Writing Our First CSS Lines (09:42)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.2 What Does Cascading Mean (05:31)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.3 Blocks and Inlines (09:28)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.4 Margin Part One (12:18)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.5 Margin Part Two (06:20)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.6 Paddings and IDs (10:39)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.7 Border (05:49)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.8 Classes (11:27)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.9 Inline Block (07:37)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.10 Flexbox Part One (12:08)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.11 Flexbox Part Two (09:02)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.12 Fixed (08:19)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.13 Relative Absolute (07:45)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.14 Pseudo Selectors part One (08:57)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.15 Combinators (08:46)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.16 Pseudo Selectors part Two (08:08)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.17 States (10:15)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.18 Recap (05:41)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#3.19 Colors and Variables (07:16)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#3.0 The Document Object (08:14)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#3.1 HTML in Javascript (10:31)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#3.2 Searching For Elements (12:23)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#3.3 Events (12:38)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#3.4 Events part Two (08:31)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#3.5 More Events (09:48)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#3.6 CSS in Javascript (06:51)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#3.7 CSS in Javascript part Two (09:34)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#3.8 CSS in Javascript part Three (07:57)</span><a href="#">Watch now →</a></li>
 		 					</ul>
 		 				</div><!-- card end -->
 		 			</div><!-- col-12 col-lg-8 mx-auto -->
 		 			<div class="col-12 col-lg-8 mx-auto my-5">
 		 				<div class="card shadow-sm">
 		 					<div class="card-header bg-info text-white">
-		 						#4 ADVANCED CSS
+		 						#4 [2021 UPDATE] LOGIN
 		 					</div>
 		 					<ul class="list-group list-group-flush">
-		 						<li class="list-group-item"><span class="lock">#4.0 Transitions (09:40)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#4.1 Transitions part Two (07:45)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#4.2 Transformations (12:33)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#4.3 Animations part One (04:52)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#4.4 Animations part Two (07:27)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#4.5 Media Queries (11:21)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#4.6 Media Queries Recap (05:31)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#4.0 Input Values (09:48)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#4.1 Form Submission (08:38)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#4.2 Events (10:56)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#4.3 Events part Two (08:08)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#4.4 Getting Username (11:12)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#4.5 Saving Username (07:35)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#4.6 Loading Username (10:07)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#4.7 Super Recap (13:58)</span><a href="#">Watch now →</a></li>
 		 					</ul>
 		 				</div><!-- card end -->
 		 			</div><!-- col-12 col-lg-8 mx-auto -->
 		 			<div class="col-12 col-lg-8 mx-auto my-5">
 		 				<div class="card shadow-sm">
 		 					<div class="card-header bg-info text-white">
-		 						#5 GIT AND GITHUB
+		 						#5 [2021 UPDATE] CLOCK
 		 					</div>
 		 					<ul class="list-group list-group-flush">
-		 						<li class="list-group-item"><span class="lock">#5.0 What is Git (04:06)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#5.1 What is Github (07:40)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#5.2 Creating a Github Repository (07:10)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#5.3 Making Our First Commits (09:10)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#5.0 Intervals (05:37)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#5.1 Timeouts and Dates (08:46)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#5.2 PadStart (07:42)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#5.3 Recap (04:44)</span><a href="#">Watch now →</a></li>
 		 					</ul>
 		 				</div><!-- card end -->
 		 			</div><!-- col-12 col-lg-8 mx-auto -->
 		 			<div class="col-12 col-lg-8 mx-auto my-5">
 		 				<div class="card shadow-sm">
 		 					<div class="card-header bg-info text-white">
-		 						#6 CLONING TIME
+		 						#6 [2021 UPDATE] QUOTES AND BACKGROUND
 		 					</div>
 		 					<ul class="list-group list-group-flush">
-		 						<li class="list-group-item"><span class="lock">#6.0 Introduction (06:15)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.1 Sign Up Screen part One (09:44)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.2 BEM (06:39)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.3 Font Awesome (07:59)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.4 Sign Up Screen part Two (05:53)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.5 Status Bar CSS (13:34)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.6 Sign Up Screen part Three (11:16)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.7 Log In Form part One (10:11)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.8 Log In Form part Two (07:54)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.9 Recap and Forms (10:22)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.10 Navigation Bar part One (12:32)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.11 Navigation Bar part Two (06:34)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.12 Border Box (05:46)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.13 Navigation Bar part Three (07:04)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.14 Screen Header (07:41)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.15 Friends Screen part One (07:40)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.17 User Component part Two (07:45)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.18 Finishing Friends Screen (06:51)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.19 Chats Screen part One (07:49)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.20 Chats Screen part Two (08:52)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.21 Find Screen Part One (10:38)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.22 Find Screen Part Two (06:52)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.23 Find Screen Part Three (13:10)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.24 Find Screen Part Four (07:47)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.25 More Screen part One (14:22)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.26 More Screen part Two (06:28)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.27 Settings Screen part One (12:55)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.28 Settings and Chat Screen part One (07:01)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.29 Chat Screen part Two (10:03)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.30 Chat Screen part Three (08:39)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.31 Chat Screen part Four (07:41)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.32 Chat Screen part Five (07:36)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.33 Write Message Input (11:54)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.34 Splash Screen part One (06:41)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.35 Splash Screen part Two (06:22)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.36 Navigation Animation (10:46)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.37 More Animations (08:57)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.38 Animating Chats Screen (12:44)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.39 Recap (04:43)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#6.40 No Mobile Media Query (07:06)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#6.0 Quotes (10:14)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#6.1 Background (08:45)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#6.2 Recap (05:15)</span><a href="#">Watch now →</a></li>
 		 					</ul>
 		 				</div><!-- card end -->
 		 			</div><!-- col-12 col-lg-8 mx-auto -->
 		 			<div class="col-12 col-lg-8 mx-auto my-5">
 		 				<div class="card shadow-sm">
 		 					<div class="card-header bg-info text-white">
-		 						#7 PUBLISHING OUR WEBSITE
+		 						#7 [2021 UPDATE] TO DO LIST
 		 					</div>
 		 					<ul class="list-group list-group-flush" id="lastCard">
-		 						<li class="list-group-item"><span class="lock">#7.0 Branches on Git (09:22)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#7.1 Publishing on Github Pages (05:24)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item"><span class="lock">#7.2 Updating Github Pages (07:30)</span><a href="#">Watch now →</a></li>
-		 						<li class="list-group-item">#7.3 Conclusions (01:44)<a href="#">Free Preview →</a></li>
+		 						<li class="list-group-item"><span class="lock">#7.0 Setup (07:55)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#7.1 Adding To Dos (07:00)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#7.2 Delting To Dos (09:54)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#7.3 Saving To Dos (07:26)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#7.4 Loading To Dos part One (11:19)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#7.5 Loading To Dos part Two (08:28)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#7.6 Deleting To Dos part One (10:23)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#7.7 Deleting To Dos part Two (13:04)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#7.8 Deleting To Dos part Three (05:32)</span><a href="#">Watch now →</a></li>
+		 					</ul>
+		 				</div><!-- card end -->
+		 			</div><!-- col-12 col-lg-8 mx-auto -->
+		 			<div class="col-12 col-lg-8 mx-auto my-5">
+		 				<div class="card shadow-sm">
+		 					<div class="card-header bg-info text-white">
+		 						#8 [2021 UPDATE] WEATHER
+		 					</div>
+		 					<ul class="list-group list-group-flush">
+		 						<li class="list-group-item"><span class="lock">#8.0 Geolocation (07:27)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#8.1 Weather API (14:13)</span><a href="#">Watch now →</a></li>
+		 						<li class="list-group-item"><span class="lock">#8.2 Conclusions (02:52)</span><a href="#">Watch now →</a></li>
 		 					</ul>
 		 				</div><!-- card end -->
 		 			</div><!-- col-12 col-lg-8 mx-auto -->
@@ -565,7 +524,7 @@
 		 	<!-----------------------------------------
 		 				 	  Start
 		 	------------------------------------------>
-		 	<div class="container-fluid px-0 c-color-yellow c-pt-8 c-mb-8" id="start">
+		 	<div class="container-fluid px-0 c-color-orange c-pt-8 c-mb-8" id="start">
 		 		<div class="container">
 		 			<div class="row">
 		 				<div class="col">

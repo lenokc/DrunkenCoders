@@ -44,13 +44,19 @@
 	}
 
 	</script>
+	<style type="text/css">
+	#cat::before {
+		content: "#";
+	}
+	
+	</style>
 </head>
 <body>
 	<div class="container">
 		<!-- 첫번째 섹션, 최상단 title -->
 		<div class="row text-center p-5">
 			<div class="col">
-				<div class="display-4 font-weight-bold h1 p-3">
+				<div class="display-4 font-weight-bold h5 p-2 mt-5">
 					Community
 				</div>
 				<p class="h5 text-muted mb-4">
@@ -67,28 +73,29 @@
 			<!-- 좌측 nav -->
 			<div class="col-md-3 pt-5" id="sideCategory">
 				<p>카테고리</p>
+<!--				
+				<div>
+				<c:forEach items="${gList}" var="gList">	
+					<c:forEach items="${gList}" var="map">
+						${map.value}<br/>
+					</c:forEach>
+				</c:forEach>	
+				</div>
+				<div>
+				<c:forEach items="${gList}" var="item" varStatus="i">	
+					<c:out value="${item.CATEGORY}"/>
+					<c:out value="${item.CATCNT}"/>	
+				</c:forEach>	
+				</div>
+-->				
 				<ul class="list-unstyled h5 c-fontSize-small text-muted text-left">
-						<li><button href="#" type="button" class="btn rounded-pill py-1 active">all</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">javascript (280)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">html_css (265)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">to-do-list (13)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">bla-bla (131)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">python (94)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">side_project (6)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">twitter_clone (4)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">announcement (2)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">tips (38)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">react (33)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">portfolio (31)</button></button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">ssul (29)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">mbti (21)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">uber_eats (18)</button></button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">insta_clone (13)</button></button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">interview (10)</button></button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">jobs (9)</button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">weather_app (9)</button></button></li>
-						<li><button href="#" type="button" class="btn rounded-pill py-1">ask (6)</button></li>
-					</ul>
+						<li><button onclick="location.href='communityList.do'" type="button" class="btn rounded-pill py-1 active">all</button></li>
+						<c:forEach items="${gList}" var="item" varStatus="i">
+						<li><button onclick="location.href='/drunkenCoders/community/communityCtList.do?category=${item.CATEGORY}'" type="button" class="btn rounded-pill py-1">
+							<c:out value="${item.CATEGORY}"/>(<c:out value="${item.CATCNT}"/>)
+							</button></li>
+						</c:forEach>
+				</ul>			
 			</div>
 			<!-- .col-md-3#sideCategory -->
 			
@@ -117,7 +124,7 @@
 	
 								<div class="col-8 card-body text-muted">
 									<h4 class="card-title text-dark">${dto.subject}</h4>in 
-									<span class="bg-secondary text-white px-1 font-weight-bold">
+									<span class="bg-secondary text-white px-1 font-weight-bold" id="cat">
 										${dto.category}
 									</span>
 									&nbsp;by&nbsp;<span class="font-weight-bold">${dto.name}</span>
@@ -137,33 +144,38 @@
 				
 				<nav aria-label="Page navigation example">
 					<ul class="pagination">
+					
 						<c:if test="${startPage > 1}">
 							<li class="page-item">
 								<a class="page-link"
-								href="communityList.do?pg=${startPage-1}">Previous</a>
+								href="${sUri}?pg=${startPage-1}&${sQry}">Previous</a>
 							</li>
 						</c:if>
 
 						<c:forEach var="i" begin="${startPage }" end="${endPage }" step="1">
 							<c:if test="${pg==i}">
 								<li class="page-item"><a class="page-link"
-									href="communityList.do?pg=${i }">${i }</a>
+									href="${sUri}?pg=${i }&${sQry}">${i }</a>
 								</li>
 							</c:if>
 							<c:if test="${pg!=i}">
 								<li class="page-item"><a class="page-link"
-									href="communityList.do?pg=${i }">${i }</a>
+									href="${sUri}?pg=${i }&${sQry}">${i }</a>
 								</li>
 							</c:if>
 						</c:forEach>
 	
-						<c:if test="${endPage < totalP }">
+						<c:if test="${endPage < totalPage }">
 							<li class="page-item"><a class="page-link"
-								href="communityList.do?pg=${endPage+1}">Next</a>
+								href="${sUri}?pg=${endPage+1}&${sQry}">Next</a>
 							</li>
 						</c:if>
+						
 					</ul>
 				</nav>
+
+
+				
 			</div>
 			<!-- .col-md-6#boardList -->
 	

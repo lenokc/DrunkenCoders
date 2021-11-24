@@ -25,10 +25,13 @@ public class MemberLoginController {
 		HttpSession session = request.getSession();
 		
 		if(name != null) {	// login success
+			int enrollNum = memberService.getEnrollTwitter(id);
+			
 			// save share data to session and go to page
 			session.setAttribute("memName", name);
 			session.setAttribute("memId", id);
-						
+			
+			request.setAttribute("enrollNum", enrollNum);
 			request.setAttribute("req", "/main/body.jsp");  // go to index if user success login
 		} else {			// login fail
 			request.setAttribute("req", "/member/loginFail.jsp");

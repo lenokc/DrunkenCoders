@@ -10,11 +10,19 @@
 	
 	<insert id="write" parameterType="Mdto">
 		insert into member values 
-		(#{name}, #{id}, #{pwd}, EMPTY_BLOB(), sysdate)
+		(#{name}, #{id}, #{pwd}, EMPTY_BLOB(), sysdate, 0)
 	</insert>
 	
 	<!-- mabatis에서 resultType으로는 boolean 값을 쓸 수 없다.=> string, integer, 객체 등은 가능 -->
 	<select id="isExistId" parameterType="String" resultType="Mdto">
 		select * from member where id=#{id}
+	</select>
+	
+	<update id="updateEnrollTwitter" parameterType="String" >
+		update member set twitterEnroll=1 where id=#{id}
+	</update>
+	
+	<select id="getEnrollTwitter" parameterType="String" resultType="int">
+		select twitterEnroll from member where id=#{id}
 	</select>
 </mapper>

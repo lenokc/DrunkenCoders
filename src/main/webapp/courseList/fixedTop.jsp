@@ -28,9 +28,9 @@
 	<body>
 		<div class="container-fluid bg-light card" id="video"> 	
 	 		<div class="row">
-				<!-----------------------------------------
+				<!------------------------------------------
 				 		상단 고정 네비게이션 fixed navbar 
-				 ------------------------------------------>
+				 ------------------------------------------->
 				 <!-- device lg 미만시 보이기-->
 				<nav class="navbar navbar-expand-lg bg-dark shadow-sm fixed-top p-2 d-block d-lg-none">
 					<a href="kakaoList.do" class="float-left mx-2"><i class="bi bi-arrow-left-circle-fill left"></i></a>

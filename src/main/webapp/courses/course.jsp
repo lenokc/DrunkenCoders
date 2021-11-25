@@ -233,8 +233,8 @@ nav .bi-bell-fill {
   clear: both;
 }
 /****************************
-			디바이스가 바뀌면 변하는 스타일
-			*****************************/
+		디바이스가 바뀌면 변하는 스타일
+*****************************/
 @media ( max-width : 575.98px) {
 }
 
@@ -352,22 +352,50 @@ nav .bi-bell-fill {
 		<div class="container" id="card">
 			<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 			<div class="row filter_group">
-				<div class="col-md-6 col-xl-4 rounded-lg level-Price beginner free">
-					<a href="../courseList/twitterFree.do">
-						<div class="card border-0">
-							<div class="card-img-top overflow-hidden rounded-lg">
-								<img src="/drunkenCoders/img/01_index/thumb_01_twitter.jpg" alt="..."
-									class="img-fluid rounded-lg"> <span
-									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급 무료</span>
-							</div>
-							<div
-								class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
-								<h5 class="card-title disabled">[풀스택]트위터 클론코딩</h5>
-								<p class="card-text">React Firebase for Beginners</p>
-							</div>
+				
+				<c:choose>
+					<c:when test="${enrollNum == 1}">
+						<div class="col-md-6 col-xl-4 rounded-lg level-Price beginner free">
+							<a href="${pageContext.request.contextPath}/courseSpecific/twitterFree.do">
+								<div class="card border-0">
+									<div class="card-img-top overflow-hidden rounded-lg">
+										<img src="/drunkenCoders/img/01_index/thumb_01_twitter.jpg" alt="..."
+											class="img-fluid rounded-lg"> <span
+											class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급 무료</span>
+									</div>
+									<div
+										class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+										<h5 class="card-title disabled">[풀스택] 트위터 클론코딩</h5>
+										<div class="progress c-color-lightblue rounded-lg">
+											<div class="progress-bar" role="progressbar" style="width: 0%"
+												aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<p class="card-text">0% complete</p>
+									</div>
+								</div>
+							</a>
 						</div>
-					</a>
-				</div>
+					</c:when> 
+					<c:otherwise>
+						<div class="col-md-6 col-xl-4 rounded-lg level-Price beginner free">
+							<a href="${pageContext.request.contextPath}/courseSpecific/twitterFree.do">
+								<div class="card border-0">
+									<div class="card-img-top overflow-hidden rounded-lg">
+										<img src="/drunkenCoders/img/01_index/thumb_01_twitter.jpg" alt="..."
+											class="img-fluid rounded-lg"> <span
+											class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급 무료</span>
+									</div>
+									<div
+										class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+										<h5 class="card-title disabled">[풀스택] 트위터 클론코딩</h5>
+										<p class="card-text">React Firebase for Beginners</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</c:otherwise>
+				</c:choose>
+			
 				<div class="col-md-6 col-xl-4 rounded-lg level-Price beginner paid">
 					<a href="${pageContext.request.contextPath}/courseSpecific/kakao.do">
 						<div class="card border-0">

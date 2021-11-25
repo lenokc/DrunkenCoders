@@ -26,14 +26,14 @@
 		<link rel="stylesheet" href="/drunkenCoders/css/styleSj.css">
 	</head>
 	<body>
-		<div class="container-fluid bg-light card" id="video"> 	
+		<div class="container-fluid bg-light card" id="video"></div> 	
 	 		<div class="row">
 				<!-----------------------------------------
 				 		상단 고정 네비게이션 fixed navbar 
 				 ------------------------------------------>
 				 <!-- device lg 미만시 보이기-->
 				<nav class="navbar navbar-expand-lg bg-dark shadow-sm fixed-top p-2 d-block d-lg-none">
-					<a href="kakaoList.do" class="float-left mx-2"><i class="bi bi-arrow-left-circle-fill left"></i></a>
+					<a href="../main/body.do" class="float-left mx-2 text-muted"><i class="bi bi-arrow-left-circle-fill left"></i><span class="text-white">HOME</span></a>	
 					<h6 class="float-left mr-1">
 						<!-- sideList 보이기 버튼 -->
 						<a href="#" class="show sideToggleBtn badge badge-pill badge-secondary p-2 px-3 mt-2 d-none"> 
@@ -61,7 +61,7 @@
 				 <!-- device lg 이상시 보이기 -->
 				<nav class="navbar navbar-expand-lg bg-dark shadow-sm fixed-top p-2 d-none d-lg-block">
 					<div class="container-fluid">
-						<a href="kakaoList.do" class="float-left mx-1"><i class="bi bi-arrow-left-circle-fill left"></i></a>
+						<a href="../main/body.do" class="float-left mx-1"><i class="bi bi-arrow-left-circle-fill left"><span class="text-white">HOME</span></i></a>
 						<h5 class="float-left">
 							<!-- sideList 보이기 버튼 -->
 							<a href="#" class="show sideToggleBtn badge badge-pill badge-secondary p-2 px-3 mt-2 d-none"> 

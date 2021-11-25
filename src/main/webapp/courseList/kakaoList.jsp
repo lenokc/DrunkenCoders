@@ -36,21 +36,19 @@
 	 			<div class="container c-my-8">
 	 				<div class="row">
 	 					<div class="col-lg-4 rounded-lg">
-	 						<a href="#">
-	 							<div class="card border-0 bg-light">
-	 								<div class="card-img-top overflow-hidden rounded-lg">
-	 									<img src="/drunkenCoders/img/01_index/thumb_02.jpg" alt="..." class="img-fluid rounded-lg">
-	 									<span class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
-	 								</div>
-	 								<div class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
-	 									<h5 class="card-title disabled">코코아톡 클론코딩</h5>
-	 									<div class="progress c-color-lightblue rounded-lg">
-	 										<div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
-	 									</div>
-	 									<p class="card-text">5% complete</p>
-	 								</div>
-	 							</div>
-	 						</a>
+ 							<div class="card border-0 bg-light">
+ 								<div class="card-img-top overflow-hidden rounded-lg">
+ 									<img src="/drunkenCoders/img/01_index/thumb_02.jpg" alt="..." class="img-fluid rounded-lg">
+ 									<span class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
+ 								</div>
+ 								<div class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+ 									<h5 class="card-title disabled">코코아톡 클론코딩</h5>
+ 									<div class="progress c-color-lightblue rounded-lg">
+ 										<div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+ 									</div>
+ 									<p class="card-text">5% complete</p>
+ 								</div>
+ 							</div>
 	 					</div>	
 	 					<div class="col-lg-8 mx-auto">
 	 						<div class="card shadow-sm mb-5">

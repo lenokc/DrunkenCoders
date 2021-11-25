@@ -6,24 +6,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import courseList.dto.CourseListDTO;
+import member.controller.MemberService;
 
 @Controller
 public class CourseListController {
 	
-	@RequestMapping(value = "/courseList/twitterFree.do")
-	public String twitterFree(HttpServletRequest request, HttpServletResponse response) {
-		// 1. data processing
-		
-		// 2. share data
-		request.setAttribute("req","/courseSpecific/twitterFree.jsp");
-		
-		// 3. view return
-		return "/main/index.jsp";
-	}
+	@Autowired
+	private MemberService memberService;
 	
 	@RequestMapping(value = "/courseList/enrollTwitterFree.do")
 	public String twitterEnroll(HttpServletRequest request, HttpServletResponse response) {
@@ -73,7 +67,9 @@ public class CourseListController {
 	    // DB
 	    CourseListDTO dto = new CourseListDTO();
 	    dto.setName(name);
-	    dto.setId(id);		
+	    dto.setId(id);	
+	    int su = memberService.updateEnrollTwitter(id); 
+		System.out.println("=========su : "+su);
 		
 		// 2. share data
 		request.setAttribute("req","/courseList/twitterList.jsp");
@@ -114,6 +110,7 @@ public class CourseListController {
 		}
 		String name = (String)session.getAttribute("memName");
 	    String id = (String)session.getAttribute("memId");
+	    
 		// 2. share data
 	    CourseListDTO dto = new CourseListDTO();
 	    dto.setName(name);

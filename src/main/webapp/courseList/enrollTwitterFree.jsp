@@ -147,8 +147,9 @@ function checkFreeLogin() {
 	if (member_id == "null") {
 		alert("로그인을 먼저 하셔야 합니다.");  
 		window.location="../member/memberLoginForm.do"; 	
-	} else {	
-	window.location="/drunkenCoders/courseList/twitterList.do";
+	} else {
+		alert("Twitter 무료강의가 구독 완료되었습니다.");
+		window.location="/drunkenCoders/courseList/twitterList.do";
 	}
 }
 </script>

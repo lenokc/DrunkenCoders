@@ -9,6 +9,9 @@ public interface MemberService {
 
 	public String login(String id, String pwd);
 	
-	// 아이디 유무 검사.
 	public int isExistId(String id);
+
+	public int updateEnrollTwitter(String id);
+
+	public int getEnrollTwitter(String id);
 }

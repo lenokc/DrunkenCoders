@@ -26,4 +26,14 @@ public class MemberServiceImpl implements MemberService {
 	public int isExistId(String id) {
 		return memberDAO.isExistId(id);
 	}
+	
+	@Override
+	public int updateEnrollTwitter(String id) {
+		return memberDAO.updateEnrollTwitter(id);
+	}
+
+	@Override
+	public int getEnrollTwitter(String id) {
+		return memberDAO.getEnrollTwitter(id);
+	}
 }

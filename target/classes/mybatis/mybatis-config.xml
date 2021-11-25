@@ -3,6 +3,13 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+	<!-- DB값이 null일 때에도 정상작동 -->
+	<!-- 
+	<settings>
+        <setting name="jdbcTypeForNull" value="NULL"/>
+	</settings> 
+	-->
+	
 	<!-- 클래스에 별명짓기 -->
 	<typeAliases>
 		<typeAlias type="community.dto.CommunityDTO" alias="Cdto"/>
@@ -24,4 +31,6 @@
 		<mapper resource="/mybatis/courseList-mapping.xml" />
 		<mapper resource="/mybatis/video-mapping.xml" />				
 	</mappers>
+	
+	
 </configuration>

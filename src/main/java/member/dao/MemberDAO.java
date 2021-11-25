@@ -34,5 +34,13 @@ public class MemberDAO {
 			exist = 1;
 		return exist;
 	}
-
+	// twitter freeLecture enroll => unenrolled:0, enrolled:1
+	public int updateEnrollTwitter(String id) {
+		return sqlSession.update("mybatis.MemberMapper.updateEnrollTwitter", id);
+	}
+	// confirm twitter freeLecture is enrolled
+	public int getEnrollTwitter(String id) {
+		return sqlSession.selectOne("mybatis.MemberMapper.getEnrollTwitter", id);
+	}
+	
 }

@@ -7,6 +7,7 @@ public class MemberDTO {
     private String imgIdx;		//-- image index num
     private byte[] img;			//-- image
     private String logtime;     //-- registered date
+    private int twitterEnroll;  //-- twitter freeLecture => unenrolled:0, enrolled:1
     
     public String getName() {
 		return name;
@@ -43,5 +44,11 @@ public class MemberDTO {
 	}
 	public void setLogtime(String logtime) {
 		this.logtime = logtime;
+	}
+	public int getTwitterEnroll(String id) { 
+		return twitterEnroll; 
+	}
+	public void setTwitterEnroll(int twitterEnroll) {
+		this.twitterEnroll = twitterEnroll;
 	}
 }

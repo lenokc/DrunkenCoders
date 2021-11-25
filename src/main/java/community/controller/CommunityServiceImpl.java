@@ -30,6 +30,13 @@ public class CommunityServiceImpl implements CommunityService{
 		return communityDAO.communityHitList(startNum, endNum);
 	}
 	
+	// list by category	
+	@Override
+	public List<CommunityDTO> communityCtList(String category, int startNum, int endNum) {
+		return communityDAO.communityCtList(category, startNum, endNum);
+	}	
+	
+
 	@Override
 	public CommunityDTO communityView(int seq) {
 		return communityDAO.communityView(seq);
@@ -54,6 +61,25 @@ public class CommunityServiceImpl implements CommunityService{
 	public int communityModify(CommunityDTO dto) {
 		return communityDAO.communityModify(dto);
 	}
+
+	@Override
+	public int getTotalB(String category) {
+		// TODO Auto-generated method stub
+		return communityDAO.getTotalB(category);
+	}
+
+	@Override
+	public List<CommunityDTO> communityGrpList(String category) {
+		// TODO Auto-generated method stub
+		return communityDAO.communityGrpList(category);
+	}
+
+
+
+
+
+
+
 
 
 }

@@ -59,7 +59,7 @@
 		
 		<!-- device-width 768px미만시 로고위치 센터-->
 		<div id="logo" class="col-10 d-block d-lg-none d-flex justify-content-center">
-			<a class="navbar-brand align-content-center c-left-1" href="/drunkenCoders/main/index.do" id="logo1">
+			<a class="navbar-brand align-content-center c-left-1" href="../main/body.do" id="logo1">
 				<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="" class="">
 				<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
 			</a>
@@ -67,7 +67,7 @@
 		
 		<!-- device-width 768px이상시 로고위치 좌측-->
 		<div id="logo" class="col-lg-1 d-none d-lg-block">
-			<a class="navbar-brand" href="/drunkenCoders/main/index.do" id="logo2">	
+			<a class="navbar-brand" href="../main/body.do" id="logo2">	
 				<img class="c-h-8" src="/drunkenCoders/img/01_index/m.svg" alt="">
 				<span class="sr-only">드렁큰 코더 메인페이지입니다.</span>
 			</a>

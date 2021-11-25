@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ChallengeApplyController {
 	@RequestMapping(value = "/challenge/challengeApply.do")
 	public String challenge(HttpServletRequest request, HttpServletResponse response) {
-		// ref로 챌린지명 받아와서 해당 챌린지 apply로 이동.
+		// ref로 챌린지명 받아와서 해당 챌린지 apply로 이동..
 		String ref = request.getParameter("ref");
 		
 		request.setAttribute("req","/challenges/"+ref+"Apply.jsp");

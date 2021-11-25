@@ -54,26 +54,25 @@
 					<div class="form-group">		    		
 						<select class="form-select" aria-label="Default select example" style="width:100%" size="1" name="category">
 				  			<option selected>카테고리 고르기</option>
-				  			<option value="#all">#all</option>
-				  			<option value="#javascript">#javascript</option>
-				  			<option value="#html_css">#html_css</option>
-				  			<option value="#to-do-list">#to-do-list</option>
-				  			<option value="#bla-bla">#bla-bla</option>
-				  			<option value="#python">#python</option> 
-				  			<option value="#side_projects">#side_projects</option>
-				  			<option value="#twitter_clone ">#twitter_clone </option>
-				  			<option value="#announcement ">#announcement </option>
-				  			<option value="#tips">#tips </option>
-				  			<option value="#react">#react</option>
-				  			<option value="#portfolio">#portfolio</option>
-				  			<option value="#ssul">#ssul</option>
-				  			<option value="#mbti">#mbti</option>
-				  			<option value="#uber_eats">#uber_eats</option>
-				  			<option value="#insta_clone">#insta_clone</option>
-				  			<option value="#mobile_app">#mobile_app</option>
-				  			<option value="#interview">#interview</option>
-				  			<option value="#jobs">#jobs</option>
-				  			<option value="#ask">#ask</option>				  			
+				  			<option value="javascript">#javascript</option>
+				  			<option value="html_css">#html_css</option>
+				  			<option value="to-do-list">#to-do-list</option>
+				  			<option value="bla-bla">#bla-bla</option>
+				  			<option value="python">#python</option> 
+				  			<option value="side_projects">#side_projects</option>
+				  			<option value="twitter_clone ">#twitter_clone </option>
+				  			<option value="announcement ">#announcement </option>
+				  			<option value="tips">#tips </option>
+				  			<option value="react">#react</option>
+				  			<option value="portfolio">#portfolio</option>
+				  			<option value="ssul">#ssul</option>
+				  			<option value="mbti">#mbti</option>
+				  			<option value="uber_eats">#uber_eats</option>
+				  			<option value="insta_clone">#insta_clone</option>
+				  			<option value="mobile_app">#mobile_app</option>
+				  			<option value="interview">#interview</option>
+				  			<option value="jobs">#jobs</option>
+				  			<option value="ask">#ask</option>				  			
 						</select>
 					</div>
 					<p></p>		    

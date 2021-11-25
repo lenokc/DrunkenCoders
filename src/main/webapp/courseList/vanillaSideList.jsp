@@ -29,7 +29,7 @@
 		 	<!-----------------------------------------
 		 		  left sideList : course curriculum :lg미만일 때 
 		 	------------------------------------------>
-		 		<div class="col-lg-4 col-xl-3 mx-auto d-blcok d-lg-none lockList topList" id="sideList">
+		 		<div class="col-lg-4 col-xl-3 mx-auto d-block d-lg-none lockList topList" id="sideList">
 		 			<div class="row">
 		 				<div class="card-body text-center mb-4 bg-white shadow-sm mx-auto text-dark">
 		 					<h5 class="card-title disabled">바닐라 JS로 크롬 앱 만들기</h5>
@@ -203,7 +203,7 @@
 				<!-----------------------------------------
 		 		  left sideList : course curriculum :lg이상일 때 
 		 	------------------------------------------>
-		 		<div class="col-lg-4 col-xl-3 mx-auto d-none d-lg-block scrollSide leftSideShow" id="sideList">
+		 		<div class="col-lg-4 col-xl-3 mx-auto d-none d-lg-block scrollSide" id="sideList">
 		 			<div class="row">
 		 				<div class="card-body text-center mb-4 bg-white shadow-sm mx-auto text-dark">
 		 					<h5 class="card-title disabled">바닐라 JS로 크롬 앱 만들기</h5>

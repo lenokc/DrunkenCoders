@@ -129,14 +129,12 @@ $(function(){
 
 	sideToggleBtn.click(function(){
 		sideToggleBtn.toggleClass('d-none');
-		if((topList.css('display') == 'block') || (scrollSide.css('display') == 'block') ) {
-			topList.hide();
-			scrollSide.removeClass('leftSideShow').addClass('leftSideHide');
+		if(scrollSide.css('display') == 'block') {
+			scrollSide.addClass('leftSideHide');
 			videoBody.removeClass('col-lg-8').removeClass('offset-lg-4').removeClass('col-xl-9').removeClass('offset-xl-3').addClass('col');
 			
-		}else if((topList.css('display') == 'none') || (scrollSide.css('display') == 'none')) {
-			topList.show();
-			scrollSide.removeClass('leftSideHide').addClass('leftSideShow');
+		}else if(scrollSide.css('display') == 'none') {
+			scrollSide.removeClass('leftSideHide');
 			videoBody.removeClass('col').addClass('col-lg-8').addClass('offset-lg-4').addClass('col-xl-9').addClass('offset-xl-3');
 		}
 		

@@ -482,6 +482,12 @@ nav .bi-bell-fill{
 	cursor:pointer !important;
 }
 /* only view when a lg size */
+.scrollSide{
+	height: 100vh;
+	overflow:scroll;
+	position:fixed;
+	padding-bottom:150px !important;
+}
 .leftSideHide{
 	height: 100vh;
 	overflow:scroll;

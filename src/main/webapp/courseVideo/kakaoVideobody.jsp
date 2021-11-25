@@ -159,7 +159,7 @@
 				<!-----------------------------------------
 								body:Video:lg이상일 때 
 				------------------------------------------>
-				<div class="col-lg-8 offset-lg-4 col-xl-9 offset-xl-3 d-none d-lg-block px-5">
+				<div class="col-lg-8 offset-lg-4 col-xl-9 offset-xl-3 d-none d-lg-block px-5 videoBody">
 <!--  				<h5 class="c-mb-5 py-4">#1.1 🚨 Read this First 🚨</h5> -->
 					<h5 class="c-mb-5 py-4">${vo.ksub }</h5>
 					<div class="rounded bg-primary text-white mb-4 p-4">

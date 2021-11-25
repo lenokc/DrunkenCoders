@@ -123,13 +123,23 @@ $(function(){
 	
 	//show and hide sideList if user click to toggle sidebar btn on a top 
 	var sideToggleBtn = $('.sideToggleBtn');
-	var sideList = $('#sideList')
+	var topList = $('.topList');
+	var scrollSide = $('.scrollSide');
+	var videoBody = $('.videoBody');
 
 	sideToggleBtn.click(function(){
 		sideToggleBtn.toggleClass('d-none');
-		sideList.fadeToggle();
+		if((topList.css('display') == 'block') || (scrollSide.css('display') == 'block') ) {
+			topList.hide();
+			scrollSide.removeClass('leftSideShow').addClass('leftSideHide');
+			videoBody.removeClass('col-lg-8').removeClass('offset-lg-4').removeClass('col-xl-9').removeClass('offset-xl-3').addClass('col');
+			
+		}else if((topList.css('display') == 'none') || (scrollSide.css('display') == 'none')) {
+			topList.show();
+			scrollSide.removeClass('leftSideHide').addClass('leftSideShow');
+			videoBody.removeClass('col').addClass('col-lg-8').addClass('offset-lg-4').addClass('col-xl-9').addClass('offset-xl-3');
+		}
+		
 	})
-	
-	
-	
+		
 })

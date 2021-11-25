@@ -482,11 +482,19 @@ nav .bi-bell-fill{
 	cursor:pointer !important;
 }
 /* only view when a lg size */
-.scrollSide{
+.leftSideHide{
 	height: 100vh;
 	overflow:scroll;
 	position:fixed;
 	padding-bottom:150px !important;
+	display:none !important;
+}
+.leftSideShow{
+	height: 100vh;
+	overflow:scroll;
+	position:fixed;
+	padding-bottom:150px !important;
+	display:block !important;
 }
 /****************************
 	 twitterFree css

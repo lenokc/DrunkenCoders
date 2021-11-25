@@ -29,14 +29,14 @@
 		 	<!-----------------------------------------
 		 		 left sideList : course curriculum :lg미만일 때 
 		 	------------------------------------------>
-		 		<div class="col-lg-4 col-xl-3 mx-auto d-blcok d-lg-none lockList" id="sideList">
+		 		<div class="col-lg-4 col-xl-3 mx-auto d-blcok d-lg-none lockList topList" id="sideList">
 		 			<div class="row">
 		 				<div class="card-body text-center mb-4 bg-white shadow-sm mx-auto text-dark">
 		 					<h5 class="card-title disabled">코코아톡 클론코딩</h5>
 		 					<div class="progress c-color-lightblue rounded-lg">
-		 						<div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+		 						<div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 		 					</div>
-		 					<p class="card-text">5% complete</p>
+		 					<p class="card-text">0% complete</p>
 		 				</div>
 		 			</div>
 		 			<!-- row end -->
@@ -49,7 +49,7 @@
 								</div>
 								<!--최근 선택지만 active 작동하도록 ??-->								
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item unlocked active"><a href="../courseList/kakaoVideoView.do?knum=1">#1.1 🚨 Read this First 🚨 </a></li>
+									<li class="list-group-item unlocked"><a href="../courseList/kakaoVideoView.do?knum=1">#1.1 🚨 Read this First 🚨 </a></li>
 									<li class="list-group-item unlocked"><a href="../courseList/kakaoVideoView.do?knum=2">#1.2 Welcome (01:49)</a></li>
 									<li class="list-group-item unlocked"><a href="../courseList/kakaoVideoView.do?knum=3">#1.3 Software Requirements (03:55)</a></li>
 									<li class="list-group-item unlocked"><a href="../courseList/kakaoVideoView.do?knum=4">#1.4 Join the Challenge (02:26)</a></li>
@@ -204,7 +204,7 @@
 			 	<!-----------------------------------------
 		 		 left sideList : course curriculum :lg이상일 때  
 		 	------------------------------------------>
-		 		<div class="col-lg-4 col-xl-3 mx-auto d-none d-lg-block scrollSide" id="sideList">
+		 		<div class="col-lg-4 col-xl-3 mx-auto d-none d-lg-block scrollSide leftSideShow" id="sideList">
 		 			<div class="row">
 		 				<div class="card-body text-center mb-4 bg-white shadow-sm mx-auto text-dark">
 		 					<h5 class="card-title disabled">코코아톡 클론코딩</h5>

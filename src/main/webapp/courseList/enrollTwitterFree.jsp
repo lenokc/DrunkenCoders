@@ -158,14 +158,15 @@ function checkFreeLogin() {
 	<!-----------------------------------------
  	네비 제외한 전체 컨텐츠 container-fluid 
  ------------------------------------------>
-	<div class="container-fluid px-0 c-skew-5 pt-0">
+	<div class="container-fluid px-0 c-skew-5 c-mt-8">
 		<!-- 상단 문구 main top -->
 		<div class="container py-0">
 			<div class="row">
-				<div class="jumbotron text-center col bg-white py-0">
-					<h1 class="display-5 font-weight-bold py-0">
-						<strong>Confirm Enrollment</strong>
-					</h1>
+				<div class="jumbotron text-center col bg-white p-0">
+					<h2 class="display-4 font-weight-bold">Challenges</h2>
+					<div class="my-4">
+						<h6 class="font-weight-bold text-black-50">Confirm Enrollment</h6>
+					</div>
 				</div>
 				<!-- jumbotron end -->
 			</div>

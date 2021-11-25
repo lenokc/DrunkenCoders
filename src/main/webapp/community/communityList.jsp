@@ -52,16 +52,15 @@
 	</style>
 </head>
 <body>
-	<div class="container">
+	<div class="container c-mt-8">
 		<!-- 첫번째 섹션, 최상단 title -->
 		<div class="row text-center p-5">
 			<div class="col">
-				<div class="display-4 font-weight-bold h5 p-2 mt-5">
-					Community
+				<div class="display-4 font-weight-bold h5 p-2 ">Community</div>
+				<div class="my-3">
+					<h6 class="font-weight-bold text-black-50">개발자 99% 커뮤니티에서 수다
+						떨어요!</h6>
 				</div>
-				<p class="h5 text-muted mb-4">
-					개발자 99% 커뮤니티에서 수다 떨어요!
-				</p>
 			</div>
 		</div>
 		<!-- 첫번째.row -->

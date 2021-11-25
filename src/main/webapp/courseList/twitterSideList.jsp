@@ -29,7 +29,7 @@
 		 	<!-----------------------------------------
 		 		  left sideList : course curriculum :lg미만일 때 
 		 	------------------------------------------>
-		 		<div class="col-lg-4 col-xl-3 mx-auto d-blcok d-lg-none" id="sideList">
+		 		<div class="col-lg-4 col-xl-3 mx-auto d-blcok d-lg-none topList" id="sideList">
 		 			<div class="row">
 		 				<div class="card-body text-center mb-4 bg-white shadow-sm mx-auto text-dark">
 		 					<h5 class="card-title disabled">트위터 클론코딩</h5>
@@ -201,7 +201,7 @@
 			 	<!-----------------------------------------
 		 		  left sideList : course curriculum  :lg이상일 때
 		 	------------------------------------------>
-		 		<div class="col-lg-4 col-xl-3 mx-auto d-none d-lg-block scrollSide unlockList" id="sideList">
+		 		<div class="col-lg-4 col-xl-3 mx-auto d-none d-lg-block scrollSide unlockList leftSideShow" id="sideList">
 		 			<div class="row">
 		 				<div class="card-body text-center mb-4 bg-white shadow-sm mx-auto text-dark">
 		 					<h5 class="card-title disabled">트위터 클론코딩</h5>

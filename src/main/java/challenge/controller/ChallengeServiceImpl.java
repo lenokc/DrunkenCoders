@@ -11,5 +11,5 @@ public class ChallengeServiceImpl implements ChallengeService{
 	
 	@Autowired
 	private ChallengeDAO challengeDAO;
-
+  
 }

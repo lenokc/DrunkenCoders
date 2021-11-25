@@ -46,3 +46,4 @@ function checkModify() {
 		modifyForm.submit();
 	}
 }
+

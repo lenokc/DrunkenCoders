@@ -65,11 +65,23 @@ body, html {
 .c-mb-8{
 	margin-bottom: 8em;
 }
+.c-mb-10{
+	margin-bottom: 10em;
+}
 .c-pb-8{
 	padding-bottom: 8em;
 }
+.c-pb-10{
+	padding-bottom: 10em;
+}
 .c-text-mint{
 	color: #2BEAE8;
+}
+.c-pl-8{
+	padding-left:8em;
+}
+.c-pl-10{
+	padding-left:10em;
 }
 .c-w-100{
 	width: 100% !important;
@@ -399,6 +411,7 @@ nav .bi-bell-fill{
 /************************
  video : fixed navbar css
 ************************/
+
 #sideList .card li a{
 	float: left;
 	text-decoration: none;
@@ -465,7 +478,16 @@ nav .bi-bell-fill{
 	color: white;
 	padding-left: 5px;
 }
-
+.unlockList li{
+	cursor:pointer !important;
+}
+/* only view when a lg size */
+.scrollSide{
+	height: 100vh;
+	overflow:scroll;
+	position:fixed;
+	padding-bottom:150px !important;
+}
 /****************************
 	 twitterFree css
 *****************************/
@@ -497,15 +519,16 @@ nav .bi-bell-fill{
 /****************************
 	디바이스가 바뀌면 변하는 스타일
 *****************************/
-@media (max-width: 575.98px) {
 
+@media (max-width: 575.98px) {
+	
 }
 @media (min-width: 576px) {
-
+	
 }
 
 @media (min-width: 768px) {
-
+	
 }
 
 @media (min-width: 992px) {

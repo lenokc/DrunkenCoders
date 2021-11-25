@@ -301,11 +301,10 @@ px-6 {
 </head>
 <body>
 	<!-- 전체 감싸는 div -->
-	<div class="d-flex flex-column py-12 sm-px-6 lg-px-8"
-		style="min-height: calc(100vh - 70px);">
-		<div class="card bg-light">
+	<div class="d-flex flex-column py-12 sm-px-6 lg-px-8 c-pt-8 bg-light" style="min-height: calc(100vh - 70px);">
+		<h2 class="display-4 font-weight-bold my-5 text-center">Join Drunken Coders</h2>
+		<div class="">
 			<article class="card-body mx-auto" style="max-width: 400px;">
-				<h4 class="card-title mt-6 text-center text-3xl leading-9 font-semibold">Join Drunken Coders</h4>
 				<form action="../member/memberWrite.do" name="writeForm" method="post" onsubmit="checkWrite();return false;">
 					<div class="form-group input-group" style="text-align:center;">
 						<div class="input-group-prepend">

@@ -46,16 +46,14 @@
 	</script>
 </head>
 <body>
-	<div class="container">
+	<div class="container c-pt-8">
 		<!-- 첫번째 섹션, 최상단 title -->
 		<div class="row text-center p-5">
 			<div class="col">
-				<div class="display-4 font-weight-bold h1 p-3">
-					Community
-				</div>
-				<p class="h5 text-muted mb-4">
+				<h2 class="display-4 font-weight-bold">Community</h2>
+				<h6 class="font-weight-bold text-black-50 mb-5">
 					개발자 99% 커뮤니티에서 수다 떨어요!
-				</p>
+				</h6>
 			</div>
 		</div>
 		<!-- 첫번째.row -->

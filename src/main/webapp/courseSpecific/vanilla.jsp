@@ -43,7 +43,7 @@
 								<h4 class="display-5 mb-5">Javascript for Beginners</h4>
 								<h4 class=" pt-2">
 									<span class="badge badge-pill badge-warning text-white">초급</span>
-									<span class="badge badge-pill badge-primary text-white">무료</span>
+									<!-- <span class="badge badge-pill badge-primary text-white">무료</span> -->
 								</h4>
 							</div>
 						</div>
@@ -381,11 +381,11 @@
 		 						#1 [2021 UPDATE] INTRODUCTION
 		 					</div>
 		 					<ul class="list-group list-group-flush" id="firstCard">
-		 						<li class="list-group-item">♥ 2021 Update Announcement ♥ <a href="#">Free Preview →</a></li>
-		 						<li class="list-group-item">#1.0 Welcome (01:54)<a href="#">Free Preview →</a></li>
-		 						<li class="list-group-item">#1.1 What Are We Building (02:13)<a href="#">Free Preview →</a></li>
-		 						<li class="list-group-item">#1.2 Requirements (02:00)<a href="#">Free Preview →</a></li>
-		 						<li class="list-group-item">#1.3 Software Requirements (02:42)<a href="#">Free Preview →</a></li>
+		 						<li class="list-group-item">♥ 2021 Update Announcement ♥ <a href="../courseList/vanillaList.do">Free Preview →</a></li>
+		 						<li class="list-group-item">#1.0 Welcome (01:54)<a href="../courseList/vanillaList.do">Free Preview →</a></li>
+		 						<li class="list-group-item">#1.1 What Are We Building (02:13)<a href="../courseList/vanillaList.do">Free Preview →</a></li>
+		 						<li class="list-group-item">#1.2 Requirements (02:00)<a href="../courseList/vanillaList.do">Free Preview →</a></li>
+		 						<li class="list-group-item">#1.3 Software Requirements (02:42)<a href="../courseList/vanillaList.do">Free Preview →</a></li>
 		 						<li class="list-group-item"><span class="lock">#1.4 Why JS (07:39)</span><a href="#">Watch now →</a></li>
 		 						<li class="list-group-item"><span class="lock">#1.5 Why JS II (06:30)</span><a href="#">Watch now →</a></li>
 		 						<li class="list-group-item"><span class="lock">#1.6 Online IDE (03:30)</span><a href="#">Watch now →</a></li>

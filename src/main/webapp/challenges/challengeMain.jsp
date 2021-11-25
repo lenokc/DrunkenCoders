@@ -7,7 +7,7 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>드렁큰 코더 Drunken Coders</title>
-<!-- favicon -->
+<!-- favicon. -->
 <link rel="shortcut icon" type="image/x-icon"
 	href="DrunkenCoders/img/m.png" />
 <!-- Bootstrap CSS -->

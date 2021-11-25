@@ -269,14 +269,14 @@ nav .bi-bell-fill {
 	<div class="container c-pt-8">
 		<div class="container-fluid px-4 c-skew-5">
 			<!-- 최상단 All Courses 로고 -->
-			<div class="container mb-10 d-sm-mb-28">
+			<div class="container d-sm-mb-28">
 				<div class="row">
 					<div class="jumbotron text-center col bg-white">
 						<h2 class="display-4 font-weight-bold">All Courses</h2>
 						<div class="my-4">
-							<p classclass="font-weight-bold text-black-50">
+							<h6 class="font-weight-bold text-black-50">
 								초급부터 고급까지! <br> 함께 풀스택으로 성장하세요!
-							</p>
+							</h6>
 						</div>
 					</div>
 				</div>

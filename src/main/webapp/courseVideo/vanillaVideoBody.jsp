@@ -28,21 +28,146 @@
 	</head>
 	<body>
 				<!-----------------------------------------
-								body:Video
+								body:Video:lg미만일 때
 				------------------------------------------>
-				<div class="col">
+				<div class="col-lg-8 d-blcok d-lg-none c-px-8">
 					<h5 class="c-mb-5 py-4">${vo.vsub }</h5>
-					<div class="rounded bg-primary text-white mb-4">
+					<div class="container rounded bg-primary text-white my-4 p-4">
 						<div class="row">
-							<div class="col-md-1 d-flex align-items-center pl-5">
-								<i class="fas fa-fire fa-2x"></i>
+							<i class="col-1 fas fa-fire fa-2x float-left"></i>
+							<span class="col-8 float-left h5">해당 강의는 2주 완성반 챌린지가 무료로 제공됩니다. 지금 바로 신청해보세요!</span>
+							<button class=" col-2 btn btn-outline-light float-right" type="button">신청하기 →</button>
+						</div>
+					</div>						
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="${vo.vurl }" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
+						<!--  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T0l6C6f6bEw" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+					</div>
+					
+					<div class="container c-pt-8">					
+						<div class="text-center">
+							<h2 class="display-3 font-weight-bold">
+								<strong>More Courses</strong>
+							</h2>
+						</div>
+					</div>
+					<!-- considering -->					
+					<div class="container mt-20">
+						<div class="row">
+							<div class="col-md-6 col-xl-4 rounded-lg mt-5">
+								<a href="../courseList/twitterFree.do">
+									<div class="card border-0">
+										<div class="card-img-top overflow-hidden rounded-lg">
+											<img src="/drunkenCoders/img/01_index/thumb_01_twitter.jpg" alt="..."
+												class="img-fluid rounded-lg"> <span
+												class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급 무료</span>
+										</div>
+										<div
+											class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+											<h5 class="card-title disabled">[풀스택] 트위터 클론코딩</h5>
+											<p class="card-text">React Firebase for Beginners</p>
+										</div>
+									</div>
+								</a>
 							</div>
-							<div class="col-md-9 card-body pt-4 fs-50">
-								<h5>해당 강의는 2주 완성반 챌린지가 무료로 제공됩니다. 지금 바로 신청해보세요!</h5>
+							<div class="col-md-6 col-xl-4 rounded-lg mt-5">
+								<a href="../courseSpecific/kakao.do">
+									<div class="card border-0">
+										<div class="card-img-top overflow-hidden rounded-lg">
+											<img src="/drunkenCoders/img/01_index/thumb_02.jpg" alt="..."
+												class="img-fluid rounded-lg"> <span
+												class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
+										</div>
+										<div
+											class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+											<h5 class="card-title disabled">코코아톡 클론코딩</h5>
+											<p class="card-text">HTML, CSS, Github</p>
+										</div>
+									</div>
+								</a>
 							</div>
-							<div class="col-md-2 d-flex align-items-center pl-5">
-								<!-- 버튼 생성이 왜 안되지? -->
-								<button class="btn btn-outline-light" type="button">신청하기 →</button>
+							<div class="col-md-6 col-xl-4 rounded-lg mt-5">
+								<a href="#">
+									<div class="card border-0">
+										<div class="card-img-top overflow-hidden rounded-lg">
+											<img src="/drunkenCoders/img/01_index/thumb_03.jpg" alt="..."
+												class="img-fluid rounded-lg"> <span
+												class="badge badge-pill badge-danger text-white align-top my-2 mx-2">고급</span>
+										</div>
+										<div
+											class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+											<h5 class="card-title disabled">[풀스택] 우버 이츠 클론코딩</h5>
+											<p class="card-text">우버이츠 백엔드 + 프런트엔드 + 결제</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-6 col-xl-4 rounded-lg mt-5">
+								<a href="#">
+									<div class="card border-0">
+										<div class="card-img-top overflow-hidden rounded-lg">
+											<img src="/drunkenCoders/img/01_index/thumb_04.jpg" alt="..."
+												class="img-fluid rounded-lg"> <span
+												class="badge badge-pill badge-success text-white align-top my-2 mx-2">중급</span>
+										</div>
+										<div
+											class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+											<h5 class="card-title disabled">[풀스택] 인스타그램 클론코딩</h5>
+											<p class="card-text">인스타그램 백엔드 + 프런트엔드 + 앱 + 서버</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-6 col-xl-4 rounded-lg mt-5">
+								<a href="#">
+									<div class="card border-0">
+										<div class="card-img-top overflow-hidden rounded-lg">
+											<img src="/drunkenCoders/img/01_index/thumb_05.jpeg" alt="..."
+												class="img-fluid rounded-lg"> <span
+												class="badge badge-pill badge-success text-white align-top my-2 mx-2">중급</span>
+										</div>
+										<div
+											class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+											<h5 class="card-title disabled">노마드 코인</h5>
+											<p class="card-text">Go로 암호화폐 만들기</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-6 col-xl-4 rounded-lg mt-5">
+								<a href="#">
+									<div class="card border-0">
+										<div class="card-img-top overflow-hidden rounded-lg">
+											<img src="/drunkenCoders/img/01_index/thumb_06.jpg" alt="..."
+												class="img-fluid rounded-lg"> <span
+												class="badge badge-pill badge-warning text-white align-top my-2 mx-2">중급 무료</span>
+										</div>
+										<div
+											class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+											<h5 class="card-title disabled">[풀스택] 에어비앤비 클론코딩</h5>
+											<p class="card-text">에어비앤비 백엔드 + 프런트엔드 + 배포</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>	
+
+				</div>
+				<!-- .col end-->	
+				<!-----------------------------------------
+								body:Video:lg이상일 때 
+				------------------------------------------>
+				<div class="col-lg-8 offset-lg-4 col-xl-9 offset-xl-3 d-none d-lg-block px-5">
+					<h5 class="c-mb-5 py-4">${vo.vsub }</h5>
+					<div class="rounded bg-primary text-white mb-4 p-3">
+						<div class="row c-round-lg fs-50">
+							<div class="col-12">
+								<div class="row">
+									<i class="col-1 fas fa-fire fa-2x float-left"></i>
+									<span class="col-8 float-left h5">해당 강의는 2주 완성반 챌린지가 무료로 제공됩니다. 지금 바로 신청해보세요!</span>
+									<button class=" col-2 btn btn-outline-light float-right" type="button">신청하기 →</button>
+								</div>
 							</div>
 						 </div>
 					</div>						
@@ -161,8 +286,7 @@
 					</div>	
 
 				</div>
-				<!-- .col end-->	
-				
+				<!-- .col end-->
 			
 
 

@@ -29,7 +29,7 @@
 		 	<!-----------------------------------------
 		 		  left sideList : course curriculum
 		 	------------------------------------------>
-		 		<div class="col-lg-4 col-xl-3 mx-auto" id="sideList">
+		 		<div class="col-lg-4 col-xl-3 mx-auto px-5" id="sideList">
 		 			<div class="row">
 		 				<div class="card-body text-center mb-4 bg-white shadow-sm mx-auto text-dark">
 		 					<h5 class="card-title disabled">코코아톡 클론코딩</h5>
@@ -42,8 +42,8 @@
 		 			<!-- row end -->
 		 			
 		 			<div class="row">
-		 				<div class="col">
-			 				<div class="card shadow-sm mb-5">
+		 				<div class="col mx-5">
+			 				<div class="card shadow-sm">
 								<div class="card-header bg-warning text-white">
 									#1 INTRODUCTION
 								</div>

@@ -45,7 +45,7 @@ public class VideoController {
 		
 		
 		// 2. share data
-		request.setAttribute("req","/courseVideo/kakaoVideoLock.jsp");
+		request.setAttribute("req","/courseVideo/kakaoVideobody.jsp");
 		
 		// 3. view
 		return "/courseVideo/kakaoVideo.jsp";

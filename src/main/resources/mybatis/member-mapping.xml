@@ -16,10 +16,6 @@
 	<update id="modify" parameterType="Mdto">
 		update member set name=#{name} where id=#{id}
 	</update>
-	
-	<update id="modifyprofile save" parameterType="Mdto">
-		update member set pic=#{pic} where id=#{id}
-	</update>
 		
 	<select id="memberView" parameterType="String" resultType="Mdto">
 		select * from member where id=#{id}

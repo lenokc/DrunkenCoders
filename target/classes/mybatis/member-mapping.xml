@@ -13,6 +13,14 @@
 		(#{name}, #{id}, #{pwd}, EMPTY_BLOB(), sysdate, 0)
 	</insert>
 	
+	<update id="modify" parameterType="Mdto">
+		update member set name=#{name} where id=#{id}
+	</update>
+		
+	<select id="memberView" parameterType="String" resultType="Mdto">
+		select * from member where id=#{id}
+	</select>
+	
 	<!-- mabatis에서 resultType으로는 boolean 값을 쓸 수 없다.=> string, integer, 객체 등은 가능 -->
 	<select id="isExistId" parameterType="String" resultType="Mdto">
 		select * from member where id=#{id}

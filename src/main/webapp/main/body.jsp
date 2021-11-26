@@ -135,22 +135,55 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg">
-					<a href="${pageContext.request.contextPath}/courseSpecific/vanillaFree.do">
-						<div class="card border-0">
-							<div class="card-img-top overflow-hidden rounded-lg">
-								<img src="/drunkenCoders/img/01_index/jsThumb.jpg" alt="..."
-									class="img-fluid rounded-lg"> <span
-									class="badge badge-pill badge-danger text-white align-top my-2 mx-2">고급 무료</span>
-							</div>
-							<div
-								class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
-								<h5 class="card-title disabled">바닐라 JS로 크롬 웹 만들기</h5>
-								<p class="card-text">Javascript For Beginners</p>
-							</div>
+				<c:choose>
+					<c:when test="${enrollNum2 == 1}">
+						<div
+							class="col-md-6 col-xl-4 rounded-lg level-Price beginner free">
+							<a
+								href="${pageContext.request.contextPath}/courseSpecific/vanillaFree.do">
+								<div class="card border-0">
+									<div class="card-img-top overflow-hidden rounded-lg">
+										<img src="/drunkenCoders/img/01_index/jsThumb.jpg"
+											alt="..." class="img-fluid rounded-lg"> <span
+											class="badge badge-pill badge-danger text-white align-top my-2 mx-2">고급
+											무료</span>
+									</div>
+									<div
+										class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+										<h5 class="card-title disabled">바닐로 JS로 크롬 앱 만들기</h5>
+										<div class="progress c-color-lightblue rounded-lg">
+											<div class="progress-bar" role="progressbar"
+												style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+										<p class="card-text">0% complete</p>
+									</div>
+								</div>
+							</a>
 						</div>
-					</a>
-				</div>
+					</c:when>
+					<c:otherwise>
+						<div
+							class="col-md-6 col-xl-4 rounded-lg level-Price advanced paid">
+							<a
+								href="${pageContext.request.contextPath}/courseSpecific/vanillaFree.do">
+								<div class="card border-0">
+									<div class="card-img-top overflow-hidden rounded-lg">
+										<img src="/drunkenCoders/img/01_index/jsThumb.jpg" alt="..."
+											class="img-fluid rounded-lg"> <span
+											class="badge badge-pill badge-danger text-white align-top my-2 mx-2">고급
+											무료</span>
+									</div>
+									<div
+										class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+										<h5 class="card-title disabled">바닐로 JS로 크롬 앱 만들기</h5>
+										<p class="card-text">Javascript For Beginners</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</c:otherwise>
+				</c:choose>
 				<div class="col-md-6 col-xl-4 rounded-lg">
 					<a href="#">
 						<div class="card border-0">

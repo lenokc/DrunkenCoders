@@ -436,7 +436,7 @@ nav .bi-bell-fill {
 									<div class="card-img-top overflow-hidden rounded-lg">
 										<img src="/drunkenCoders/img/01_index/jsThumb.jpg"
 											alt="..." class="img-fluid rounded-lg"> <span
-											class="badge badge-pill badge-warning text-white align-top my-2 mx-2">고급
+											class="badge badge-pill badge-danger text-white align-top my-2 mx-2">고급
 											무료</span>
 									</div>
 									<div

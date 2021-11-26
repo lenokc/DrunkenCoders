@@ -1,7 +1,5 @@
 package member.controller;
 
-import java.util.List;
-
 import member.dto.MemberDTO;
 
 public interface MemberService {
@@ -12,8 +10,6 @@ public interface MemberService {
 	public MemberDTO memberView(String id);
 		
 	public int modify(MemberDTO dto);
-	
-	public int modifyprofile(MemberDTO dto);
 	
 	public int isExistId(String id);
 

@@ -28,10 +28,6 @@ public class MemberServiceImpl implements MemberService {
 	}
 	
 	@Override
-	public int modifyprofile(MemberDTO dto) {
-		return memberDAO.modifyprofile(dto);
-	}
-	@Override
 	public MemberDTO memberView(String id) {
 		return memberDAO.memberView(id);
 	}

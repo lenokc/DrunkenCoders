@@ -30,10 +30,6 @@ public class MemberDAO {
 		return sqlSession.update("mybatis.MemberMapper.modify",dto);
 	}
 	
-	public int modifyprofile(MemberDTO dto) {
-		return sqlSession.update("mybatis.MemberMapper.modify",dto);
-	}
-	
 	public MemberDTO memberView(String id) {
 		return sqlSession.selectOne("mybatis.MemberMapper.memberView",id);
 	}

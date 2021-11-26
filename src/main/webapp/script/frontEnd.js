@@ -102,7 +102,7 @@ $(function(){
 	*/
 	
 	/***********************************
-			 videoLockPage_js
+			 videoPage_js
 	***********************************/
 	
 	//activation menu if user click lecture list in #sideList area

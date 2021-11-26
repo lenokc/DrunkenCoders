@@ -35,9 +35,21 @@
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 <script type="text/javascript" src="c:url value="../../script/jquery-3.6.0.min.js"/></script>
-
-
-<script type="text/javascript" src="c:url value="../../script/jquery-3.6.0.min.js"/></script>
+<!-- myScript -->
+<script type="text/javascript" src="/drunkenCoders/script/memberScript.js"></script>
+<script type="text/javascript">
+/*kakao login*/
+/* function loginWithKakao() {
+    Kakao.Auth.login({
+      success: function(authObj) {
+        alert(JSON.stringify(authObj))
+      },
+      fail: function(err) {
+        alert(JSON.stringify(err))
+      },
+    })
+  } */
+</script>
 
 <style>
 body, html {
@@ -299,11 +311,10 @@ nav .bi-bell-fill {
 	<!-----------------------------------------
 		 	네비 제외한 전체 컨텐츠 container-fluid 
 		 ------------------------------------------>
-	<div class="d-flex flex-column py-12 sm-px-6 lg-px-8"
+	<div class="d-flex flex-column py-12 sm-px-6 lg-px-8 c-pt-8"
 		style="min-height: calc(100vh - 70px);">
 		<div class="sm-mx-auto sm-w-full sm-max-w-md">
-			<h1 class="mt-6 text-center text-3xl leading-9 font-semibold">Log
-				in to Drunken Coders</h1>
+			<h2 class="display-4 font-weight-bold text-center my-5">Log in to Drunken Coders</h2>
 			<div class="container">
 				<div id="login-row"
 					class="row justify-content-center align-items-center">
@@ -335,7 +346,13 @@ nav .bi-bell-fill {
 							<p>
 								<a href="" class="btn btn-block btn-kakao"> <i
 									class="fab fa-twitter"></i>   카카오 로그인 →
-								</a> <a href="" class="btn btn-block btn-github"> <i
+								</a>
+								<!-- <a id="custom-login-btn" href="javascript:loginWithKakao()" class="mx-auto">
+									<img
+									src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg"
+									width="222" />
+								</a>  -->
+								<a href="" class="btn btn-block btn-github"> <i
 									class="fab fa-github"></i>   깃허브 로그인 →
 								</a>
 							</p>

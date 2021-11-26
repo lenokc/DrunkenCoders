@@ -373,6 +373,20 @@
 			 		<!-- row end -->
 			 	</div>
 			 	<!-- col-lg-4 end -->
+			 	
+			 	<script>
+	 			
+	 			$(function(){
+	 				var sideBtn =  $('#sideList li');
+	 				var num = ${vnum}-1;
+	 				
+	 				$(window).on('load',function(){
+	 					//alert(num);
+		 				sideBtn.eq(btn).addClass('active');
+		 			})
+	 			})
+	 			
+	 			</script>
 		<!-- Optional JavaScript; choose one of the two! -->
 
 		<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

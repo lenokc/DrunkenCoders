@@ -48,7 +48,7 @@
 									#1 INTRODUCTION
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item unlocked active"><a href="#">#1.1 🚨 Read this First 🚨 </a></li>
+									<li class="list-group-item unlocked"><a href="#">#1.1 🚨 Read this First 🚨 </a></li>
 									<li class="list-group-item unlocked"><a href="#">#1.2 Welcome (01:49)</a></li>
 									<li class="list-group-item unlocked"><a href="#">#1.3 Software Requirements (03:55)</a></li>
 									<li class="list-group-item unlocked"><a href="#">#1.4 Join the Challenge (02:26)</a></li>

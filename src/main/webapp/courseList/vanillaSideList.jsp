@@ -29,7 +29,7 @@
 		 	<!-----------------------------------------
 		 		  left sideList : course curriculum :lg미만일 때 
 		 	------------------------------------------>
-		 		<div class="col-lg-4 col-xl-3 mx-auto d-blcok d-lg-none lockList" id="sideList">
+		 		<div class="col-lg-4 col-xl-3 mx-auto d-block d-lg-none lockList topList" id="sideList">
 		 			<div class="row">
 		 				<div class="card-body text-center mb-4 bg-white shadow-sm mx-auto text-dark">
 		 					<h5 class="card-title disabled">바닐라 JS로 크롬 앱 만들기</h5>
@@ -49,7 +49,7 @@
 								</div>
 								<!--최근 선택지만 active 작동하도록 ??-->								
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item unlocked active"><a href="../courseList/vanillaVideoView.do?vnum=1">#1.1 2021 Update Announcement </a></li>
+									<li class="list-group-item unlocked"><a href="../courseList/vanillaVideoView.do?vnum=1">#1.1 2021 Update Announcement </a></li>
 	 								<li class="list-group-item unlocked"><a href="../courseList/vanillaVideoView.do?vnum=2">#1.2 Welcome (01:54)</a></li>
 	 								<li class="list-group-item unlocked"><a href="../courseList/vanillaVideoView.do?vnum=3">#1.3 What are we building (02:13)</a></li>
 	 								<li class="list-group-item unlocked"><a href="../courseList/vanillaVideoView.do?vnum=4">#1.4 Requirements (02:00)</a></li>
@@ -373,6 +373,20 @@
 			 		<!-- row end -->
 			 	</div>
 			 	<!-- col-lg-4 end -->
+			 	
+			 	<script>
+	 			
+	 			$(function(){
+	 				var sideBtn =  $('#sideList li');
+	 				var num = ${vnum}-1;
+	 				
+	 				$(window).on('load',function(){
+	 					//alert(num);
+		 				sideBtn.eq(btn).addClass('active');
+		 			})
+	 			})
+	 			
+	 			</script>
 		<!-- Optional JavaScript; choose one of the two! -->
 
 		<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

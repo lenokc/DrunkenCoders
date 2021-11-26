@@ -34,9 +34,9 @@
 		 				<div class="card-body text-center mb-4 bg-white shadow-sm mx-auto text-dark">
 		 					<h5 class="card-title disabled">코코아톡 클론코딩</h5>
 		 					<div class="progress c-color-lightblue rounded-lg">
-		 						<div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+		 						<div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 		 					</div>
-		 					<p class="card-text">5% complete</p>
+		 					<p class="card-text">0% complete</p>
 		 				</div>
 		 			</div>
 		 			<!-- row end -->
@@ -48,7 +48,7 @@
 									#1 INTRODUCTION
 								</div>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item unlocked active"><a href="#">#1.1 🚨 Read this First 🚨 </a></li>
+									<li class="list-group-item unlocked"><a href="#">#1.1 🚨 Read this First 🚨 </a></li>
 									<li class="list-group-item unlocked"><a href="#">#1.2 Welcome (01:49)</a></li>
 									<li class="list-group-item unlocked"><a href="#">#1.3 Software Requirements (03:55)</a></li>
 									<li class="list-group-item unlocked"><a href="#">#1.4 Join the Challenge (02:26)</a></li>

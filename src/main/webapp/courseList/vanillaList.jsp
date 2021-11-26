@@ -39,7 +39,7 @@
  							<div class="card border-0 bg-light">
  								<div class="card-img-top overflow-hidden rounded-lg">
  									<img src="/drunkenCoders/img/01_index/thumb_07.jpg" alt="..." class="img-fluid rounded-lg">
- 									<span class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급 무료</span>
+ 									<span class="badge badge-pill badge-danger text-white align-top my-2 mx-2">고급</span>
  								</div>
  								<div class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
  									<h5 class="card-title disabled">바닐라 JS로 크롬 앱 만들기</h5>

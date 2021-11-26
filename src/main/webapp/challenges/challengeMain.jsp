@@ -161,7 +161,8 @@ ul {
 				<h2 class="display-4 font-weight-bold">Challenges</h2>
 				<div class="my-4">
 					<h6 class="font-weight-bold text-black-50">멱살잡고 캐리하는 챌린지? 무료로
-						시작하세요!</h6>
+						시작하세요!
+					</h6>
 				</div>
 			</div>
 			<!-- jumbotron end -->

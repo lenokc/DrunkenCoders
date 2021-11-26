@@ -27,7 +27,21 @@
 		(select * from community order by hit desc) tt)
 		where rn>=#{startNum} and rn<=#{endNum}
 		]]>
-	</select>	
+	</select>
+	
+	<select id="communityCtList" parameterType="java.util.Map" resultType="Cdto">
+		<![CDATA[
+		select seq, id, name, subject, content, hit, category,
+		to_char(logtime, 'YYYY.MM.DD') as logtime 
+		from(select rownum rn, tt.* from
+		(select * from community where category=#{category, jdbcType=VARCHAR} order by seq desc) tt)
+		where rn>=#{startNum} and rn<=#{endNum}
+		]]>
+	</select>
+	
+	<select id="communityGrpList" resultType="java.util.Map" parameterType="java.util.Map">
+		select category, count(*) as catCnt from community group by category
+	</select>			
 	
 	<select id="communityView" parameterType="int" resultType="Cdto">
 		select * from community where seq=#{seq}
@@ -41,6 +55,10 @@
 		select count(*) as cnt from community
 	</select>
 	
+	<select id="getTotalB" resultType="int" parameterType="java.util.Map">
+		select count(*) as cnt from community where category=#{category, jdbcType=VARCHAR}
+	</select>		
+	
 	<delete id="delete" parameterType="int">
 		delete community where seq=#{seq}
 	</delete>
@@ -48,6 +66,5 @@
 	<update id="communityModify" parameterType="Cdto">
 		update community set subject=#{subject}, content=#{content} where seq=#{seq}
 	</update>
-	
 	
 </mapper>

@@ -136,12 +136,12 @@
 					</a>
 				</div>
 				<div class="col-md-6 col-xl-4 rounded-lg">
-					<a href="${pageContext.request.contextPath}/courseSpecific/vanilla.do">
+					<a href="${pageContext.request.contextPath}/courseSpecific/vanillaFree.do">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
 								<img src="/drunkenCoders/img/01_index/jsThumb.jpg" alt="..."
 									class="img-fluid rounded-lg"> <span
-									class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급</span>
+									class="badge badge-pill badge-danger text-white align-top my-2 mx-2">고급 무료</span>
 							</div>
 							<div
 								class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">

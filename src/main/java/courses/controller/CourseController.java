@@ -23,7 +23,9 @@ public class CourseController {
 		
 		if(id != null ) {
 			int enrollNum = memberService.getEnrollTwitter(id);
+			int enrollNum2 = memberService.getEnrollVanilla(id);
 			System.out.println("========num :"+enrollNum);
+			request.setAttribute("enrollNum2", enrollNum2);
 			request.setAttribute("enrollNum", enrollNum);
 		}
 		request.setAttribute("req","/courses/course.jsp");

@@ -26,6 +26,7 @@ public class VideoController {
 	public String kakaoVideoView(HttpServletRequest request, HttpServletResponse response) {
 		// 1. data processing
 		HttpSession session = request.getSession();
+		
 		try {
 			request.setCharacterEncoding("utf-8");
 		} catch (UnsupportedEncodingException e) {
@@ -34,7 +35,10 @@ public class VideoController {
 		String name = (String)session.getAttribute("memName");
 	    String id = (String)session.getAttribute("memId");
 	    
+	    
 		int knum = Integer.parseInt(request.getParameter("knum"));
+		
+		
 		KakaoVideoDTO vo = videoService.kakaoVideoView(knum);
 	    
 	    CourseListDTO dto = new CourseListDTO();
@@ -42,7 +46,7 @@ public class VideoController {
 	    dto.setId(id);
 	    
 		request.setAttribute("vo", vo);
-		
+		request.setAttribute("knum", knum);
 		
 		// 2. share data
 		request.setAttribute("req","/courseVideo/kakaoVideobody.jsp");

@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Required meta tags -->
+<!-- Required meta tags  -->
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -145,16 +145,24 @@ nav .bi-bell-fill {
 .cursor-pointer {
 	cursor: pointer;
 }
-.filter_btns label.c-blue.active, .filter_btns button.btn-secondary.c-blue.active{
+
+.filter_btns label.c-blue.active, .filter_btns button.btn-secondary.c-blue.active
+	{
 	background-color: #23BBEE !important;
 }
-.filter_btns label.c-yellow.active, .filter_btns button.btn-secondary.c-yellow.active{
+
+.filter_btns label.c-yellow.active, .filter_btns button.btn-secondary.c-yellow.active
+	{
 	background-color: #FAD211 !important;
 }
-.filter_btns label.c-green.active, .filter_btns button.btn-secondary.c-green.active{
+
+.filter_btns label.c-green.active, .filter_btns button.btn-secondary.c-green.active
+	{
 	background-color: #53E290 !important;
 }
-.filter_btns label.c-purple.active, .filter_btns button.btn-secondary.c-purple.active{
+
+.filter_btns label.c-purple.active, .filter_btns button.btn-secondary.c-purple.active
+	{
 	background-color: #CB58F2 !important;
 }
 /*card grid style*/
@@ -228,9 +236,9 @@ nav .bi-bell-fill {
 }
 /* clear fix */
 .level-Price:after {
-  content: '';
-  display: block;
-  clear: both;
+	content: '';
+	display: block;
+	clear: both;
 }
 /****************************
 		디바이스가 바뀌면 변하는 스타일
@@ -254,12 +262,10 @@ nav .bi-bell-fill {
 }
 
 @media ( min-width : 1200px) {
-	.lg-border-r{
-	border-right-width: 1px;
+	.lg-border-r {
+		border-right-width: 1px;
 	}
 }
-
-
 </style>
 </head>
 <body>
@@ -352,38 +358,45 @@ nav .bi-bell-fill {
 		<div class="container" id="card">
 			<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 			<div class="row filter_group">
-				
+
 				<c:choose>
 					<c:when test="${enrollNum == 1}">
-						<div class="col-md-6 col-xl-4 rounded-lg level-Price beginner free">
-							<a href="${pageContext.request.contextPath}/courseSpecific/twitterFree.do">
+						<div
+							class="col-md-6 col-xl-4 rounded-lg level-Price beginner free">
+							<a
+								href="${pageContext.request.contextPath}/courseSpecific/twitterFree.do">
 								<div class="card border-0">
 									<div class="card-img-top overflow-hidden rounded-lg">
-										<img src="/drunkenCoders/img/01_index/thumb_01_twitter.jpg" alt="..."
-											class="img-fluid rounded-lg"> <span
-											class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급 무료</span>
+										<img src="/drunkenCoders/img/01_index/thumb_01_twitter.jpg"
+											alt="..." class="img-fluid rounded-lg"> <span
+											class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급
+											무료</span>
 									</div>
 									<div
 										class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
 										<h5 class="card-title disabled">[풀스택] 트위터 클론코딩</h5>
 										<div class="progress c-color-lightblue rounded-lg">
-											<div class="progress-bar" role="progressbar" style="width: 0%"
-												aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+											<div class="progress-bar" role="progressbar"
+												style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+												aria-valuemax="100"></div>
 										</div>
 										<p class="card-text">0% complete</p>
 									</div>
 								</div>
 							</a>
 						</div>
-					</c:when> 
+					</c:when>
 					<c:otherwise>
-						<div class="col-md-6 col-xl-4 rounded-lg level-Price beginner free">
-							<a href="${pageContext.request.contextPath}/courseSpecific/twitterFree.do">
+						<div
+							class="col-md-6 col-xl-4 rounded-lg level-Price beginner free">
+							<a
+								href="${pageContext.request.contextPath}/courseSpecific/twitterFree.do">
 								<div class="card border-0">
 									<div class="card-img-top overflow-hidden rounded-lg">
-										<img src="/drunkenCoders/img/01_index/thumb_01_twitter.jpg" alt="..."
-											class="img-fluid rounded-lg"> <span
-											class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급 무료</span>
+										<img src="/drunkenCoders/img/01_index/thumb_01_twitter.jpg"
+											alt="..." class="img-fluid rounded-lg"> <span
+											class="badge badge-pill badge-warning text-white align-top my-2 mx-2">초급
+											무료</span>
 									</div>
 									<div
 										class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
@@ -395,9 +408,10 @@ nav .bi-bell-fill {
 						</div>
 					</c:otherwise>
 				</c:choose>
-			
+
 				<div class="col-md-6 col-xl-4 rounded-lg level-Price beginner paid">
-					<a href="${pageContext.request.contextPath}/courseSpecific/kakao.do">
+					<a
+						href="${pageContext.request.contextPath}/courseSpecific/kakao.do">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
 								<img src="/drunkenCoders/img/01_index/thumb_02.jpg" alt="..."
@@ -412,23 +426,57 @@ nav .bi-bell-fill {
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg level-Price advanced paid">
-					<a href="${pageContext.request.contextPath}/courseSpecific/vanilla.do">
-						<div class="card border-0">
-							<div class="card-img-top overflow-hidden rounded-lg">
-								<img src="/drunkenCoders/img/01_index/jsThumb.jpg" alt="..."
-									class="img-fluid rounded-lg"> <span
-									class="badge badge-pill badge-danger text-white align-top my-2 mx-2">고급</span>
-							</div>
-							<div
-								class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
-								<h5 class="card-title disabled">바닐로 JS로 크롬 앱 만들기</h5>
-								<p class="card-text">Javascript For Beginners</p>
-							</div>
+				<c:choose>
+					<c:when test="${enrollNum2 == 1}">
+						<div
+							class="col-md-6 col-xl-4 rounded-lg level-Price beginner free">
+							<a
+								href="${pageContext.request.contextPath}/courseSpecific/vanillaFree.do">
+								<div class="card border-0">
+									<div class="card-img-top overflow-hidden rounded-lg">
+										<img src="/drunkenCoders/img/01_index/jsThumb.jpg"
+											alt="..." class="img-fluid rounded-lg"> <span
+											class="badge badge-pill badge-warning text-white align-top my-2 mx-2">고급
+											무료</span>
+									</div>
+									<div
+										class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+										<h5 class="card-title disabled">바닐로 JS로 크롬 앱 만들기</h5>
+										<div class="progress c-color-lightblue rounded-lg">
+											<div class="progress-bar" role="progressbar"
+												style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+										<p class="card-text">0% complete</p>
+									</div>
+								</div>
+							</a>
 						</div>
-					</a>
-				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg level-Price intermediate paid">
+					</c:when>
+					<c:otherwise>
+						<div
+							class="col-md-6 col-xl-4 rounded-lg level-Price advanced paid">
+							<a
+								href="${pageContext.request.contextPath}/courseSpecific/vanillaFree.do">
+								<div class="card border-0">
+									<div class="card-img-top overflow-hidden rounded-lg">
+										<img src="/drunkenCoders/img/01_index/jsThumb.jpg" alt="..."
+											class="img-fluid rounded-lg"> <span
+											class="badge badge-pill badge-danger text-white align-top my-2 mx-2">고급
+											무료</span>
+									</div>
+									<div
+										class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
+										<h5 class="card-title disabled">바닐로 JS로 크롬 앱 만들기</h5>
+										<p class="card-text">Javascript For Beginners</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</c:otherwise>
+				</c:choose>
+				<div
+					class="col-md-6 col-xl-4 rounded-lg level-Price intermediate paid">
 					<a href="#">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
@@ -444,7 +492,8 @@ nav .bi-bell-fill {
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg level-Price intermediate paid">
+				<div
+					class="col-md-6 col-xl-4 rounded-lg level-Price intermediate paid">
 					<a href="#">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
@@ -460,13 +509,15 @@ nav .bi-bell-fill {
 						</div>
 					</a>
 				</div>
-				<div class="col-md-6 col-xl-4 rounded-lg level-Price intermediate free">
+				<div
+					class="col-md-6 col-xl-4 rounded-lg level-Price intermediate free">
 					<a href="#">
 						<div class="card border-0">
 							<div class="card-img-top overflow-hidden rounded-lg">
 								<img src="/drunkenCoders/img/01_index/thumb_06.jpg" alt="..."
 									class="img-fluid rounded-lg"> <span
-									class="badge badge-pill badge-success text-white align-top my-2 mx-2">중급 무료</span>
+									class="badge badge-pill badge-success text-white align-top my-2 mx-2">중급
+									무료</span>
 							</div>
 							<div
 								class="card-body text-center bg-white shadow-sm rounded-lg mx-auto text-dark">
@@ -483,54 +534,59 @@ nav .bi-bell-fill {
 	<!-- container-fluid -->
 
 
-<!-- Optional JavaScript; choose one of the two! -->
+	<!-- Optional JavaScript; choose one of the two! -->
 
-<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/js/isotope.min.js"> -->
-<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-</script>
+	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+		crossorigin="anonymous"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/js/isotope.min.js"> -->
+	<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+	</script>
 
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-   <!--
+	<!-- Option 2: Separate Popper and Bootstrap JS -->
+	<!--
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 -->
 
-<!-- frontEdn: my_javascript -->
-<script src="/drunkenCoders/script/frontEnd.js"></script>
+	<!-- frontEdn: my_javascript -->
+	<script src="/drunkenCoders/script/frontEnd.js"></script>
 
-<script>	
-/*filter plug-in*/		
-var $grid = $('.filter_group').isotope({
-  itemSelector: '.level-Price'
-});
+	<script>
+		/*filter plug-in*/
+		var $grid = $('.filter_group').isotope({
+			itemSelector : '.level-Price'
+		});
 
-/*** 
-	store filter for each group
-							****/
-var filters = {};
+		/*** 
+		 store filter for each group
+		 ****/
+		var filters = {};
 
-$('.filter_btns').on( 'click', '.fBtn', function( event ) {
-  var $button = $( event.currentTarget );
-  var $buttonGroup = $button.parents('.btn-group');
-  var filterGroup = $buttonGroup.attr('data-filter-group');
-  filters[ filterGroup ] = $button.attr('data-filter');
-  var filterValue = concatValues( filters );
-  $grid.isotope({ filter: filterValue });
-});
+		$('.filter_btns').on('click', '.fBtn', function(event) {
+			var $button = $(event.currentTarget);
+			var $buttonGroup = $button.parents('.btn-group');
+			var filterGroup = $buttonGroup.attr('data-filter-group');
+			filters[filterGroup] = $button.attr('data-filter');
+			var filterValue = concatValues(filters);
+			$grid.isotope({
+				filter : filterValue
+			});
+		});
 
-
-function concatValues( obj ) {
-  var value = '';
-  for ( var prop in obj ) {
-    value += obj[ prop ];
-  }
-  return value;
-}
-</script>
+		function concatValues(obj) {
+			var value = '';
+			for ( var prop in obj) {
+				value += obj[prop];
+			}
+			return value;
+		}
+	</script>
 </body>
 </html>

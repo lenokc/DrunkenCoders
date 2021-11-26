@@ -115,6 +115,9 @@ public class CourseListController {
 	    CourseListDTO dto = new CourseListDTO();
 	    dto.setName(name);
 	    dto.setId(id);
+	    int su = memberService.updateEnrollVanilla(id); 
+		System.out.println("=========su : "+su);
+	    
 		request.setAttribute("req","/courseList/vanillaList.jsp");
 		
 		// 3. view return

@@ -8,6 +8,12 @@ public interface MemberService {
 	public int write(MemberDTO dto);
 
 	public String login(String id, String pwd);
+
+	public MemberDTO memberView(String id);
+		
+	public int modify(MemberDTO dto);
+	
+	public int modifyprofile(MemberDTO dto);
 	
 	public int isExistId(String id);
 
@@ -18,4 +24,5 @@ public interface MemberService {
 	public int updateEnrollVanilla(String id);
 	
 	public int getEnrollVanilla(String id);
+
 }

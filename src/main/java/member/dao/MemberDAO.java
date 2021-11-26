@@ -26,7 +26,17 @@ public class MemberDAO {
 		map.put("pwd", pwd);
 		return sqlSession.selectOne("mybatis.MemberMapper.login", map);
 	}
-
+	public int modify(MemberDTO dto) {
+		return sqlSession.update("mybatis.MemberMapper.modify",dto);
+	}
+	
+	public int modifyprofile(MemberDTO dto) {
+		return sqlSession.update("mybatis.MemberMapper.modify",dto);
+	}
+	
+	public MemberDTO memberView(String id) {
+		return sqlSession.selectOne("mybatis.MemberMapper.memberView",id);
+	}
 	// validate id exist
 	public int isExistId(String id) {
 		MemberDTO memberDTO = sqlSession.selectOne("mybatis.MemberMapper.isExistId", id);

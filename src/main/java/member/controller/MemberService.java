@@ -14,4 +14,8 @@ public interface MemberService {
 	public int updateEnrollTwitter(String id);
 
 	public int getEnrollTwitter(String id);
+	
+	public int updateEnrollVanilla(String id);
+	
+	public int getEnrollVanilla(String id);
 }

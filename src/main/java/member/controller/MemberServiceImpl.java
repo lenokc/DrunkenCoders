@@ -36,4 +36,16 @@ public class MemberServiceImpl implements MemberService {
 	public int getEnrollTwitter(String id) {
 		return memberDAO.getEnrollTwitter(id);
 	}
+
+	@Override
+	public int getEnrollVanilla(String id) {
+		// TODO Auto-generated method stub
+		return memberDAO.getEnrollVanilla(id);
+	}
+
+	@Override
+	public int updateEnrollVanilla(String id) {
+		// TODO Auto-generated method stub
+		return memberDAO.updateEnrollVanilla(id);
+	}
 }

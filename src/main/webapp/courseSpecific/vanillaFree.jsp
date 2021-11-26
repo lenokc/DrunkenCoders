@@ -43,7 +43,7 @@
 								<h4 class="display-5 mb-5">Javascript for Beginners</h4>
 								<h4 class=" pt-2">
 									<span class="badge badge-pill badge-danger text-white">고급</span>
-									<!-- <span class="badge badge-pill badge-primary text-white">무료</span> -->
+									<span class="badge badge-pill badge-primary text-white">무료</span>
 								</h4>
 							</div>
 						</div>
@@ -67,7 +67,7 @@
 						<h5 class="text-muted">강의 분량</h4>
 					</div>
 					<div class="col-md-4 border-bottom p-3">
-						<h1 class="text-primary display-4 font-weight-bold">고급</h1>
+						<h1 class="text-primary display-4 font-weight-bold">고급 무료</h1>
 						<h5 class="text-muted">레벨</h4>
 					</div>
 				</div>

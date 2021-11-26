@@ -59,16 +59,27 @@ public class CoursesViewController {
 		return "/main/index.jsp";
 	}
 	
-	@RequestMapping(value = "/courseSpecific/vanilla.do")
-	public String vanilla(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping(value = "/courseSpecific/vanillaFree.do")
+	public String vanillaFree(HttpServletRequest request, HttpServletResponse response) {
 		// 1. data processing
-		
+		HttpSession session = request.getSession();
+		String id = (String) session.getAttribute("memId");
+		System.out.println("=========id : "+id);
 		// 2. share data
-		request.setAttribute("req","/courseSpecific/vanilla.jsp");
-		
+		if(id == null ) {
+			request.setAttribute("req","/courseSpecific/vanillaFree.jsp");
+		}else if(id != null ) {
+			int enrollNum = memberService.getEnrollVanilla(id); 
+			System.out.println("========num :"+enrollNum+typeOf(enrollNum));
+			if (enrollNum == 1){
+				request.setAttribute("req","/courseList/vanillaList.jsp");
+			}else if(enrollNum == 0){
+				request.setAttribute("req","/courseSpecific/vanillaFree.jsp");
+			}else {
+				request.setAttribute("req","/main/body.jsp");
+			}
+		}
 		// 3. view return........
 		return "/main/index.jsp";
-	}
-	
-	
+}
 }

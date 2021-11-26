@@ -160,9 +160,9 @@ drop sequence seq_community;
 
 -- insert data
 insert into community values
-(seq_community.nextval, 'hong@gmail.com', '홍길동', '힘내자', '나는 오늘도 발전한다.', 0, sysdate, 'javascript');
+(seq_community.nextval, 'hong@gmail.com', '�솉湲몃룞', '�옒�궡�옄', '�굹�뒗 �삤�뒛�룄 諛쒖쟾�븳�떎.', 0, sysdate, 'javascript');
 insert into community values
-(seq_community.nextval, 'fulfeel2@gmail.com', '풀빛', '오늘하루', '즐코딩', 5, sysdate, 'javascript');
+(seq_community.nextval, 'fulfeel2@gmail.com', '��鍮�', '�삤�뒛�븯猷�', '利먯퐫�뵫', 5, sysdate, 'javascript');
 
 -- check all
 select * from community;
@@ -192,7 +192,8 @@ create table member (
     pwd varchar2(30) not null,      -- password
     pic blob,                       -- picture
     logtime date,                   -- create member date
-    twitterEnroll number default 0  -- twitter lecture => unenrolled:0, enrolled:1
+    twitterEnroll number default 0,  -- twitter lecture => unenrolled:0, enrolled:1
+    vanillaEnroll number default 0  -- vanilla lecture => unenrolled:0, enrolled:1
 );
 
 -- 2. Check Table Description
@@ -202,13 +203,14 @@ drop table member purge;
 -- Table List
 select * from tab;
 -- 1) Data Appending into the Table
-insert into member values('honggildong', 'hong@gmail.com', '1234', EMPTY_BLOB(), sysdate, 0);
-insert into member values('fullbit', 'fulfeel2@gmail.com', '1234', EMPTY_BLOB(), sysdate, 0);
+insert into member values('honggildong', 'hong@gmail.com', '1234', EMPTY_BLOB(), sysdate, 0, 0);
+insert into member values('fullbit', 'fulfeel2@gmail.com', '1234', EMPTY_BLOB(), sysdate, 0, 0);
 
 -- 2) Data Searching
 select * from member;
 select * from member where id='hong@gmail.com';
 select twitterEnroll from member where id='hong@gmail.com';
+select vanillaEnroll from member where id='hong@gmail.com';
 select * from member where id='hong@gmail.com' and pwd='1234';
 SELECT * FROM
     (SELECT ROWNUM rn, tt.* FROM

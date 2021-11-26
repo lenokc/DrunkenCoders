@@ -21,7 +21,21 @@ public class MemberServiceImpl implements MemberService {
 	public String login(String id, String pwd) {
 		return memberDAO.login(id, pwd);
 	}
-
+	
+	@Override
+	public int modify(MemberDTO dto) {
+		return memberDAO.modify(dto);
+	}
+	
+	@Override
+	public int modifyprofile(MemberDTO dto) {
+		return memberDAO.modifyprofile(dto);
+	}
+	@Override
+	public MemberDTO memberView(String id) {
+		return memberDAO.memberView(id);
+	}
+	
 	@Override
 	public int isExistId(String id) {
 		return memberDAO.isExistId(id);

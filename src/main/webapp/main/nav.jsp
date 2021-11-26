@@ -138,7 +138,7 @@
 					</a>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 						<a class="dropdown-item" href=#>Dashboard</a>
-						<a class="dropdown-item" href=#>Edit Profile</a>
+						<a class="dropdown-item" href="${pageContext.request.contextPath}/member/memberModifyForm.do">Edit Profile</a>
 						<a class="dropdown-item" href="${pageContext.request.contextPath}/member/memberLogout.do">Sign out</a>
 					</div>
 				</div>

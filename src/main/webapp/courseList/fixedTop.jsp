@@ -34,18 +34,7 @@
 				 <!-- device lg 미만시 보이기-->
 				<nav class="navbar navbar-expand-lg bg-dark shadow-sm fixed-top p-2 d-block d-lg-none">
 					<a href="../main/body.do" class="float-left mx-2 text-muted"><i class="bi bi-arrow-left-circle-fill left"></i><span class="text-white">HOME</span></a>	
-					<h6 class="float-left mr-1">
-						<!-- sideList 보이기 버튼 -->
-						<a href="#" class="show sideToggleBtn badge badge-pill badge-secondary p-2 px-3 mt-2 d-none"> 
-							<i class="bi bi-info-circle-fill"></i> &nbsp;&nbsp;&nbsp;
-							<span>Show Sidebar</span>
-						</a>
-						<!-- sideList 숨기기 버튼 -->
-						<a href="#" class="hide sideToggleBtn badge badge-pill badge-secondary p-2 px-3 mt-2"> 
-							<i class="bi bi-x-circle-fill"></i> &nbsp;&nbsp;&nbsp;
-							<span>Hide Sidebar</span>
-						</a>
-					</h6>
+					
 					<h6 class="float-left mr-1">
 						<a href="#" class="badge badge-pill badge-secondary p-2 px-3 mt-2"> 
 							<i class="bi bi-arrow-left-circle-fill"></i> &nbsp;&nbsp;&nbsp;

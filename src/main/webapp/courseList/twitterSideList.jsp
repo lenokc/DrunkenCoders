@@ -29,7 +29,7 @@
 		 	<!-----------------------------------------
 		 		  left sideList : course curriculum :lg미만일 때 
 		 	------------------------------------------>
-		 		<div class="col-lg-4 col-xl-3 mx-auto d-blcok d-lg-none" id="sideList">
+		 		<div class="col-lg-4 col-xl-3 mx-auto d-block d-lg-none topList sideListT" id="sideList">
 		 			<div class="row">
 		 				<div class="card-body text-center mb-4 bg-white shadow-sm mx-auto text-dark">
 		 					<h5 class="card-title disabled">트위터 클론코딩</h5>
@@ -49,7 +49,7 @@
 								</div>
 								<!--최근 선택지만 active 작동하도록 ??-->								
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item unlocked"><a href="../courseList/twitterVideoView.do?tnum=1">##1.1 🚨 Read this First 🚨 </a></li>
+									<li class="list-group-item unlocked"><a href="../courseList/twitterVideoView.do?tnum=1">#1.1 🚨 Read this First 🚨 </a></li>
 	 								<li class="list-group-item unlocked"><a href="../courseList/twitterVideoView.do?tnum=2">#1.2 Welcome! (03:22)</a></li>
 	 								<li class="list-group-item unlocked"><a href="../courseList/twitterVideoView.do?tnum=3">#1.3 Requirements (01:11)</a></li>
 	 								<li class="list-group-item unlocked"><a href="../courseList/twitterVideoView.do?tnum=4">#1.4 What is Firebase (06:27)</a></li>
@@ -221,7 +221,7 @@
 								</div>
 								<!--최근 선택지만 active 작동하도록 ??-->								
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item unlocked active"><a href="../courseList/twitterVideoView.do?tnum=1">##1.1 🚨 Read this First 🚨 </a></li>
+									<li class="list-group-item unlocked"><a href="../courseList/twitterVideoView.do?tnum=1">##1.1 🚨 Read this First 🚨 </a></li>
 	 								<li class="list-group-item unlocked"><a href="../courseList/twitterVideoView.do?tnum=2">#1.2 Welcome! (03:22)</a></li>
 	 								<li class="list-group-item unlocked"><a href="../courseList/twitterVideoView.do?tnum=3">#1.3 Requirements (01:11)</a></li>
 	 								<li class="list-group-item unlocked"><a href="../courseList/twitterVideoView.do?tnum=4">#1.4 What is Firebase (06:27)</a></li>
@@ -369,7 +369,19 @@
 			 		<!-- row end -->
 			 	</div>
 			 	<!-- col-lg-4 end -->
-	 		
+	 		 	<script>
+	 			
+	 			$(function(){
+	 				var sideBtn =  $('#sideList li');
+	 				var num = ${tnum}-1;
+	 				
+	 				$(window).on('load',function(){
+	 					//alert(num);
+		 				sideBtn.eq(btn).addClass('active');
+		 			})
+	 			})
+	 			
+	 			</script>
 
 		<!-- Optional JavaScript; choose one of the two! -->
 

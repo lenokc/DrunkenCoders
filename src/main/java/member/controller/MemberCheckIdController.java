@@ -13,10 +13,10 @@ public class MemberCheckIdController {
 	@Autowired
 	private MemberService memberService;
 
-	@RequestMapping(value = "/member/checkId.do", method = RequestMethod.GET)
+	@RequestMapping(value = "/member/checkId.do", method = RequestMethod.POST)
 	@ResponseBody
-	public int checkId(@RequestParam("userid") String userid) {
-		
-		return memberService.isExistId(userid);
-	}
+	public int idCheck(@RequestParam("userid") String id){
+        int cnt = memberService.isExistId(id);
+        return cnt;
+    }
 }

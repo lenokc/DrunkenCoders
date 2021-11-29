@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- DB값이 null일 때에도 정상작동 -->
+	<!-- 
+	<settings>
+        <setting name="jdbcTypeForNull" value="NULL"/>
+	</settings> 
+	-->
+	
+	<!-- 클래스에 별명짓기 -->
+	<typeAliases>
+		<typeAlias type="community.dto.CommunityDTO" alias="Cdto"/>
+		<typeAlias type="member.dto.MemberDTO" alias="Mdto"/>
+		<typeAlias type="courses.dto.CoursesDTO" alias="Sdto"/>
+		<typeAlias type="challenge.dto.ChallengeDTO" alias="Chdto"/>
+		<typeAlias type="courseList.dto.CourseListDTO" alias="CLdto"/>
+		<typeAlias type="video.dto.KakaoVideoDTO" alias="KAdto"/>
+		<typeAlias type="video.dto.VanillaVideoDTO" alias="VAdto"/>
+		<typeAlias type="video.dto.TwitterVideoDTO" alias="TWdto"/>
+	</typeAliases>
+	
+	<!-- sql mapper 등록 -->
+	<mappers>
+		<mapper resource="/mybatis/community-mapping.xml" />
+		<mapper resource="/mybatis/member-mapping.xml" />
+		<mapper resource="/mybatis/courses-mapping.xml" />
+		<mapper resource="/mybatis/challenge-mapping.xml" />
+		<mapper resource="/mybatis/courseList-mapping.xml" />
+		<mapper resource="/mybatis/video-mapping.xml" />				
+	</mappers>
+	
+	
+</configuration>

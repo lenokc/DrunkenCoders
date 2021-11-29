@@ -16,7 +16,7 @@
 	integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
 	crossorigin="anonymous">
 
-<title></title>
+<title>드렁큰 코더 Drunken Coders</title>
 <!-- myStyle -->
 <link rel="stylesheet" href="/drunkenCoders/css/styleSj.css">
 <script type="text/javascript" src="/drunkenCoders/script/communityScript.js"> </script>

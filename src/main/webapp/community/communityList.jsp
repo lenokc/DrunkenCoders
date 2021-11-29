@@ -204,5 +204,4 @@
 	<!-- frontEdn: my_javascript -->
 	<script src="/drunkenCoders/script/frontEnd.js"></script>
 </body>
->>>>>>> refs/remotes/origin/sj
 </html>

@@ -35,11 +35,8 @@ public class MemberDAO {
 	}
 	// validate id exist
 	public int isExistId(String id) {
-		MemberDTO memberDTO = sqlSession.selectOne("mybatis.MemberMapper.isExistId", id);
-		int exist = 0;
-		if (memberDTO != null)
-			exist = 1;
-		return exist;
+		int cnt = sqlSession.selectOne("mybatis.MemberMapper.isExistId", id);
+		return cnt;
 	}
 
 	// twitter freeLecture enroll => unenrolled:0, enrolled:1
